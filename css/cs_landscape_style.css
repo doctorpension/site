@@ -1,0 +1,19 @@
+/*@media all and (orientation: landscape) and (max-width: 767px) {*/
+    /*.call-action {*/
+        /*top: 0px;*/
+    /*}*/
+
+    /*.logo_blk img {*/
+        /*height: 20px !important;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (orientation: landscape) and (max-width: 767px) {*/
+    /*.homehd.header-sticky .call-action {*/
+        /*top: 41px;*/
+    /*}*/
+
+    /*.homehd.header-sticky.header-fixed .call-action {*/
+        /*top: 35px;*/
+    /*}*/
+/*}*/

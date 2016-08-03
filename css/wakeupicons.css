@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'wakeupicons';
+  src: url("../fonts/wakeupicons.eot?z4t62r");
+  src: url("../fonts/wakeupicons.eot?z4t62r#iefix") format("embedded-opentype"), url("../fonts/wakeupicons.ttf?z4t62r") format("truetype"), url("../fonts/wakeupicons.woff?z4t62r") format("woff"), url("../fonts/wakeupicons.svg?z4t62r#wakeupicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="wake-"], [class*=" wake-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wakeupicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.wake-iconup:before {
+  content: "\e921"; }
+
+.wake-icon1:before {
+  content: "\e900"; }
+
+.wake-icon2:before {
+  content: "\e901"; }
+
+.wake-icon3:before {
+  content: "\e902"; }
+
+.wake-icon4:before {
+  content: "\e903"; }
+
+.wake-icon5:before {
+  content: "\e904"; }
+
+.wake-icon6:before {
+  content: "\e905"; }
+
+.wake-icon7:before {
+  content: "\e906"; }
+
+.wake-icon8:before {
+  content: "\e907"; }
+
+.wake-icon9:before {
+  content: "\e908"; }
+
+.wake-icon10:before {
+  content: "\e909"; }
+
+.wake-icon11:before {
+  content: "\e90a"; }
+
+.wake-icon12:before {
+  content: "\e90b"; }
+
+.wake-icon13:before {
+  content: "\e90c"; }
+
+.wake-icon14:before {
+  content: "\e90d"; }
+
+.wake-icon15:before {
+  content: "\e90e"; }
+
+.wake-icon16:before {
+  content: "\e90f"; }
+
+.wake-icon17:before {
+  content: "\e910"; }
+
+.wake-icon18:before {
+  content: "\e912"; }
+
+.wake-icon19:before {
+  content: "\e913"; }
+
+.wake-icon20:before {
+  content: "\e914"; }
+
+.wake-icon21:before {
+  content: "\e915"; }
+
+.wake-icon22:before {
+  content: "\e916"; }
+
+.wake-icon23:before {
+  content: "\e918"; }
+
+.wake-icon24:before {
+  content: "\e919"; }
+
+.wake-icon25:before {
+  content: "\e91a"; }
+
+.wake-icon26:before {
+  content: "\e91b"; }
+
+.wake-check:before {
+  content: "\f00c"; }
+
+.wake-left:before {
+  content: "\f104"; }
+
+.wake-right:before {
+  content: "\f105"; }
+
+.wake-up:before {
+  content: "\f106"; }
+
+.wake-down:before {
+  content: "\f107"; }
+
+.wake-home:before {
+  content: "\e911"; }
+
+.wake-book:before {
+  content: "\e91c"; }
+
+.wake-phone:before {
+  content: "\e91d"; }
+
+.wake-menu:before {
+  content: "\e91e"; }
+
+.wake-plus:before {
+  content: "\e91f"; }
+
+.wake-minus:before {
+  content: "\e920"; }
+
+.wake-cross:before {
+  content: "\e917"; }

@@ -1,0 +1,245 @@
+--- subpage.html	2016-07-11 17:38:52.000000000 +0000
++++ subpage_mobile.html	2016-07-10 19:59:31.225082000 +0000
+@@ -27,7 +27,25 @@
+ 			<script src="js/html5shiv.js"></script>
+ 			<script src="js/respond.min.js"></script>
+ 		<![endif]-->
+-
++<style type='text/css'>
++.swipe{display:none;}
++.bothaf-singleblk h4{display:none;}
++@media only screen and (max-width: 767px){
++.swipe{position:absolute;left:250px;top:0;display:block;height:48px;width:48px;}
++.scroll_holder{background:#92b1be;width:100%;}
++.listing_blk_tabs{position:relative;overflow:hidden;height:850px;width:90%;margin:0px auto;background:#e9eef2;border-top:10px solid #92b1be;border-bottom:10px solid #92b1be;}
++.tab_container{width:200%;height:850px;}
++.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.down-block, 
++.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk{width:50%;height:850px;padding-top:46px;float:left;}
++#guide-template{display:none;}
++.bottom-outercont{background:#e9eef2;}
++.scroll_holder .bottom-outercont{position:relative;overflow:hidden;height:415px;width:90%;margin:0px auto;background:#e9eef2;border-top:10px solid #92b1be;border-bottom:10px solid #92b1be;float:none;}
++.bottom-scroller{width:220%;height:425px;float:left;}
++.bottom-outercont .bothaf-singleblk{width:45%;margin-top:20px;margin-right:10px;float:left;}
++.bottom-outercont .bothaf-singleblk:nth-child(2){margin-left:20px;}
++.bothaf-singleblk h4{display:block;}
++}
++</style>
+ </head>
+ 
+ <body>
+@@ -91,7 +109,6 @@
+             <p>יש לך נכון להיום <strong> 258,258 ₪</strong> בחסכונותיך לפנסיה <br>
+               המלצותינו הינן אובייקטיביות לחלוטין ומותאמות לצורכיך האישיים.</p>
+             <span id="guide-template"><i class="fa fa-check"></i>הצבירה שלך לגיל הפרישה יכולה לגדול ב <strong>453,302 ₪</strong> אם תבחר ליישם את המלצותינו.</span>
+-       
+           </div>
+         </div>
+       </div>
+@@ -100,20 +117,13 @@
+       <div class="container"> 
+         
+         <!--tab section-->
++			<div class='scroll_holder'>
+         
+         <div class="listing_blk_tabs">
+           <div class="tab_container">
+-          <div id="sticky-anchor"></div>
+-           <div class="header-outercont hidden-xs"  id="sticky">
+-               <div class="header-innercont">
+-              <h4>מצבך היום</h4>
+-            <h4>לסיכום</h4>
+-            </div>
+-           </div>
+-           
++				<img src='images/swipe-hand.png' class='swipe'/>
+             <div class="listing-singleblk down-block">
+- 
+-              <h4 class="visible-xs">מצבך היום</h4>
++              <h4>מצבך היום</h4>
+               <!--pie chart section-->
+               <div class="chart-outercont">
+                 <div class="pieID pie"></div>
+@@ -127,7 +137,7 @@
+               <!--pie chart section-->
+               
+               <div class="single-tabblock first-blk">
+-                <div class="cont-singleouterblock old-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>קופת גמל</label>
+                   </div>
+@@ -138,7 +148,7 @@
+                 </div>
+               </div>
+               <div class="single-tabblock sec-blk">
+-                <div class="cont-singleouterblock old-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>קרן השתלמות</label>
+                   </div>
+@@ -148,7 +158,7 @@
+                 </div>
+               </div>
+               <div class="single-tabblock third-blk">
+-                <div class="cont-singleouterblock old-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>ביטוח מנהלים</label>
+                   </div>
+@@ -159,7 +169,7 @@
+                 </div>
+               </div>
+               <div class="single-tabblock fourth-blk">
+-                <div class="cont-singleouterblock old-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>קרן פנסיה</label>
+                   </div>
+@@ -171,7 +181,7 @@
+               </div>
+             </div>
+             <div class="listing-singleblk right-blk">
+-              <h4 class="visible-xs">מצבך היום</h4>
++              <h4>המלצות שלנו</h4>
+               <!--pie chart section-->
+               <div class="chart-outercont">
+                 <div class="pieID2 pie"></div>
+@@ -191,7 +201,7 @@
+                   <a href="#secondpopup" class="link-button popupbtns">הבנתי</a> </div>
+                 <!--normal popover-->
+                 <div class="alrm-icon normalpop"> </div>
+-                <div class="cont-singleouterblock new-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>קופת גמל</label>
+                   </div>
+@@ -209,7 +219,7 @@
+                   <!--normal popover--> 
+                 </div>
+                 <div class="alrm-icon closepopover"></div>
+-                <div class="cont-singleouterblock new-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>קרן השתלמות</label>
+                   </div>
+@@ -226,7 +236,7 @@
+                     <a href="#topblock" class="link-button popupbtns">הבנתי</a> </div>
+                   <!--normal popover--> 
+                 </div>
+-                <div class="cont-singleouterblock new-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>ביטוח מנהלים</label>
+                   </div>
+@@ -237,7 +247,7 @@
+               </div>
+               <div class="single-tabblock rightfourth-blk">
+                 <div class="alrm-icon normalpop"> </div>
+-                <div class="cont-singleouterblock new-cont">
++                <div class="cont-singleouterblock">
+                   <div class="compare-fieldtitle">
+                     <label>קרן פנסיה</label>
+                   </div>
+@@ -245,10 +255,9 @@
+                     <li><span>מנורה מבטחים פנסיה וגמל בע”מ</span><em>₪23,030</em></li>
+                   </ul>
+                 </div>
+-              </div>
+             </div>
+           </div>
+-          
++  </div></div>
+           <!--popup blocks section--> 
+           
+           <!--popup blocks section--> 
+@@ -278,12 +287,6 @@
+                 </div>
+               </div>
+             </div>
+-          </div>
+-          <!--first popup-->
+-            <!--first popup-->
+-          <div class="new-popupouter newfirstsub-popupblk">
+-            <div class="close-pop"><i class="wake-cross"></i></div>
+-            
+             <div class="single-leftblk">
+               <div class="main-popup-content">
+                 <h5>ההמלצות שלנו:</h5>
+@@ -301,9 +304,15 @@
+         </div>
+         <div class="bottom-outercont">
+           <div class="mainb-hdrblk">
+-            <h4 class="visible-xs">לסיכום</h4>
++            <h4>לסיכום</h4>
+           </div>
++	  </div>
++			<div class='scroll_holder'>
++				<img src='images/swipe-hand.png' class='swipe'/>
++        <div class="bottom-outercont">
++			<div class='bottom-scroller'>
+           <div class="bothaf-singleblk"> 
++              <h4>מצבך היום</h4>
+             <!--risk block section-->
+             <div class="riskblock-outer">
+               <div class="pensions-outer">
+@@ -339,6 +348,7 @@
+             <!--risk block section--> 
+           </div>
+           <div class="bothaf-singleblk left-block"> 
++              <h4>המלצות שלנו</h4>
+             <!--risk block section-->
+             <div class="riskblock-outer success-bock">
+               <div class="pensions-outer">
+@@ -371,7 +381,8 @@
+               </div>
+               <div class="feesouter-cont"> <span><em>₪1,000</em>דמי ניהול חזויים לשנה</span> </div>
+             </div>
+-          </div>
++	</div></div>
++</div></div>
+           <div class="bluebottomboxspan"> <i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול ב <strong>453,302 ₪</strong> אם תבחר ליישם את המלצותינו. </div>
+           <div class="insurance-block">
+             <div class="container">
+@@ -388,7 +399,7 @@
+                           <div class="single-popblock">
+                             <div class="single-fildout small-box">&nbsp;</div>
+                             <div class="single-fildout"><span>מצבך היום</span></div>
+-                            <div class="single-fildout hidden-xs"><span>המלצות שלנו</span></div>
++                            <div class="single-fildout"><span>המלצות שלנו</span></div>
+                           </div>
+                           <div class="single-popblock">
+                             <div class="single-fildout small-box">
+@@ -399,9 +410,7 @@
+                                 </ul>
+                               </div>
+                             </div>
+-                            <div class="single-fildout mobicontent-box">
+-                             <div class="mobiheader-block  visible-xs">נכות</div>
+-                             <div class="mobiheader-block-bot  visible-xs">שארים</div>
++                            <div class="single-fildout">
+                               <div class="table-blocksouter">
+                                 <ul class="header-block">
+                                   <li>קצבה חודשית</li>
+@@ -416,12 +425,8 @@
+                                   <li>₪600,000</li>
+                                 </ul>
+                               </div>
+-                              
+-                            <div class="single-fildout visible-xs"><span>המלצות שלנו</span></div>
+                             </div>
+-                            <div class="single-fildout mobicontent-box active-block">
+-                             <div class="mobiheader-block  visible-xs">נכות</div>
+-                             <div class="mobiheader-block-bot  visible-xs">שארים</div>
++                            <div class="single-fildout active-block">
+                               <div class="table-blocksouter">
+                                 <ul class="header-block">
+                                   <li>קצבה חודשית</li>
+@@ -547,5 +552,6 @@
+ <script src="js/plugins/bpopup.min.js"></script> 
+ <script src="js/piechart.js"></script> 
+ <script src="js/main.js"></script>
++<script src="js/iscroll.js"></script>
+ </body>
+-</html>
+\ No newline at end of file
++</html>

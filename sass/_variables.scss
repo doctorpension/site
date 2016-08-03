@@ -1,0 +1,135 @@
+// Variables
+// --------------------------
+
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:        #000000	!default; 
+$lighter:        #FFFFFF !default; 
+$popover:        #f1f1f1 !default; 
+
+$mainbg:           #92b1be !default; 
+$seconbg:       #ffeb08 !default;   
+$seconlight:       #fff36b !default;   
+$blocksbg:       #b9ccd6 !default;  
+$graphbg:       #cfdce4 !default;  
+$mainbtn:          #d9e4eb !default;  
+$boxes1:       #a1bac6 !default;    
+$borderbg:       #e9eef2 !default;   
+$lightvar:       #faf9f8 !default;  
+$pointers:       #e9ebed !default;  
+$iconscol:       #c6ced1 !default;  
+$btnbg:       #c6d6dd !default;  
+$bottombg:       #829ea9 !default;  
+$iconbg:       #e3e9ef !default;  
+$inputtxt:       #7b7e81 !default;    
+$innerbg:       #d7e2e9 !default;    
+$downarrow:       #abb1b5 !default;    
+$boxbg:       #bfd0da !default;    
+$tabtxt:       #333c4f !default;    
+$productbg:       #54c9cc !default;    
+$thirdblk:       #44a1a3 !default;    
+$darkerbg:       #48e2ce !default;    
+$iconlistbg:       #d1dee4 !default;    
+$btnborder:       #e3d107 !default;    
+$singleblk:       #dee8ed !default;    
+$halfbg:       #e3eaef !default;    
+$tablebg1:       #c8d7e0 !default;    
+$warning:       #f17078 !default;    
+$poptxt:       #525a5e !default;    
+$tabbg:       #efefef !default;    
+
+$maintxt:       #535b5e !default;  
+
+$btn-colr-w:   #ff5f1f !default;  
+$heading-colr-w:   #222526 !default;  
+$listround-w:   #fcdb05 !default;  
+$retire-col:   #5076d8 !default;  
+$listround-h:   #4d555a !default;  
+$newbtn-bg:   #0e4f68 !default;  
+$pulse-bg:   #ff7f00 !default;  
+$tooltip-bg:   #004e67 !default;  
+$bottomspn:   #435cc8 !default;  
+$arrowpoint:   #dedede !default;  
+
+
+
+$nwblk1: #6d8bd5 !default;  
+$nwblk2: #b07fcf !default;  
+$nwblk3: #63bdc0 !default;  
+$nwblk4: #44c6e6 !default;
+
+$nwblk21: #6a69d5 !default;    
+$nwblk22: #9458b9 !default;  
+$nwblk23: #00bd9c !default; 
+$nwblk24: #2c97dd !default;  
+
+
+
+
+
+
+//== Typography
+// -------------------------- 
+
+ @font-face {
+    font-family: "fbspoileren-bold";
+    src: url("../fonts/fbspoileren-bold-webfont.eot?") format("eot"), 
+		 url("../fonts/fbspoileren-bold-webfont.woff") format("woff"), 
+		 url("../fonts/fbspoileren-bold-webfont.ttf") format("truetype"), 
+		 url("../fonts/fbspoileren-bold-webfont.svg#fbspoileren-bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+    font-family: "fbspoileren-regular";
+    src: url("../fonts/fbspoileren-regular-webfont.eot?") format("eot"), 
+		 url("../fonts/fbspoileren-regular-webfont.woff") format("woff"), 
+		 url("../fonts/fbspoileren-regular-webfont.ttf") format("truetype"), 
+		 url("../fonts/fbspoileren-regular-webfont.svg#fbspoileren-regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+$mainfont: Arial, Helvetica, sans-serif; 
+$font1: 'fbspoileren-bold';
+$font2: 'fbspoileren-regular';
+	
+	
+
+$size-base:             14px !default; 
+$size-h1:			    ceil(($size-base * 5.5)) !default;    // ~ 77px
+$size-h2:				ceil(($size-base * 4.28)) !default;    // ~ 60px
+$size-h3:				ceil(($size-base * 4.28)) !default;    // ~ 60px
+$size-h4:				ceil(($size-base * 3.42)) !default;    // ~ 48px
+$size-h5:				ceil(($size-base * 2.57)) !default;    // ~ 36px
+$size-h6:				ceil(($size-base * 2.14)) !default;    // ~ 30px
+
+$navtxt:              ceil(($size-base * 1.64)) !default;     // ~ 23px 
+$listtxt:              ceil(($size-base * 1.85)) !default;     // ~ 26px 
+$btntxt:				ceil(($size-base * 3.28)) !default;    // ~ 46px
+$smalltxt:				ceil(($size-base * 1.28)) !default;    // ~ 18px
+$grouptxt:				ceil(($size-base * 1.42)) !default;    // ~ 20px
+$innertxt:				ceil(($size-base * 1.71)) !default;    // ~ 24px
+$foottxt:				ceil(($size-base * 1.5)) !default;    // ~ 21px
+$navmob:				ceil(($size-base * 1.14)) !default;    // ~ 16px
+$slidertxt:				ceil(($size-base * 2)) !default;    // ~ 28px
+$btnsize:				ceil(($size-base * 2.85)) !default;    // ~ 40px
+$smallfont:				ceil(($size-base * 0.85)) !default;    // ~ 12px
+$txtfooter:				ceil(($size-base * 0.92)) !default;    // ~ 13px
+$innerhead:				ceil(($size-base * 4.85)) !default;    // ~ 68px
+$iconsize:				ceil(($size-base * 3.92)) !default;    // ~ 55px
+$pricetxt:				ceil(($size-base * 2.28)) !default;    // ~ 32px
+
+
+
+$size-h5-w:				ceil(($size-base * 2.35)) !default;    // ~ 33px
+$size-h6-w:				ceil(($size-base * 1.78)) !default;    // ~ 25px
+$hmlisttext:            ceil(($size-base * 1.57)) !default;    // ~ 22px
+$listtext:              ceil(($size-base * .85)) !default;    // ~ 12px
+$bannertext:              ceil(($size-base * 5)) !default;    // ~ 70px
+
+
+
+
