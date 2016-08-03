@@ -2634,15 +2634,16 @@
 
 	.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box {
 		height: 90px;
-		padding: 20px 12px 12px;
+		padding:10px;
 		width: 90px; }
-
+	.looking-outerblk.new-looking-outerblk ul li:nth-child(2) .single-contentblk .list-topblock .round-box {
+right:-32px;left:auto;}
 	.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box h6 {
 		font-size: 25px;
 		line-height: 23px; }
 
 	.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span {
-		font-size: 24px; }
+		font-size: 22px;line-height:22px;display:inline-block; }
 
 	.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box p {
 		font-size: 18px;

@@ -3857,14 +3857,14 @@ div.drum figure {
 	line-height: 30px;
 	color: #222526; }
 .looking-outerblk.new-looking-outerblk ul {
-	width: 105%;
+	width: 80%;
 	height: auto;
 	float: left;
 	list-style: none;
-	margin-left: -5%;
+	margin:0px auto;
 	padding-bottom: 18px; }
 .looking-outerblk.new-looking-outerblk ul li {
-	width: 31.83%;
+	width: 47%;
 	height: auto;
 	max-width: 328px;
 	list-style: none;
@@ -3878,7 +3878,7 @@ div.drum figure {
 	background: url(../images/list_arrow.png) no-repeat left center;
 	width: 23px;
 	height: 100%;
-	right: -13%; }
+	right: -10%; }
 .looking-outerblk.new-looking-outerblk ul li:first-child {
 	margin-right: 0; }
 .looking-outerblk.new-looking-outerblk ul li:first-child:before {
@@ -3887,7 +3887,6 @@ div.drum figure {
 	right: auto; }
 .looking-outerblk.new-looking-outerblk ul li .list-head {
 	float: left;
-	min-height: 64px;
 	width: 100%; }
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk {
 	width: 100%;
@@ -3937,6 +3936,10 @@ div.drum figure {
 	padding: 12px;
 	padding-top: 22px;
 	text-align: center; }
+.looking-outerblk.new-looking-outerblk ul li:nth-child(2) .single-contentblk .list-topblock .round-box {
+	right:auto;
+	left:-32px;
+}
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box h6 {
 	padding: 0;
 	font-family: "fbspoileren-bold";
@@ -3948,10 +3951,10 @@ div.drum figure {
 	padding: 0;
 	margin-top: 0;
 	font-size: 30px;
+	line-height:30px;
 	font-family: "fbspoileren-regular"; }
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span.small-price {
-	font-size: 20px;
-	text-decoration: line-through; }
+	font-size: 20px};
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box p {
 	margin-bottom: 0;
 	color: #ff5f1f;

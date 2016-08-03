@@ -111,45 +111,20 @@
 							<div class="single-contentblk">
 								<div class="list-topblock"><i class="wake-icon9"></i>
 									<div class="list-head">
-										<h6>&nbsp;</h6>
-										<h5>רכוש דוח ייעוץ פנסיה</h5>
+										<h5>ייעוץ חד פעמי</h5>
 									</div>
 									<div class="list-mainblock">
 										<ul>
-											<li>ריכוז של חסכונותיך לפנסיה</li>
+											<li>ריכוז חסכונותיך לפנסיה עד היום</li>
 											<li>התאמת החיסכון לפרופיל האישי</li>
-											<li>המלצות להגדלת הרווחיות</li>
+											<li>דוח ייעוץ פנסיה אובייקטיבי</li>
 										</ul>
-										<p>*חינם לתקופה מוגבלת</p>
 									</div>
 									<div class="round-box">
 										<h6>שלב 1</h6>
-										<span class="small-price">₪ 199</span>
-										<p> חינם*</p>
+										<span >חינם</span>
+										<!--p> חינם*</p-->
 									</div>
-								</div>
-							</div>
-						</li>
-						<!--single section-->
-						<!--single section-->
-						<li>
-							<div class="single-contentblk">
-								<div class="list-topblock"><i class="wake-icon7"></i>
-									<div class="list-head">
-										<h6>אהבת את ההמלצות שלנו?</h6>
-										<h5>צא לדרך חדשה</h5>
-									</div>
-									<div class="list-mainblock">
-										<ul>
-											<li>יישום דיגיטלי של ההמלצות</li>
-											<li>העברת הכספים לקופות החדשות</li>
-											<li>בלי עמלות</li>
-										</ul>
-										<p>&nbsp;</p>
-									</div>
-									<div class="round-box">
-										<h6>שלב 2</h6>
-										<span>₪ 149</span></div>
 								</div>
 							</div>
 						</li>
@@ -159,20 +134,18 @@
 							<div class="single-contentblk">
 								<div class="list-topblock"><i class="wake-icon5"></i>
 									<div class="list-head">
-										<h6>&nbsp;</h6>
-										<h5>ניטור תקופתי</h5>
+										<h5>שירות פרימיום</h5>
 									</div>
 									<div class="list-mainblock">
 										<ul>
-											<li>ריכוז תקופתי של תיק החיסכון</li>
-											<li>ניטור תשואת התיק ודמי הניהול</li>
-											<li>התאמת התיק לשינויים אישיים</li>
+											<li>יישום דיגיטאלי של המלצות הייעוץ</li>
+											<li>דמי ניהול מופחתים</li>
+											<li>ריכוז ובקרה תקופתית של התיק</li>
 										</ul>
-										<p>&nbsp;</p>
 									</div>
 									<div class="round-box">
-										<h6>שלב 3</h6>
-										<span>₪ 99</span></div>
+										<h6>שלב 2</h6>
+										<span>₪ 99 <span class='small-price'>לשנה</span></span></div>
 								</div>
 							</div>
 						</li>
