@@ -43,7 +43,7 @@
 		<div class="main-outercon" id="cs_section_01">
 			<span ></span>
 			<!--Begin header section-->
-			<?php include('elements/cs_header.php') ?>
+			<?php include('includes/cs_header.php') ?>
 			<!--End header section-->
 			<!--Begin Banner section-->
 			<section class="banner-outercont banner-new">
@@ -360,7 +360,7 @@
 			<!--End Banner section-->
 
 			<!--Begin Footer section-->
-			<?php include('elements/cs_footer.php') ?>
+			<?php include('includes/cs_footer.php') ?>
 			<!--End Footer section-->
 		</div>
 		<!-- Le javascript
