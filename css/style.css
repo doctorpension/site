@@ -4392,7 +4392,9 @@ div.drum figure {
 	height: 45px;
 	line-height: 45px;
 	font-size: 23px; }
-
+body.account-section .homehd .call-action{
+	display:none;
+}
 .slider h3 {
 	background: red;
 	color: #3498db;

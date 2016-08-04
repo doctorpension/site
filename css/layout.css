@@ -618,7 +618,7 @@
 		text-align: center;
 		max-width: 100%;
 		position: relative;
-		padding-bottom: 10px; }
+		padding-bottom: 20px; }
 
 	.main-headerout .logo_blk:after {
 		width: 100%;
@@ -1929,45 +1929,70 @@
 	.header-sticky .logo_blk img {
 		width: auto;
 		max-width: 200px;
-		-webkit-transition: all .3s ease;
-		-moz-transition: all .3s ease;
-		-ms-transition: all .3s ease;
-		-o-transition: all .3s ease; }
+		-webkit-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		-o-transition: all .2s ease; }
 
 	.header-sticky.header-fixed .logo_blk {
 		padding: 0px; }
 
 	/* .header-sticky.header-fixed .logo_blk img{  max-width: 110px;} */
 	.navbar-default {
-		margin: 0; }
-
+		margin: 0;margin-top:-13px; 
+		-webkit-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		-o-transition: all .2s ease; }
 	.homehd.header-sticky .call-action {
 		float: left;
-		left: 0;
 		position: absolute;
-		top: 38px; /* 68px; */
-		-webkit-transition: all .3s ease;
-		-moz-transition: all .3s ease;
-		-ms-transition: all .3s ease;
-		-o-transition: all .3s ease;
+		-webkit-transition: all .2s ease;
+		-moz-transition: all .2s ease;
+		-ms-transition: all .2s ease;
+		-o-transition: all .2s ease;
+		top: 51px; /* 68px; */
 		left: 20px; }
+	.homehd.header-sticky.header-fixed .call-action {
+		 font-size: 16px;
+		 height: 31px;
+		 line-height: 32px;
+		 padding:0px 5px;
+		 left:10px;
+		 top:0px;
+	 }
 
 	.homehd.header-sticky.header-fixed .call-action {
-		top: 63px; }
+		top: 0px;left:10px; }
 
 	.navbar-default {
-		width: 100%; }
+		width: 100%; 
+		background: #b9ccd6;
+		padding-top: 10px;
+	}
 
+	.homehd.header-sticky.header-fixed .navbar-default{
+		position:absolute;margin:0px;
+		    background: none; 
+		    padding-top: 0px; 
+	}
 	.homehd .call-action .link-button {
-		font-size: 23px;
+		 font-size: 23px;
 		height: 34px;
-		line-height: 32px; }
+		line-height: 32px; 
+	}
+	.homehd.header-sticky.header-fixed .call-action .link-button {
+		font-size: 16px;
+		height: 31px;
+		line-height: 32px; 
+		padding:0px 5px;
+	}
 
 	.main-headerout .logo_blk:after {
 		height: 12px; }
 
-	.navbar-toggle {
-		margin-top: -10px; }
+	/*.navbar-toggle {
+		margin-top: -10px; }*/
 
 	.navbar {
 		min-height: 0px; }
