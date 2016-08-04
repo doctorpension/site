@@ -18,7 +18,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li><a href="#">צוות המומחים שלנו </a></li>
-                                <li><a href="#"> איך זה עובד?</a></li>
+                                <li><a href="#"> איך זה עובד</a></li>
                                 <li><a href="#">שאלות נפוצות</a></li>
 								
 								<li class="visible-xs"><a href="#">תנאי שימוש</a></li>

@@ -28,7 +28,7 @@
                                 <li><a href="#">דף הבית</a></li>
                                 <li><a href="#">צוות המומחים שלנו</a></li>
                                 <!--li><a href="#">כתבו עלינו</a></li-->
-                                <li><a href="#">איך זה עובד?</a></li>
+                                <li><a href="#">איך זה עובד</a></li>
                             </ul>
                         </div>
                         <!--div class="links-single follow">
