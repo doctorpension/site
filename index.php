@@ -104,7 +104,7 @@
 			<!--Begin content section-->
 			<section class="content-maincont looking-outerblk new-looking-outerblk">
 				<div class="container">
-					<h5>התהליך</h5>
+					<h5>כמה זה עולה</h5>
 					<ul>
 						<!--single section-->
 						<li>
@@ -145,7 +145,7 @@
 									</div>
 									<div class="round-box">
 										<h6>שלב 2</h6>
-										<span>₪ 99 <span class='small-price'>לשנה</span></span></div>
+										<span>₪ 99 לשנה</span></div>
 								</div>
 							</div>
 						</li>

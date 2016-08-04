@@ -290,15 +290,8 @@ img {
 .looking-outerblk ul {
 	width: 101.5%;
 	height: auto;
-	float: left;
 	list-style: none;
 	margin-left: -1.5%; }
-.looking-outerblk ul li {
-	width: 31.83%;
-	height: auto;
-	list-style: none;
-	margin-left: 1.5%;
-	float: right; }
 .looking-outerblk ul li .single-contentblk {
 	width: 100%;
 	height: auto;
@@ -3857,9 +3850,8 @@ div.drum figure {
 	line-height: 30px;
 	color: #222526; }
 .looking-outerblk.new-looking-outerblk ul {
-	width: 80%;
+	width: 75%;
 	height: auto;
-	float: left;
 	list-style: none;
 	margin:0px auto;
 	padding-bottom: 18px; }
@@ -3872,13 +3864,16 @@ div.drum figure {
 	margin-left: 0;
 	float: right;
 	position: relative; }
+.looking-outerblk.new-looking-outerblk ul li:nth-child(2){
+	float:left;
+}
 .looking-outerblk.new-looking-outerblk ul li:before {
 	position: absolute;
 	content: "";
 	background: url(../images/list_arrow.png) no-repeat left center;
 	width: 23px;
 	height: 100%;
-	right: -10%; }
+	right: -30%; }
 .looking-outerblk.new-looking-outerblk ul li:first-child {
 	margin-right: 0; }
 .looking-outerblk.new-looking-outerblk ul li:first-child:before {
@@ -3927,8 +3922,8 @@ div.drum figure {
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border-radius: 100px;
-	width: 100px;
-	height: 100px;
+	width: 110px;
+	height: 110px;
 	position: absolute;
 	right: -32px;
 	top: -34px;
@@ -3950,8 +3945,8 @@ div.drum figure {
 	background: none;
 	padding: 0;
 	margin-top: 0;
-	font-size: 30px;
-	line-height:30px;
+	font-size: 28px;
+	line-height:27px;
 	font-family: "fbspoileren-regular"; }
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span.small-price {
 	font-size: 20px};
