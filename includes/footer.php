@@ -13,37 +13,23 @@
                     </div>
                     <div class="footer-links cs_mobile_footer border">
                         <div class="links-single">
-                            <h6>פרטים חשובים </h6>
                             <ul>
                                 <li><a href="#">תנאי שימוש</a></li>
                                 <li><a href="#">מדיניות פרטיות</a></li>
-                                <li><a href="#">צור קשר</a></li>
                                 <li><a href="#">שאלות נפוצות</a></li>
-                                <!--li><a href="#">מפת האתר</a></li-->
-                            </ul>
+                             </ul>
                         </div>
                         <div class="links-single">
-                            <h6>ניווט באתר </h6>
                             <ul>
-                                <li><a href="#">דף הבית</a></li>
-                                <li><a href="#">צוות המומחים שלנו</a></li>
-                                <!--li><a href="#">כתבו עלינו</a></li-->
+								<li><a href="#">צוות המומחים שלנו</a></li>
                                 <li><a href="#">איך זה עובד</a></li>
+                                <li><a href="#">צור קשר</a></li>
                             </ul>
                         </div>
-                        <!--div class="links-single follow">
-                          <h6>עקבו אחרינו </h6>
-                          <ul>
-                            <li><a href="#"><span><i class="wake-icon10"></i></span>פייסבוק</a></li>
-                            <li><a href="#"><span><i class="wake-icon11"></i></span>טוויטר</a></li>
-                            <li><a href="#"><span><i class="wake-icon13"></i></span>גוגל פלוס</a></li>
-                          </ul>
-                        </div-->
-                    </div>
+                      </div>
                     <div class="input-block cs_mobile_footer">
-                        <h6>השאר מעודכן</h6>
                         <div class="input-inner">
-                            <p>הירשם לרשימת התפוצה שלנו ואנו נדאג לעדכן אותך בכל המידע החשוב.</p>
+                            <p>הירשם לרשימת התפוצה שלנו</p>
                             <form>
                                 <input type="text" placeholder="כתובת הדוא”ל שלך">
                                 <input type="submit" value="" class="btn btn-default main-btn">

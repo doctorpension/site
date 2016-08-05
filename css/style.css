@@ -1768,7 +1768,8 @@ ul.listing-outer:after {
 	padding-left: 3.5%;
 	width: 23.7%; }
 .right-logo p {
-	font-size: 13px;
+	font-size: 14px;
+	text-align:center;
 	color: #d9e4eb;
 	margin: 0; }
 .right-logo .wakeup-logo {
