@@ -2236,7 +2236,10 @@
 		display: none; }
 
 	#chart #bars li span {
-		font-size: 10px; }
+		font-size: 14px;
+		bottom:-33px;
+	 line-height:14px;	
+	}
 
 	.newwakeup-logo {
 		margin-top: 0; }
