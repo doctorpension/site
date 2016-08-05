@@ -175,7 +175,12 @@ canvas {
 		left: -250px;
 		margin: 0px;
 		max-width: none;
-		float: left; } }
+		float: left; }
+	.banner-outercont.banner-new.newquote-outer li.cycle-slide:nth-child(3) img {
+		left:-350px;
+	}
+	   
+	}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
 	.banner-outercont.banner-new.newquote-outer li.cycle-slide img {
 		position: relative;
