@@ -3867,19 +3867,8 @@ div.drum figure {
 .looking-outerblk.new-looking-outerblk ul li:nth-child(2){
 	float:left;
 }
-.looking-outerblk.new-looking-outerblk ul li:before {
-	position: absolute;
-	content: "";
-	background: url(../images/list_arrow.png) no-repeat left center;
-	width: 23px;
-	height: 100%;
-	right: -30%; }
 .looking-outerblk.new-looking-outerblk ul li:first-child {
 	margin-right: 0; }
-.looking-outerblk.new-looking-outerblk ul li:first-child:before {
-	background: none;
-	width: auto;
-	right: auto; }
 .looking-outerblk.new-looking-outerblk ul li .list-head {
 	float: left;
 	width: 100%; }
