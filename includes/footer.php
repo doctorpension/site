@@ -5,7 +5,7 @@
                 <div class="col-sm-12">
                     <div class="right-logo border">
                         <div class="wakeup-logo">
-                            <a href="#">
+                            <a href="/index.php">
                                 <img src="images/wakeup_logo.png" alt="" style="max-height: none; margin-bottom: auto;"/>
                             </a>
                             <p>ייעוץ פנסיוני אישי, אובייקטיבי ואפקטיבי</p>
