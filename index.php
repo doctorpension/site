@@ -171,7 +171,7 @@
 										<li class="third-ball"><span class="pulse"></span>מיישמים את ההמלצות בקליק</li>
 									</ul>
 								</div>
-								<div class="link-block"><a class="link-button" href="subpage.html">צפה במפה לדוגמא</a></div>
+								<div class="link-block"><a class="link-button" href="subpage.html">דוח לדוגמה</a></div>
 							</div>
 						</div>
 					</div>
@@ -184,17 +184,14 @@
 				<span ></span>
 				<div class="container">
 					<div class="heading-top">
-						<h5>למה אתה צריך את</h5>
-						<div class="logo-blk"><img src="images/wakeup_logo2.png" alt="logo"/></div>
+						<h5>מגיע לך להיות בידיים טובות</h5>
 					</div>
 					<div class="detail-section">
 						<div class="graph-details">
 							<ul>
-								<li>כי אנחנו עובדים רק בשבילך. בלי עמלות נסתרות ובלי ניגודי אינטרסים</li>
-								<li>כי המערכת שלנו מוכיחה את עצמה משנת 2011 בקרב אלפי משתמשים</li>
-								<li>כי לראשונה יהיה לך ממש קל לטפל בפנסיה שלך, להיפטר מדמי ניהול מיותרים ולהגדיל את הקצבה
-									החזויה
-								</li>
+								<li>אנחנו עובדים רק בשבילך. בלי עמלות נסתרות</li>
+								<li>המערכת שלנו הוכיחה את עצמה כבר בקרב אלפים</li>
+								<li>אפשר להקטין את דמי הניהול ולהגדיל את הקצבה</li>
 							</ul>
 						</div>
 						<div class="graph-block">
