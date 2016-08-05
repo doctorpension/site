@@ -42,7 +42,7 @@
 	<body class='account-section'>
 		<div class="main-outercon">
 			<!--Begin header section-->
-<?php include('includes/cs_header.php'); ?>
+<?php include('includes/header.php'); ?>
 			<!--End header section-->
 
 			<!--Begin Page Content-->
@@ -530,7 +530,7 @@
 			<!--End Page Content-->
 
 			<!--Begin Footer section-->
-			<?php include('includes/cs_footer.php') ?>
+			<?php include('includes/footer.php') ?>
 			<div class="mob-view"></div>
 			<!--End Footer section-->
 		</div>
