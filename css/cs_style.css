@@ -20,21 +20,7 @@
 .cs_path_outer_img_visible {
 	opacity: 1; }
 
-/*Mobile*/
-.path-outer-m {
-	position: fixed;
-	left: 50%;
-	top: 0px;
-	width: 12px;
-	height: 276px;
-	z-index: 10000000;
-	margin-left: 550px;
-	display: none; }
 
-@media all and (max-width: 767px) {
-	.path-outer {
-		display: none; } }
-/*END HOME PAGE --------------------------*/
 /*------------------------------------------------------------------------------*/
 /*SUBPAGE --------------------------------*/
 /*TWO BLOCKS BOX*/

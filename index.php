@@ -56,15 +56,6 @@
 						<img class="cs_path_outer_img04 cs_path_outer_img" src="images/content/path_img4.png" alt="">
 					</div>
 				</div>
-				<div class="path-outer-m">
-					<div class="cs_path_outer_container">
-						<img class="cs_path_outer_img01 cs_path_outer_img cs_path_outer_img_visible"
-							 src="images/content/path_img1_m.png" alt="">
-						<img class="cs_path_outer_img02 cs_path_outer_img" src="images/content/path_img2_m.png" alt="">
-						<img class="cs_path_outer_img03 cs_path_outer_img" src="images/content/path_img3_m.png" alt="">
-						<img class="cs_path_outer_img04 cs_path_outer_img" src="images/content/path_img4_m.png" alt="">
-					</div>
-				</div>
 				<div class="banner-imgblk"><img src="images/content/main_bannerbg-new.jpg" alt="Banner img"></div>
 				<div class="banner-content">
 					<div class="container">
