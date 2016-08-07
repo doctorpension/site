@@ -98,7 +98,7 @@
 					<h5>כמה זה עולה</h5>
 					<ul>
 						<!--single section-->
-						<li>
+						<li><a href='survey.php'>
 							<div class="single-contentblk">
 								<div class="list-topblock"><i class="wake-icon9"></i>
 									<div class="list-head">
@@ -117,7 +117,7 @@
 										<!--p> חינם*</p-->
 									</div>
 								</div>
-							</div>
+							</div></a>
 						</li>
 						<!--single section-->
 						<!--single section-->
