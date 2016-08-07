@@ -93,7 +93,7 @@
 			<!--Begin slider section-->
 
 			<!--Begin content section-->
-			<section class="content-maincont looking-outerblk new-looking-outerblk">
+			<section id='cs_section_02' class="content-maincont looking-outerblk new-looking-outerblk">
 				<div class="container">
 					<h5>כמה זה עולה</h5>
 					<ul>
