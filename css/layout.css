@@ -1916,7 +1916,7 @@
 		width: 400px; }
 
 	.graph-details ul li {
-		font-size: 22px; }
+		font-size: 22px;line-height:30px; }
 
 	.graph-details {
 		width: 100%; } }
