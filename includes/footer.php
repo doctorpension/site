@@ -22,7 +22,7 @@
                         <div class="links-single">
                             <ul>
 								<li><a href="#">צוות המומחים שלנו</a></li>
-                                <li><a href="#">איך זה עובד</a></li>
+                                <li><a href="/index.php#kal_vepashut">איך זה עובד</a></li>
                                 <li><a href="#">צור קשר</a></li>
                             </ul>
                         </div>

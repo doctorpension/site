@@ -148,8 +148,8 @@
 			<!--End content section-->
 
 			<!--Begin Banner section-->
-			<section class="banner-outercont banner-new banner-second">
-				<div class="banner-imgblk"><img src="images/content/seacond_banner.jpg" alt="Banner img"></div>
+			<section class="banner-outercont banner-new banner-second" id='kal_vepashut_banner'><a name='kal_vepashut' id='kal_vepashut'>
+				<div class="banner-imgblk"><img src="images/content/seacond_banner.jpg" alt="Banner img"></div></a>
 				<div class="banner-content second-banner">
 					<div class="container">
 						<div class="row">
