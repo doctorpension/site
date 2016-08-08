@@ -1,3 +1,7 @@
+var lastPopup = false;
+var checkpopup = false;
+var check = 0;
+
 jQuery(function () {
 	/*  Commenting Out Sticky Text
      if(jQuery('.mob-view').is(":visible")){
@@ -512,6 +516,27 @@ jQuery(function () {
 		}, 1000);
 	});
 
+	if($('body#report_page').length > 0){
+		/* Report Page Doc Ready */
+		$(window).scroll(function () {
+			var elem = $('.cs_popup_marker');
+			if (!lastPopup && checkIfViewed(elem)) {
+				$('.closepop-over').css('display', 'block');
+				lastPopup = true;
+			}
+		})
+		$('.cs_scross').click(function(){
+			$('.closepop-over').css('display', 'none');
+		})
+
+		if(jQuery.cookie("tutorialDone")){
+			jQuery('.mainpop-over').hide();
+			jQuery('.closepop-over').hide();
+			renderCharts();
+			setUpScrolls();
+			setupFundDetailPops();
+		}
+	}
 });
 function goToByScroll(id) {
 	// Remove "link" from the ID
@@ -638,3 +663,23 @@ function setUpScrolls(){
 	}
 
 }
+
+function checkIfViewed(elem) {
+	var docViewTop = $(window).scrollTop();
+	var winHeight = $(window).height();
+	var elemTop = $(elem).offset().top;
+	// CHECK IF ELEMENT IS ON SCREEN
+	if (((docViewTop + winHeight) > elemTop) && !checkpopup) {
+		check = ((docViewTop + winHeight) + winHeight / 3);
+		checkpopup = true;
+	}
+	// CHECK IF ELEMENT IS ON 50% OF SCREEN
+	if ((checkpopup) && (check < (docViewTop +winHeight))) {
+		return true;
+	}
+	return false;
+}
+
+/* Report Page Doc Ready */
+$(document).ready(function () {
+});
