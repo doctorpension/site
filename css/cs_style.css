@@ -217,10 +217,14 @@ canvas {
 .new-popupouter.newfirstsub-popupblk .main-popup-content .progress-outercon .link-btnblk {
 	right: 20%; }
 
-.header-innercont h4 img {
+.header-innercont h4 img{
 	margin-bottom: -5px;
 	max-height: 35px;
 	vertical-align: bottom; }
+.thumbs-popupblk img{
+	max-height:26px;
+	vertical-align:bottom;
+}
 
 @media only screen and (max-width: 767px) {
 	.top_summary br:first-child {
