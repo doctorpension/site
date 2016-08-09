@@ -2216,12 +2216,15 @@
 		height: 70px;
 		padding-bottom: 20px; }
 
+	.insurance-inner h6{display:block;}
 	.insurance-inner p {
 		font-size: 20px;
 		margin-bottom: 22px; }
 
 	.insurance-inner img {
-		max-width: 70px; }
+		max-width: 70px;
+		margin:10px auto 0px;   
+	}
 
 	.banner-outercont.banner-new .animation-text {
 		width: 100%;
