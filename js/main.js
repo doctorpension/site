@@ -81,11 +81,6 @@ jQuery(function () {
 					{scrollTop: toppos + -100},
 					{duration: 1000});
 			}
-			else if ($classrefer.indexOf('sec-blk') > -1) {
-				jQuery("body, html").animate(
-					{scrollTop: toppos + -100},
-					{duration: 1000});
-			}
 			else if ($classrefer === '') {
 				//	var toppos= jQuery( '#guide-template' ).offset().top;
 				
