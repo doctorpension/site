@@ -309,7 +309,7 @@
 								</div>
 								<div class="single-leftblk">
 									<div class="main-popup-content">
-										<h5>ההמלצות <img src='images/wakeup_logo.png'/>:</h5>
+										<h5>ההמלצות <img src='images/wakeup_logo.png'/></h5>
 										<ul>
 											<li>הביצועים של הקופה הולמים את הפרופיל האישי שלך</li>
 											<li>דמי הניהול המצטברים בגין קופה זו יפחתו ביחס למצבך הקודם</li>
