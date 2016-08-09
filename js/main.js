@@ -3,36 +3,6 @@ var checkpopup = false;
 var check = 0;
 
 jQuery(function () {
-	/*  Commenting Out Sticky Text
-     if(jQuery('.mob-view').is(":visible")){
-     var header = jQuery("#guide-template");
-     jQuery(window).scroll(function() {
-     var scroll = jQuery(window).scrollTop();
-     if (scroll >= window.innerHeight) {
-     header.addClass("fixed");
-     } else {
-     header.removeClass("fixed");
-     }
-     });
-     }
-
-     jQuery(window).resize(function () {
-     if(jQuery('.mob-view').is(":visible")){
-     var header = jQuery("#guide-template");
-     jQuery(window).scroll(function() {
-     var scroll = jQuery(window).scrollTop();
-     if (scroll >= window.innerHeight) {
-     header.addClass("fixed");
-     } else {
-     header.removeClass("fixed");
-     }
-
-
-
-     });
-     }
-     });
-     */
 
 	function sticky_relocate() {
 		var window_top = $(window).scrollTop();
