@@ -2049,15 +2049,16 @@
 		padding: 0  15px; }
 
 	.content-maincont.common-blk.subtop-content .top-cont-blk span {
-		width: 100%;
-		left: 0px;
+		width: 90%;
+		float:none;
+		display:block;
+		margin:0px auto;
 		z-index: 9999;
-		padding-top: 30px;
+		padding:10px;
+		text-align:center;
 		font-size: 18px; }
 	.content-maincont.common-blk.subtop-content .top-cont-blk span i {
-		padding-left: 30px;
-		position: absolute;
-		right: 10px; }
+		padding-left: 10px;}
 
 	.bluebottomboxspan {
 		position: relative;
