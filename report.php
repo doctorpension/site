@@ -508,8 +508,8 @@
 																												   src="images/insurance-hand.png" alt=""> </a></div>
 												<p class='rec_partial'>אהבת את ההמלצות שלנו? לחץ למטה ליישום ההמלצות.
 													<span>ניתן ליישם את כל ההמלצות או רק את חלקן.</span>
-													<span>שתף חבר וקבל מנוי לחצי שנה לשירותי הניטור התקופתי שלנו</span>
-													<span>וגם פרגן לנו עם פוסט לפייסבוק</span></p>
+													<span>שתף חבר וקבל מנוי לחצי שנה לשירותי הניטור התקופתי שלנו
+											וגם פרגן לנו עם פוסט לפייסבוק</span></p>
 												<div class="button-outer cs_button-outer bottom-blk">
 													<button class="link-button implement cs_link-button implement" type="submit"
 															value="Submit">יישם
