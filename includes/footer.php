@@ -27,7 +27,7 @@
                             </ul>
                         </div>
                       </div>
-                    <div class="input-block cs_mobile_footer">
+                    <div class="footer-links input-block cs_mobile_footer">
                         <div class="input-inner">
                             <p>הירשם לרשימת התפוצה שלנו</p>
                             <form>
