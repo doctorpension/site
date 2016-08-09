@@ -3466,7 +3466,7 @@ div.drum figure {
 	left: 50%;
 	margin-left: 30px;
 	bottom: 130%;
-	height: 240px; /* 375px; */
+	height: auto; /* 375px; */
 	margin-left: -175px;
 	margin-bottom: 10px;
 	background: #FFFFFF;
@@ -3488,10 +3488,10 @@ div.drum figure {
 	position: absolute;
 	margin-left: -10px; }
 .closepop-over p {
-	font-size: 14px !important;
+	font-size: 21px !important;
 	font-family: "fbspoileren-regular" !important;
 	color: #000000 !important;
-	line-height: 20px !important;
+	line-height: 26px !important;
 	margin: 0px;
 	padding: 10px 15px;
 	text-align: right; }
@@ -4181,7 +4181,6 @@ div.drum figure {
 	display: table-cell; }
 .insurance-inner p {
 	font-size: 24px;
-	margin-bottom: 38px;
 	color: #525a5e;
 	line-height: 31px;
 	font-family: "fbspoileren-regular"; }

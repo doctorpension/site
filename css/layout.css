@@ -2100,6 +2100,10 @@
 	.closepop-over .title-blk span {
 		top: -2px; }
 
+	.insurance-title.result-hover .closepop-over p{
+		font-size:19px !important;
+		line-height:19px !important;
+	}
 	.new-popupouter .single-halfblk {
 		width: 100%;
 		max-width: 100%;
@@ -2501,7 +2505,7 @@
 		float: left !important; }
 
 	.closepop-over {
-		height: 240px; }
+		height: auto; }
 
 	.slider-contentarea {
 		padding: 0 15px; }
