@@ -3186,6 +3186,7 @@ div.drum figure {
 .bottom-outercont .bothaf-singleblk .riskblock-outer .progress-outercon .start-blk,
 .bottom-outercont .bothaf-singleblk .riskblock-outer .progress-outercon .endvalue {
 	width: 50%;
+	text-align:right;
 	height: auto;
 	float: right;
 	font-weight: bold; }
