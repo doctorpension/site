@@ -110,7 +110,7 @@
 											<li>דוח ייעוץ פנסיה אובייקטיבי</li>
 											<li>התאמת החיסכון לפרופיל האישי</li>
 										</ul>
-										<p>שלב 1 - חינם לזמן מוגבל</p>
+										<p>* חינם לזמן מוגבל</p>
 									</div>
 									<div class="round-box">
 										<span >חינם</span>
@@ -132,7 +132,7 @@
 											<li>הפחתת דמי הניהול</li>
 											<li>ריכוז ובקרה תקופתית של התיק</li>
 										</ul>
-										<p>שלב 2 - 99&#8362;  בלבד לזמן מוגבל</p>
+										<p>* 99&#8362;  בלבד לזמן מוגבל</p>
 									</div>
 									<div class="round-box">
 										<span>&#8362;99 לשנה</span></div>
@@ -174,7 +174,7 @@
 				<span ></span>
 				<div class="container">
 					<div class="heading-top">
-						<h5>מגיע לך להיות בידיים טובות</h5>
+						<h5>אתה בידיים טובות</h5>
 					</div>
 					<div class="detail-section">
 						<div class="graph-details">
@@ -193,8 +193,8 @@
 									<li>
 										<div data-percentage="90" class="bar">
 											<div class="disc-outr">
-												<p>גידול של ₪1,900בפנסיה החודשיתעם WakeUp*</p>
-											</div>
+											<p>גידול של ₪1,900 בפנסיה החודשית עם WakeUp*</p>											
+</div>
 										</div>
 										<span>עם WakeUp</span></li>
 									<li>
@@ -214,6 +214,9 @@
 									<li><span></span></li>
 								</ul>
 							</div>
+							<div>
+  <div>* עבור חוסך ממוצע ועל בסיס תחזיות תשואה מבוססת אלגוריתם של החברה
+</div>
 						</div>
 					</div>
 				</div>

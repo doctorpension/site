@@ -21,6 +21,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-family:"fbspoileren-regular";
 	vertical-align: baseline; }
 
 input:focus, input:active, textarea:focus, textarea:active, a:focus, a:active {
@@ -31,7 +32,7 @@ ul, ol, h1, h2, h3, h4, h5, h6, p {
 	padding: 0; }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 22px;
 	background: #FFFFFF;
@@ -40,39 +41,39 @@ body {
 
 h1 {
 	font-size: 77px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	line-height: 44px; }
 
 h2 {
 	font-size: 60px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	line-height: 48px; }
 
 h3 {
 	font-size: 60px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	line-height: 25px; }
 
 h4 {
 	font-size: 48px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	line-height: 24px; }
 
 h5 {
 	font-size: 36px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	line-height: 22px; }
 
 h6 {
 	font-size: 30px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	line-height: 22px; }
 
 p {
 	font-size: 14px;
 	line-height: 22px;
 	margin-bottom: 10px;
-	font-family: Arial, Helvetica, sans-serif; }
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
 
 a {
 	text-decoration: none;
@@ -1578,7 +1579,7 @@ ul.listing-outer:after {
 	float: right;
 	color: #e9eef2;
 	font-size: 21px;
-	font-family: Arial, Helvetica, sans-serif; }
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
 
 .logo-outer {
 	float: right;
@@ -1655,18 +1656,18 @@ ul.listing-outer:after {
 	font-size: 21px; }
 .subscribe-block input[type="text"]::-webkit-input-placeholder {
 	color: #535b5e;
-	font-family: Arial, Helvetica, sans-serif; }
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
 .subscribe-block input[type="text"]:-moz-placeholder {
 	color: #535b5e;
-	font-family: Arial, Helvetica, sans-serif; }
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
 .subscribe-block input[type="text"]::-moz-placeholder {
 	color: #535b5e;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	opacity: 1;
 	/* Since FF19 lowers the opacity of the placeholder by default */ }
 .subscribe-block input[type="text"]:-ms-input-placeholder {
 	color: #535b5e;
-	font-family: Arial, Helvetica, sans-serif; }
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
 .subscribe-block .btn.btn-default.main-btn {
 	height: 42px;
 	line-height: 42px;
@@ -4843,7 +4844,7 @@ body.account-section .homehd .call-action{
 	padding-top: 40px; }
 .graph-details ul {
 	float: right;
-	width: 100%;
+	width: 74%;
 	list-style-type: none;
 	margin: 0; }
 .graph-details ul li {
@@ -4890,7 +4891,7 @@ body.account-section .homehd .call-action{
 #chart {
 	width: 600px;
 	height: 300px;
-	margin: 30px auto 0;
+	margin: 15px auto 0;
 	display: block;
 	padding-right: 50px; }
 #chart #numbers {
@@ -4923,7 +4924,7 @@ body.account-section .homehd .call-action{
 	position: absolute;
 	bottom: -20px;
 	right: 10px;
-	font-size: 18px;
+	font-size: 20px;
 	font-family: "fbspoileren-regular"; }
 #chart #bars {
 	display: inline-block;
@@ -4978,7 +4979,7 @@ body.account-section .homehd .call-action{
 	border-bottom: #FFFFFF solid 2px;
 	color: #FFFFFF;
 	line-height: 17px;
-	font-size: 19px;
+	font-size: 18px;
 	font-family: "fbspoileren-regular"; }
 #chart #bars li .bar .disc-outr:before {
 	content: "";

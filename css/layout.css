@@ -801,7 +801,9 @@
 	.banner-outercont .banner-content.second-banner ul li {
 		width: 40px;
 		height: 40px; }
-
+	
+			.graph-details ul{width:100%;}
+			#chart #numbers li span{font-size:17px;}
 	.banner-outercont .banner-content.second-banner ul li.active {
 		width: 56px;
 		height: 56px; }
