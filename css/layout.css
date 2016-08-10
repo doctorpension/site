@@ -2062,9 +2062,8 @@
 		position: relative;
 		font-size: 18px; }
 	.bluebottomboxspan i {
-		padding-left: 30px;
-		position: absolute;
-		right: 10px; }
+		padding-left: 10px;
+	}
 
 	.bottom-outercont .bothaf-singleblk {
 		width: 100%;

@@ -3347,7 +3347,7 @@ div.drum figure {
 	padding-left: 30px;
 	position: relative; }
 .bluebottomboxspan strong {
-	font-family: "fbspoileren-bold"; }
+	font-family: "fbspoileren-bold";display:inline-block; }
 
 .popover.fade.right {
 	width: 500px; }

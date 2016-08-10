@@ -70,7 +70,7 @@
 								<p class='top_summary'>יש לך נכון להיום <br/><strong> 258,258 ₪</strong> בחסכונותיך לפנסיה <br>
 									המלצותינו אובייקטיביות ומותאמות אישית לצרכיך</p>
 								<span id="guide-template"><i
-															 class="fa fa-check"></i>הצירה שלך לגיל הפרישה יכולה לגדול <strong>ב 453,302 ₪</strong> אם תבחר ליישם את המלצותינו.</span>
+															 class="fa fa-check"></i>הצבירה שלך לגיל הפרישה יכולה לגדול <strong>ב 453,302 ₪</strong> אם תבחר ליישם את המלצותינו.</span>
 
 							</div>
 						</div>
@@ -405,8 +405,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול ב
-								<strong>453,302 ₪</strong> אם תבחר ליישם את המלצותינו.
+							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול
+								<strong>ב 453,302 ₪</strong> אם תבחר ליישם את המלצותינו.
 							</div>
 							<div class="insurance-block">
 								<div class="container">
