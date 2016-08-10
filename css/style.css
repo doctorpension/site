@@ -3400,10 +3400,10 @@ div.drum figure {
 	transform: translate(-50%, -50%);
 	width: 300px; }
 .mainpop-over p {
-	font-size: 14px !important;
+	font-size: 18px !important;
 	font-family: "fbspoileren-regular" !important;
 	color: #000000 !important;
-	line-height: 20px !important;
+	line-height: 24px !important;
 	margin: 0px;
 	padding: 0px; }
 .mainpop-over.active-popup {
@@ -3415,7 +3415,7 @@ div.drum figure {
 	display: none;
 	z-index: 99999;
 	width: 220px;
-	height: 100px;
+	height: auto;
 	float: left;
 	position: absolute;
 	left: 100%;
@@ -3443,10 +3443,9 @@ div.drum figure {
 	position: absolute;
 	margin-top: -10px; }
 .normalpop-over p {
-	font-size: 14px !important;
-	font-family: "fbspoileren-regular" !important;
+	font-size: 18px !important;
 	color: #000000 !important;
-	line-height: 20px !important;
+	line-height: 22px !important;
 	margin: 0px;
 	padding: 0px; }
 
@@ -3497,7 +3496,6 @@ div.drum figure {
 	margin-left: -10px; }
 .closepop-over p {
 	font-size: 21px !important;
-	font-family: "fbspoileren-regular" !important;
 	color: #000000 !important;
 	line-height: 26px !important;
 	margin: 0px;
@@ -3608,6 +3606,10 @@ div.drum figure {
 	max-width: 230px;
 	padding-right: 25px;
 	text-align: right; }
+.new-popupouter .single-leftblk h5 img{
+	max-height:26px;
+	vertical-align:bottom;
+}
 .new-popupouter .single-leftblk ul {
 	width: 100%;
 	height: auto;
@@ -3649,7 +3651,8 @@ div.drum figure {
 	float: left;
 	padding-top: 10px;
 	font-size: 30px;
-	font-family: "fbspoileren-bold"; }
+	font-family: "fbspoileren-bold";
+}
 .new-popupouter .main-popup-content .top-popblock {
 	width: 100%;
 	height: auto;
@@ -3681,7 +3684,7 @@ div.drum figure {
 	background: url(../images/dotted_img.png) repeat-x center left;
 	font-weight: normal;
 	color: #525a5e;
-	font-family: "fbspoileren-regular"; }
+}
 .new-popupouter .main-popup-content .top-popblock ul li label {
 	width: auto;
 	float: right;
@@ -3702,7 +3705,7 @@ div.drum figure {
 	font-weight: bold;
 	padding: 0px;
 	font-size: 14px;
-	font-family: "fbspoileren-regular"; }
+}
 .new-popupouter .main-popup-content .progress-outercon {
 	width: 100%;
 	height: auto;
@@ -3800,7 +3803,6 @@ div.drum figure {
 	background: #ff5f1f;
 	display: inline-block;
 	color: #FFFFFF;
-	font-family: "fbspoileren-regular";
 	font-size: 18px;
 	height: 28px;
 	line-height: 28px;
@@ -3856,7 +3858,6 @@ div.drum figure {
 	font-size: 36px;
 	text-align: center;
 	padding-bottom: 35px;
-	font-family: "fbspoileren-regular";
 	line-height: 30px;
 	color: #222526; }
 .looking-outerblk.new-looking-outerblk ul {
@@ -3942,7 +3943,7 @@ div.drum figure {
 	margin-top: 0;
 	font-size: 28px;
 	line-height:27px;
-	font-family: "fbspoileren-regular"; }
+}
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span:before {
 	content:'*';
 }
@@ -3956,7 +3957,6 @@ div.drum figure {
 	margin-bottom: 0;
 	color: #ff5f1f;
 	font-size: 25px;
-	font-family: "fbspoileren-regular";
 	line-height: 13px; }
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-mainblock {
 	width: 100%;
@@ -3983,7 +3983,7 @@ div.drum figure {
 	padding: 0px 25px 0 0;
 	line-height: 30px;
 	position: relative;
-	font-family: "fbspoileren-regular"; }
+}
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-mainblock ul li:before {
 	content: "\f00c";
 	right: 0px;
@@ -3997,7 +3997,7 @@ div.drum figure {
 	padding: 0 0 0 12px;
 	float: right;
 	color: #ff5f1f;
-	font-family: "fbspoileren-regular"; }
+}
 .looking-outerblk.new-looking-outerblk .link-button:after {
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(29deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(29deg);
@@ -4015,12 +4015,11 @@ div.drum figure {
 	font-size: 36px;
 	line-height: 50px;
 	color: #535b5e;
-	font-family: "fbspoileren-bold"; }
+}
 .top-sliderblock.pension-block .pension-text span {
 	padding: 0 5px; }
 .top-sliderblock.pension-block .pension-text span i {
 	font-style: normal;
-	font-family: "fbspoileren-bold";
 	font-size: 28px;
 	color: #fcdb05; }
 .top-sliderblock.pension-block .pension-text img {
@@ -4067,13 +4066,11 @@ div.drum figure {
 	letter-spacing: -1px;
 	line-height: 72px;
 	padding-bottom: 40px;
-	font-family: "fbspoileren-regular";
 	font-size: 60px; }
 .banner-outercont.banner-new .banner-content .link-button {
 	height: 59px;
 	line-height: 59px;
 	min-width: 213px;
-	font-family: "fbspoileren-regular";
 	font-size: 30px;
 	width: 40%; }
 .banner-outercont.banner-new .animation-text {
@@ -4081,7 +4078,6 @@ div.drum figure {
 	float: right; }
 .banner-outercont.banner-new .animation-text p {
 	margin-bottom: 0;
-	font-family: "fbspoileren-regular";
 	font-size: 25px;
 	color: #FFFFFF;
 	overflow: hidden;
@@ -4128,7 +4124,7 @@ div.drum figure {
 	width: 100%;
 	font-size: 25px;
 	color: #FFFFFF;
-	font-family: "fbspoileren-regular"; }
+}
 .banner-outercont.banner-new.banner-second .progress-block ul li .pulse {
 	display: block;
 	width: 27px;
@@ -4194,13 +4190,13 @@ div.drum figure {
 	font-size: 24px;
 	color: #525a5e;
 	line-height: 31px;
-	font-family: "fbspoileren-regular"; }
+}
 .insurance-inner .link-button {
 	height: 59px;
 	line-height: 59px;
 	padding: 0 29px;
 	font-size: 30px;
-	font-family: "fbspoileren-bold"; }
+}
 .insurance-inner i {
 	padding-right: 11px;
 	font-size: 26px; }
@@ -4242,7 +4238,7 @@ div.drum figure {
 	left: 0;
 	top: 0;
 	font-weight: normal !important;
-	font-family: "fbspoileren-regular"; }
+}
 
 .cd-words-wrapper b.is-visible {
 	position: relative; }
@@ -4473,8 +4469,7 @@ body.account-section .homehd .call-action{
 	float: right;
 	color: #e9eef2;
 	font-size: 21px;
-	font-family: "fbspoileren-regular"; }
-
+}
 .newwakeup-outer {
 	float: right;
 	width: 100%;
@@ -4504,7 +4499,7 @@ body.account-section .homehd .call-action{
 	float: right;
 	font-size: 21px;
 	color: #e9eef2;
-	font-family: "fbspoileren-regular"; }
+}
 .newlinks-block ul li a:hover {
 	color: #ffeb08; }
 .newlinks-block.second {
@@ -4545,7 +4540,6 @@ body.account-section .homehd .call-action{
 	width: 39.3%;
 	padding: 40px 19px 0 15px; }
 .newsubscribe-block p {
-	font-family: "fbspoileren-regular";
 	font-size: 21px;
 	line-height: 30px;
 	color: #e9eef2;
@@ -4563,26 +4557,24 @@ body.account-section .homehd .call-action{
 	margin-left: -3px;
 	width: 63%;
 	font-size: 21px;
-	font-family: "fbspoileren-regular"; }
+}
 .newsubscribe-block input[type="text"]::-webkit-input-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular"; }
+}
 .newsubscribe-block input[type="text"]:-moz-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular"; }
+}
 .newsubscribe-block input[type="text"]::-moz-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular";
 	opacity: 1;
 	/* Since FF19 lowers the opacity of the placeholder by default */ }
 .newsubscribe-block input[type="text"]:-ms-input-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular"; }
+}
 .newsubscribe-block .btn.btn-default.main-btn {
 	height: 42px;
 	line-height: 42px;
 	font-size: 21px;
-	font-family: "fbspoileren-regular";
 	padding: 0 29px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -4593,7 +4585,7 @@ body.account-section .homehd .call-action{
 	padding-bottom: 83px; }
 .newarticle h2 {
 	margin-bottom: 47px;
-	font-family: "fbspoileren-regular"; }
+}
 .newarticle ul {
 	float: right;
 	margin: 0 0 0 -2.2%;
@@ -4620,7 +4612,6 @@ body.account-section .homehd .call-action{
 	display: block;
 	width: 100%; }
 .newarticle-single .newarticle-inner h6 {
-	font-family: "fbspoileren-regular";
 	font-size: 25px;
 	line-height: 26px;
 	color: #535b5e; }
@@ -4673,7 +4664,6 @@ body.account-section .homehd .call-action{
 	z-index: 999999;
 	display: block !important; }
 .slider-contentarea p {
-	font-family: "fbspoileren-regular";
 	font-size: 22px;
 	color: #FFFFFF;
 	line-height: 30px;
@@ -4691,7 +4681,6 @@ body.account-section .homehd .call-action{
 	background: #FFFFFF; }
 .slider-contentarea span {
 	display: block;
-	font-family: "fbspoileren-regular";
 	color: #FFFFFF;
 	font-size: 25px; }
 
@@ -4700,7 +4689,6 @@ body.account-section .homehd .call-action{
 	width: 100%;
 	padding-left: 8%; }
 .newquote-banner .quote-block p {
-	font-family: "fbspoileren-regular";
 	font-size: 22px;
 	color: #FFFFFF;
 	line-height: 30px;
@@ -4717,7 +4705,6 @@ body.account-section .homehd .call-action{
 	background: #FFFFFF; }
 .newquote-banner .quote-block span {
 	display: block;
-	font-family: "fbspoileren-regular";
 	color: #FFFFFF;
 	font-size: 25px; }
 
@@ -4771,7 +4758,6 @@ body.account-section .homehd .call-action{
 	padding: 42px 0 50px 0;
 	border-bottom: #ffeb08 solid 14px; }
 .newthree-blk.three-blockouter h2 {
-	font-family: "fbspoileren-regular";
 	line-height: 59px; }
 .newthree-blk.three-blockouter .firsl-mainblk {
 	width: 37%;
@@ -4804,7 +4790,6 @@ body.account-section .homehd .call-action{
 	width: 100%;
 	height: auto;
 	float: left;
-	font-family: "fbspoileren-regular";
 	font-size: 20px;
 	margin: 0px;
 	padding: 0px 25px 0 0;
@@ -4857,7 +4842,6 @@ body.account-section .homehd .call-action{
 	font-size: 32px;
 	line-height: 35px;
 	color: #535b5e;
-	font-family: "fbspoileren-regular";
 	padding-right: 58px;
 	position: relative; }
 .graph-details ul li:after {
@@ -4928,7 +4912,7 @@ body.account-section .homehd .call-action{
 	bottom: -20px;
 	right: 10px;
 	font-size: 20px;
-	font-family: "fbspoileren-regular"; }
+}
 #chart #bars {
 	display: inline-block;
 	background: url(../images/graphbg.png);
@@ -4983,7 +4967,7 @@ body.account-section .homehd .call-action{
 	color: #FFFFFF;
 	line-height: 17px;
 	font-size: 18px;
-	font-family: "fbspoileren-regular"; }
+}
 #chart #bars li .bar .disc-outr:before {
 	content: "";
 	width: 30px;
@@ -5021,7 +5005,7 @@ body.account-section .homehd .call-action{
 	left: 0;
 	text-align: center;
 	font-size: 18px;
-	font-family: "fbspoileren-regular"; }
+}
 
 .typed-cursor {
 	display: none; }
@@ -5043,7 +5027,6 @@ body.account-section .homehd .call-action{
 	vertical-align: middle;
 	position: relative;
 	font-size: 18px;
-	font-family: "fbspoileren-regular";
 	line-height: 16px;
 	padding: 0 7px; }
 #per-slide-template a.first-blk {
@@ -5273,7 +5256,7 @@ body.account-section .homehd .call-action{
 .new-popupouter.thumbs-popupblk .main-popup-content .single-popblock .single-fildout .table-blocksouter ul.header-block li {
 	font-size: 21px;
 	color: #d7e2e9;
-	font-family: "fbspoileren-regular"; }
+}
 .new-popupouter.thumbs-popupblk .main-popup-content .single-popblock .single-fildout .table-blocksouter ul li {
 	width: 50%;
 	height: auto;
