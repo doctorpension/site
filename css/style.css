@@ -107,6 +107,9 @@ img {
 	height: auto;
 	float: right;
 	max-width: 220px; }
+.main-headerout .logo_blk a{
+	display:inline-block;
+}
 .main-headerout.subpage-hd {
 	border: none; }
 

@@ -24,7 +24,6 @@
 								<li class="visible-xs"><a href="#">תנאי שימוש</a></li>
                                 <li class="visible-xs"><a href="#">מדיניות פרטיות</a></li>
                                 <li class="visible-xs"><a href="#">צור קשר</a></li>
-								<li class="visible-xs"><a href="#">דף הבית</a></li>
 
 
 								

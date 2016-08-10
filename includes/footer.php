@@ -53,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <p>כל הזכויות שמורות ל WakeUp 2015</p>
+<p>&copy;כל הזכויות שמורות לדוקטור פנסיה תאגיד יועץ פנסיוני בע"מ.</p>
                 </div>
             </div>
         </div>
