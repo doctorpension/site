@@ -3292,6 +3292,9 @@ div.drum figure {
 	border-radius: 7px;
 	margin-right: 15px;
 	background: #e3eaef; }
+.bottom-outercont .bothaf-singleblk:first-child .riskblock-outer .feesouter-cont span em {
+	padding-top:3px;
+}
 
 .riskblock-outer.success-bock .pensions-outer .half-block .inner-txtcontblk.rightcontblk {
 	border: solid 3px #ffeb08 !important; }
