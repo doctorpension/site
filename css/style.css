@@ -3892,7 +3892,7 @@ div.drum figure {
 	position: relative;
 	background: #b9ccd6;
 	text-align: right;
-	padding: 15px 13px 14px;
+	padding: 21px 13px 21px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 	border-radius: 8px; }
@@ -3926,10 +3926,6 @@ div.drum figure {
 	padding: 12px;
 	padding-top: 22px;
 	text-align: center; }
-.looking-outerblk.new-looking-outerblk ul li:nth-child(2) .single-contentblk .list-topblock .round-box {
-	right:auto;
-	left:-32px;
-}
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box h6 {
 	padding: 0;
 	font-family: "fbspoileren-bold";
@@ -3943,6 +3939,13 @@ div.drum figure {
 	font-size: 28px;
 	line-height:27px;
 	font-family: "fbspoileren-regular"; }
+.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span:before {
+	content:'*';
+}
+.looking-outerblk.new-looking-outerblk ul li:first-child .single-contentblk .list-topblock .round-box span {
+	margin-top:14px;
+	display:inline-block;
+}
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span.small-price {
 	font-size: 20px};
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box p {
@@ -3957,7 +3960,7 @@ div.drum figure {
 	height: auto;
 	float: left;
 	background: #FFFFFF;
-	padding: 12px 16px 0px;
+	padding: 20px 16px 16px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 	border-radius: 8px; }
