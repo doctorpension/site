@@ -254,8 +254,9 @@
 					data-cycle-swipe-fx=scrollHorz
 					data-cycle-timeout=4000
 					data-cycle-slides="> li"
+					data-pause-on-hover=".cycle-hover"
 					data-cycle-pager="#per-slide-template">
-					<li data-cycle-pager-template="<a href=# class=first-blk>דנה</a>"><img src="images/content/last_banner4.jpg"
+					<li data-cycle-pager-template="<a href=# class='first-blk cycle-hover'>דנה</a>"><img src="images/content/last_banner4.jpg"
 																						   alt="img">
 						<div class="slider-contentarea">
 							<div class="container">
@@ -263,12 +264,12 @@
 									<div class="col-sm-12">
 										<p>כשנכנסתי לראשונה לשוק העבודה Wakeup עזרו לי לבחור את הקופות הכי טובות ומתאימות
 											בשבילי. הם גם אפשרו לי להצטרף אל הקופות בקלות דרך האתר. </p>
-										<span>דנה</span></div>
+										<span class="cycle-hover">דנה</span></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class=sec-blk>רני</a>"><img src="images/content/last_banner3.jpg"
+					<li data-cycle-pager-template="<a href=# class='sec-blk cycle-hover'>רני</a>"><img src="images/content/last_banner3.jpg"
 																						 alt="img">
 						<div class="slider-contentarea">
 							<div class="container">
@@ -276,12 +277,12 @@
 									<div class="col-sm-12">
 										<p>אחרי שהחלפתי כמה מעסיקים, Wakeup החזירו לי את השליטה על הפנסיה שלי, והמליצו לי לבצע
 											מספר שינויים שעשויים להגדיל את הפנסיה שלי בגיל הפרישה באופן משמעותי. </p>
-										<span>רני </span></div>
+										<span class="cycle-hover">רני </span></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class=third-blk>יעל</a>"><img src="images/content/last_banner2.jpg"
+					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover'>יעל</a>"><img src="images/content/last_banner2.jpg"
 																						   alt="img" class="center-picbg">
 						<div class="slider-contentarea">
 							<div class="container">
@@ -290,12 +291,12 @@
 										<p>בזכות Wakeup הבנתי סוף סוף כמה כסף כבר חסכתי לפנסיה, אבל יותר חשוב, היכן כדאי לי
 											להמשיך לחסוך לפנסיה, כדי לקבל ביצועים יותר טובים ולשלם פחות דמי ניהול, כך שהרווחתי
 											פעמיים! </p>
-										<span>יעל</span></div>
+										<span class="cycle-hover">יעל</span></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class=sec-blk>טל</a>"><img src="images/content/last_banner.jpg"
+					<li data-cycle-pager-template="<a href=# class='sec-blk cycle-hover'>טל</a>"><img src="images/content/last_banner.jpg"
 																						alt="img">
 						<div class="slider-contentarea">
 							<div class="container">
@@ -303,12 +304,12 @@
 									<div class="col-sm-12">
 										<p>ההמלצות של Wakeup נתפרו היטב למצב המשפחתי החדש שלי, עם מסלולי השקעה ההולמים את גילי
 											הצעיר יחסית, אבל עם כיסוי ביטוחי הולם לילדיי. </p>
-										<span>טל</span></div>
+										<span class="cycle-hover">טל</span></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class=fifth-blk>איריס </a>"><img
+					<li data-cycle-pager-template="<a href=# class='fifth-blk cycle-hover'>איריס </a>"><img
 																							  src="images/content/last_banner5.jpg" alt="img">
 						<div class="slider-contentarea">
 							<div class="container">
@@ -316,12 +317,12 @@
 									<div class="col-sm-12">
 										<p>כעובדת סוציאלית בתחילת דרכי, Wakeup המליצו לי על הקופות ומסלולי הביטוח המתאימים לגילי
 											ולמצבי המשפחתי, כך שכל הכסף שאני חוסכת נשאר לפנסיה שלי.</p>
-										<span>איריס </span></div>
+										<span class="cycle-hover">איריס </span></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class=third-blk>אייל</a>"><img
+					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover'>אייל</a>"><img
 																							src="images/content/last_banner1.jpg" alt="img">
 						<div class="slider-contentarea">
 							<div class="container">
@@ -329,7 +330,7 @@
 									<div class="col-sm-12">
 										<p>מאז שנרשמתי לשירות של Wakeup אני מרגיש שיש לי "שומר ראש פנסיוני", שמלווה אותי לאורך
 											זמן, ושעושה הכול כדי להביא אותי לגיל הפרישה עם מקסימום כסף בכיס שלי. </p>
-										<span>אייל</span></div>
+										<span class="cycle-hover">אייל</span></div>
 								</div>
 							</div>
 						</div>
