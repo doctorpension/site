@@ -558,14 +558,14 @@ function renderCharts(){
 				startAngle: 0,
 				indexLabelFontColor: "dimgrey",
 				indexLabelLineColor: "darkgrey",
-				toolTipContent: "{y} %  {text}",
+				toolTipContent: "{y}% {text}",
 
 				// Chart sections parameters (y : value) - (color : assigned color)
 				dataPoints: [
-					{y: 13.56, text: "text1",  cursor: "pointer", color: "#00BD9C"},
-					{y: 25.2, text: "text2",  cursor: "pointer", color: "#9458B9"},
-					{y: 39.7, text: "text2",  cursor: "pointer", color: "#6A69D5"},
-					{y: 21.6, text: "text3",  cursor: "pointer", color: "#2C97DD"}
+					{y: 13.56, text: "ביטוח מנהלים",  cursor: "pointer", color: "#00BD9C"},
+					{y: 25.2, text: "קרן השתלמות",  cursor: "pointer", color: "#9458B9"},
+					{y: 39.7, text: "קופת גמל",  cursor: "pointer", color: "#6A69D5"},
+					{y: 21.6, text: "קרן פנסיה",  cursor: "pointer", color: "#2C97DD"}
 				]
 			},
 		]
@@ -587,14 +587,14 @@ function renderCharts(){
 				startAngle: 0,
 				indexLabelFontColor: "dimgrey",
 				indexLabelLineColor: "darkgrey",
-				toolTipContent: "{y} %  {text}",
+				toolTipContent: "{y}%  {text}",
 
 				// Chart sections parameters (y : value) - (color : assigned color)
 				dataPoints: [
-					{y: 13.5, text: "text1",   cursor: "pointer", color: "#44C6E6"},
-					{y: 16.8, text: "text2",   cursor: "pointer", color: "#B07FCF"},
-					{y: 39.7, text: "text2",   cursor: "pointer", color: "#6D8BD5"},
-					{y: 29.9, text: "text3",   cursor: "pointer", color: "#63BDC0"}
+					{y: 13.5, text: "קרן פנסיה",   cursor: "pointer", color: "#44C6E6"},
+					{y: 16.8, text: "קרן השתלמות",   cursor: "pointer", color: "#B07FCF"},
+					{y: 39.7, text: "קופת גמל",   cursor: "pointer", color: "#6D8BD5"},
+					{y: 29.9, text: "ביטוח מנהלים",   cursor: "pointer", color: "#63BDC0"}
 				]
 			},
 		]
