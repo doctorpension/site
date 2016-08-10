@@ -3691,10 +3691,14 @@ div.drum figure {
 	background: #FFFFFF;
 	padding: 0 0 0 5px; }
 .new-popupouter .main-popup-content .top-popblock ul li span {
+	font-size:19px;
 	width: auto;
 	float: left;
 	background: #FFFFFF;
 	padding: 0 5px 0 0; }
+.new-popupouter.recommendations .main-popup-content .top-popblock ul li span {
+	color:#ffeb08;
+}
 .new-popupouter .main-popup-content .progress-con {
 	width: 100%;
 	height: auto;

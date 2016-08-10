@@ -282,7 +282,7 @@
 							</div>
 							<!--first popup-->
 							<!--first popup-->
-							<div class="new-popupouter newfirstsub-popupblk">
+							<div class="new-popupouter newfirstsub-popupblk recommendations">
 								<div class="close-pop"><i class="wake-cross"></i></div>
 								<div class="single-halfblk">
 									<div class="main-popup-content">
@@ -490,13 +490,9 @@
 
 																הפרישה החוקי, וכן בקצבה החודשית ובחיסכון ההוני הנובעים
 
-																.ממנה, ברמת הסיכון ובפרטי הכיסוי הביטוחי שלך</p>
-															<p>₪1,000 ₪3,000
-
-																דמי ניהול חזויים לשנה דמי ניהול חזויים לשנה
-																</p><p>
-
-																לחץ על האייקון למטה לצפייה בפרטים נוספים אודות הכיסוי
+																ממנה.</p>
+															<p>
+															לחץ על האייקון למטה לצפייה בפרטים נוספים אודות הכיסוי
 
 																הביטוחי שלך.</p>
 														</div>
