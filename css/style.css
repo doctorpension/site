@@ -3296,15 +3296,13 @@ div.drum figure {
 	border-radius: 7px;
 	margin-right: 15px;
 	background: #e3eaef; }
-.bottom-outercont .bothaf-singleblk:first-child .riskblock-outer .feesouter-cont span em {
-	padding-top:3px;
-}
 
 .riskblock-outer.success-bock .pensions-outer .half-block .inner-txtcontblk.rightcontblk {
 	border: solid 3px #ffeb08 !important; }
 
-.riskblock-outer.success-bock .feesouter-cont span em {
-	border: solid 3px #ffeb08 !important; }
+.bottom-outercont .bothaf-singleblk .riskblock-outer.success-bock .feesouter-cont span em {
+	background:#ffeb08;
+}
 
 .content-maincont.common-blk.subtop-content .inner-contentblk .mainb-hdrblk {
 	width: 100%;
@@ -3696,9 +3694,6 @@ div.drum figure {
 	float: left;
 	background: #FFFFFF;
 	padding: 0 5px 0 0; }
-.new-popupouter.recommendations .main-popup-content .top-popblock ul li span {
-	color:#ffeb08;
-}
 .new-popupouter .main-popup-content .progress-con {
 	width: 100%;
 	height: auto;
@@ -4836,7 +4831,7 @@ body.account-section .homehd .call-action{
 	padding-top: 40px; }
 .graph-details ul {
 	float: right;
-	width: 74%;
+	width: 81%;
 	list-style-type: none;
 	margin: 0; }
 .graph-details ul li {
@@ -4850,7 +4845,7 @@ body.account-section .homehd .call-action{
 	position: relative; }
 .graph-details ul li a.mizrachi-ref{
 display:inline-block;
-margin-right:3px;
+margin-right:7px;
 font-size:75%;
 }
 .graph-details ul li:after {
