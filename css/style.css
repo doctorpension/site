@@ -4848,6 +4848,11 @@ body.account-section .homehd .call-action{
 	color: #535b5e;
 	padding-right: 58px;
 	position: relative; }
+.graph-details ul li a.mizrachi-ref{
+display:inline-block;
+margin-right:3px;
+font-size:75%;
+}
 .graph-details ul li:after {
 	position: absolute;
 	content: "";
@@ -4953,7 +4958,7 @@ body.account-section .homehd .call-action{
 	border-radius: 50%;
 	padding: 32px 20px;
 	vertical-align: middle;
-	z-index: 9999;
+	z-index: 999;
 	opacity: 1;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -5324,4 +5329,16 @@ body.account-section .homehd .call-action{
 	width: 100%;
 	float: left; }
 
-/*new pages*/
+/*new pages */
+#mizrachi-testimonial .modal-dialog .modal-content,
+#mizrachi-testimonial .modal-dialog{
+	height:100%;
+} 
+#mizrachi-testimonial .modal-dialog .modal-body{
+	height:85%;
+	overflow-y:scroll;
+}
+.modal-open .modal{
+	overflow-y:hidden;
+}
+

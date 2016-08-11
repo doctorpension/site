@@ -132,7 +132,7 @@
 											<li>הפחתת דמי הניהול</li>
 											<li>ריכוז ובקרה תקופתית של התיק</li>
 										</ul>
-										<p>* 99&#8362;  בלבד לזמן מוגבל</p>
+										<p>* &#8362;99  בלבד לזמן מוגבל</p>
 									</div>
 									<div class="round-box">
 										<span>&#8362;99 לשנה</span></div>
@@ -180,7 +180,7 @@
 						<div class="graph-details">
 							<ul>
 								<li>אנחנו עובדים רק בשבילך. בלי עמלות נסתרות</li>
-								<li>המערכת שלנו הוכיחה את עצמה כבר בקרב אלפים</li>
+								<li>המערכת שלנו הוכיחה את עצמה כבר בקרב אלפים<a class='mizrachi-ref' data-toggle="modal" data-target='#mizrachi-testimonial'>למידע נוסף</a></li>
 								<li>אפשר להקטין את דמי הניהול ולהגדיל את הקצבה</li>
 							</ul>
 						</div>
@@ -349,7 +349,22 @@
 </div>-->
 			</section>
 			<!--End Banner section-->
+<div id='mizrachi-testimonial' class="modal fade modal-lg" role="dialog" style='margin:30px auto 0px;'>
+<div class='modal-dialog'>
+<div class='modal-content'>
 
+<div class='modal-header'>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+<div class='modal-body'>
+<a href='files/MizrahiTestimonial.pdf' target="_blank"><img src='images/mizrachi_testimonial.jpg'/></a>
+</div>
+<div class='modal-footer'>
+&nbsp;
+</div>
+</div>
+</div>
+</div>
 			<!--Begin Footer section-->
 			<?php include('includes/footer.php') ?>
 			<!--End Footer section-->
