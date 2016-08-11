@@ -1990,7 +1990,19 @@
 	.homehd.header-sticky.header-fixed .navbar-default{
 		position:absolute;margin:0px;
 		    background: none; 
+			top:-13px;
 		    padding-top: 0px; 
+	}
+	.homehd.header-sticky.header-fixed .navbar-default .navbar-toggle{
+		margin-top:14px;
+	}
+	.homehd.header-sticky.header-fixed .navbar-default .navbar-collapse.collapse.in[aria-expanded="true"]{
+		-webkit-transition: all 0s ease;
+		-moz-transition: all 0s ease;
+		-ms-transition: all 0s ease;
+		-o-transition: all 0s ease; 
+		float:right;
+		margin-top:-4px;
 	}
 	.homehd .call-action .link-button {
 		 font-size: 23px;
