@@ -3943,15 +3943,11 @@ div.drum figure {
 	font-size: 28px;
 	line-height:27px;
 }
-.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span:before {
-	content:'*';
-}
-.looking-outerblk.new-looking-outerblk ul li:first-child .single-contentblk .list-topblock .round-box span {
-	margin-top:14px;
-	display:inline-block;
-}
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box span.small-price {
-	font-size: 20px};
+	font-size: 19px;
+	display:block;
+	line-height:19px;
+}
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box p {
 	margin-bottom: 0;
 	color: #ff5f1f;
@@ -4844,6 +4840,8 @@ body.account-section .homehd .call-action{
 	padding-right: 58px;
 	position: relative; }
 .graph-details ul li a.mizrachi-ref{
+	text-decoration:underline;
+	cursor:pointer;
 display:inline-block;
 margin-right:7px;
 font-size:75%;
@@ -4953,7 +4951,7 @@ font-size:75%;
 	border-radius: 50%;
 	padding: 32px 20px;
 	vertical-align: middle;
-	z-index: 999;
+	z-index: 1000;
 	opacity: 1;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -5328,6 +5326,7 @@ font-size:75%;
 #mizrachi-testimonial .modal-dialog .modal-content,
 #mizrachi-testimonial .modal-dialog{
 	height:100%;
+	width:100%;
 } 
 #mizrachi-testimonial .modal-dialog .modal-body{
 	height:85%;
