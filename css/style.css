@@ -8,6 +8,11 @@
 	src: url("../fonts/fbspoileren-regular-webfont.eot?") format("eot"), url("../fonts/fbspoileren-regular-webfont.woff") format("woff"), url("../fonts/fbspoileren-regular-webfont.ttf") format("truetype"), url("../fonts/fbspoileren-regular-webfont.svg#fbspoileren-regular") format("svg");
 	font-weight: normal;
 	font-style: normal; }
+@font-face {
+	font-family: "fbspoileren-regular-english";
+	src: url("../fonts/fbspoileren-regular-webfont-english.eot?") format("eot"), url("../fonts/fbspoileren-regular-webfont-english.woff") format("woff"), url("../fonts/fbspoileren-regular-webfont-english.ttf") format("truetype"), url("../fonts/fbspoileren-regular-webfont-english.svg#fbspoileren-regular") format("svg");
+	font-weight: normal;
+	font-style: normal; }
 /* BORDER RADIUS */
 /*******************************************************************************************************************************************/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
@@ -21,7 +26,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	font-family:"fbspoileren-regular";
+	font-family:"fbspoileren-regular", "fbspoileren-regular-english", Arial, Helvetica, sans-serif;
 	vertical-align: baseline; }
 
 input:focus, input:active, textarea:focus, textarea:active, a:focus, a:active {
@@ -32,7 +37,7 @@ ul, ol, h1, h2, h3, h4, h5, h6, p {
 	padding: 0; }
 
 body {
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", "fbspoileren-regular-english", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 22px;
 	background: #FFFFFF;
@@ -41,39 +46,39 @@ body {
 
 h1 {
 	font-size: 77px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	
 	line-height: 44px; }
 
 h2 {
 	font-size: 60px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	
 	line-height: 48px; }
 
 h3 {
 	font-size: 60px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	
 	line-height: 25px; }
 
 h4 {
 	font-size: 48px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	
 	line-height: 24px; }
 
 h5 {
 	font-size: 36px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	
 	line-height: 22px; }
 
 h6 {
 	font-size: 30px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	
 	line-height: 22px; }
 
 p {
 	font-size: 14px;
 	line-height: 22px;
 	margin-bottom: 10px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
+	 }
 
 a {
 	text-decoration: none;
@@ -219,7 +224,7 @@ img {
 	letter-spacing: -1px;
 	line-height: 72px;
 	padding-bottom: 80px;
-	font-family: "fbspoileren-regular"; }
+	 }
 
 .btn.btn-default.main-btn {
 	width: auto;
@@ -1582,7 +1587,7 @@ ul.listing-outer:after {
 	float: right;
 	color: #e9eef2;
 	font-size: 21px;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
+	 }
 
 .logo-outer {
 	float: right;
@@ -1659,18 +1664,18 @@ ul.listing-outer:after {
 	font-size: 21px; }
 .subscribe-block input[type="text"]::-webkit-input-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
+	 }
 .subscribe-block input[type="text"]:-moz-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
+	 }
 .subscribe-block input[type="text"]::-moz-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	
 	opacity: 1;
 	/* Since FF19 lowers the opacity of the placeholder by default */ }
 .subscribe-block input[type="text"]:-ms-input-placeholder {
 	color: #535b5e;
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif; }
+	 }
 .subscribe-block .btn.btn-default.main-btn {
 	height: 42px;
 	line-height: 42px;
@@ -2263,7 +2268,7 @@ ul.listing-outer:after {
 	margin-bottom: 70px;
 	line-height: 44px;
 	color: #535b5e;
-	font-family: "fbspoileren-regular"; }
+	 }
 
 .stack-innermost {
 	width: 100%;
@@ -2275,7 +2280,7 @@ ul.listing-outer:after {
 	float: right;
 	margin-bottom: 28px; }
 .single-field input {
-	font-family: "fbspoileren-regular";
+	
 	max-width: 383px;
 	height: 48px;
 	display: inline-block;
@@ -2286,7 +2291,7 @@ ul.listing-outer:after {
 	border: 1px solid #535b5e;
 	padding: 5px; }
 .single-field button {
-	font-family: "fbspoileren-regular";
+	
 	margin-top: 55px;
 	background: #ffeb08;
 	color: #535b5e;
@@ -2338,7 +2343,7 @@ ul.listing-outer:after {
 	max-width: 320px;
 	vertical-align: top;
 	border-bottom: 4px solid transparent;
-	font-family: "fbspoileren-regular"; }
+	 }
 .single-check.check-active label {
 	text-decoration: underline;
 	-webkit-text-decoration-color: #ffeb08;
@@ -2390,7 +2395,7 @@ ul.listing-outer:after {
 	font-size: 23px;
 	line-height: 35px;
 	margin-bottom: 0;
-	font-family: "fbspoileren-regular";
+	
 	text-align: right; }
 
 .light-block {
@@ -2443,7 +2448,7 @@ ul.listing-outer:after {
 	display: inline-block;
 	width: 100%; }
 .dob-block label {
-	font-family: "fbspoileren-regular";
+	
 	font-size: 40px;
 	line-height: 40px;
 	margin-bottom: 12px;
@@ -2486,7 +2491,7 @@ ul.listing-outer:after {
 	text-indent: 10px;
 	top: 0;
 	width: 115px;
-	font-family: "fbspoileren-regular";
+	
 	font-size: 28px;
 	color: #535b5e; }
 
@@ -2536,7 +2541,7 @@ ul.listing-outer:after {
 	display: block;
 	outline: none;
 	padding: 7px 0 7px 3px;
-	font-family: "fbspoileren-regular";
+	
 	font-size: 28px;
 	color: #535b5e;
 	text-align: right; }
@@ -2575,7 +2580,7 @@ ul.listing-outer:after {
 	max-width: 155px;
 	float: right;
 	height: 44px;
-	font-family: "fbspoileren-regular";
+	
 	font-size: 28px;
 	color: #535b5e; }
 .age-show span {
@@ -2610,7 +2615,7 @@ ul.listing-outer:after {
 
 .male span,
 .female span {
-	font-family: "fbspoileren-regular";
+	
 	font-size: 28px;
 	color: #535b5e; }
 
@@ -2627,7 +2632,7 @@ ul.listing-outer:after {
 
 div.date_wrapper {
 	float: right;
-	font-family: "fbspoileren-regular";
+	
 	font-size: 28px;
 	width: 100%; }
 div.date_wrapper .date_header {
@@ -2635,7 +2640,7 @@ div.date_wrapper .date_header {
 	font-weight: 400;
 	border-bottom: 1px solid #CCC;
 	margin-bottom: 10px;
-	font-family: "fbspoileren-regular"; }
+	 }
 div.date_wrapper .date_header span.title {
 	float: right;
 	text-align: right; }
@@ -2764,7 +2769,7 @@ div.drum figure {
 
 .content-maincont.common-blk.subtop-content .top-cont-blk .date-block p {
 	font-size: 24px;
-	font-family: "fbspoileren-regular"; }
+	 }
 
 .content-maincont.common-blk.subtop-content .top-cont-blk h1 {
 	margin-bottom: 27px; }
@@ -2783,14 +2788,14 @@ div.drum figure {
 	border-radius: 7px;
 	color: #5076d8;
 	font-size: 30px;
-	font-family: "fbspoileren-regular";
+	
 	margin-top: 20px;
 	text-align: right;
 	padding-right: 50px; }
 .content-maincont.common-blk.subtop-content .top-cont-blk span i {
 	padding-left: 30px; }
 .content-maincont.common-blk.subtop-content .top-cont-blk span strong {
-	font-family: "fbspoileren-bold"; display:inline-block;}
+	}
 .content-maincont.common-blk.subtop-content .top-cont-blk span#guide-template.fixed {
 	position: fixed;
 	top: 80px;
@@ -2805,7 +2810,6 @@ div.drum figure {
 .content-maincont.common-blk.subtop-content .inner-contentblk .tab_content {
 	padding: 0px; }
 .content-maincont.common-blk.subtop-content .inner-contentblk h4 {
-	font-family: "fbspoileren-regular";
 	width: 100%;
 	text-align: center;
 	padding-bottom: 20px; }
@@ -3161,7 +3165,7 @@ div.drum figure {
 	font-size: 21px;
 	padding: 0;
 	float: left;
-	font-family: "fbspoileren-regular"; }
+	 }
 .bottom-outercont .bothaf-singleblk .riskblock-outer .progress-con {
 	width: 100%;
 	height: auto;
@@ -3278,7 +3282,7 @@ div.drum figure {
 	float: left;
 	text-align: left;
 	line-height: 55px;
-	font-family: "fbspoileren-regular";
+	
 	font-size: 24px; }
 .bottom-outercont .bothaf-singleblk .riskblock-outer .feesouter-cont span em {
 	float: left;
@@ -3344,7 +3348,7 @@ div.drum figure {
 	border-radius: 7px;
 	color: #FFFFFF;
 	font-size: 30px;
-	font-family: "fbspoileren-regular";
+	
 	margin-top: 20px;
 	text-align: right;
 	padding-right: 50px; }
@@ -3399,7 +3403,7 @@ div.drum figure {
 	width: 300px; }
 .mainpop-over p {
 	font-size: 18px !important;
-	font-family: "fbspoileren-regular" !important;
+	font-family: "fbspoileren-regular", "fbspoileren-regular" !important;
 	color: #000000 !important;
 	line-height: 24px !important;
 	margin: 0px;
