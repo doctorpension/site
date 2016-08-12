@@ -100,20 +100,20 @@
 						<!--single section-->
 						<li><a href='survey.php'>
 							<div class="single-contentblk">
-								<div class="list-topblock"><i class="wake-icon9"></i>
+								<div class="list-topblock"><i class="flaticon-music"></i>
 									<div class="list-head">
-										<h5>ייעוץ חד פעמי</h5>
+										<h5>Call <span>&trade;</span></h5>
 									</div>
 									<div class="list-mainblock">
 										<ul>
-											<li>ריכוז חסכונותיך לפנסיה עד היום</li>
+<li>ייעוץ פנסיה אובייקטיבי חד פעמי</li>
 											<li>דוח ייעוץ פנסיה אובייקטיבי</li>
 											<li>התאמת החיסכון לפרופיל האישי</li>
 										</ul>
-										<p>* חינם לזמן מוגבל</p>
 									</div>
 									<div class="round-box">
 										<span >חינם</span>
+										<span class='small-price'>לזמן מוגבל</span>
 									</div>
 								</div>
 							</div></a>
@@ -122,20 +122,21 @@
 						<!--single section-->
 						<li>
 							<div class="single-contentblk">
-								<div class="list-topblock"><i class="wake-icon5"></i>
+								<div class="list-topblock"><i class="m-icon-hiker"></i>
 									<div class="list-head">
-										<h5>שירות פרימיום</h5>
+										<h5><span class='eng'>&#38;</span>&nbsp;Go<span>&trade;<span></h5>
 									</div>
 									<div class="list-mainblock">
 										<ul>
 											<li>יישום דיגיטאלי של המלצות הייעוץ</li>
 											<li>הפחתת דמי הניהול</li>
-											<li>ריכוז ובקרה תקופתית של התיק</li>
+											<li>ריכוז בקרה תקופתית של התיק למשך שנה</li>
 										</ul>
-										<p>* &#8362;99  בלבד לזמן מוגבל</p>
 									</div>
 									<div class="round-box">
-										<span>&#8362;99 לשנה</span></div>
+										<span>&#8362;99</span>
+										<span class='small-price'>בלבד לזמן מוגבל</span>
+									</div>
 								</div>
 							</div>
 						</li>

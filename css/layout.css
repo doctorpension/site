@@ -2702,6 +2702,9 @@
 		width: 90px; }
 	.looking-outerblk.new-looking-outerblk ul li:nth-child(2) .single-contentblk .list-topblock .round-box {
 right:-32px;left:auto;}
+.looking-outerblk.new-looking-outerblk ul li:nth-child(2) .single-contentblk .list-topblock .round-box span.small-price{
+	font-size:17px;
+}
 	.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box h6 {
 		font-size: 25px;
 		line-height: 23px; }

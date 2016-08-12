@@ -13,6 +13,72 @@
 	src: url("../fonts/fbspoileren-regular-webfont-english.eot?") format("eot"), url("../fonts/fbspoileren-regular-webfont-english.woff") format("woff"), url("../fonts/fbspoileren-regular-webfont-english.ttf") format("truetype"), url("../fonts/fbspoileren-regular-webfont-english.svg#fbspoileren-regular") format("svg");
 	font-weight: normal;
 	font-style: normal; }
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1r19w');
+  src:  url('../fonts/icomoon.eot?1r19w#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1r19w') format('truetype'),
+    url('../fonts/icomoon.woff?1r19w') format('woff'),
+    url('../fonts/icomoon.svg?1r19w#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="m-icon-"], [class*=" m-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.m-icon-hiker:before {
+  content: "\e900";
+  -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+display:inline-block;
+}
+
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-music:before { content: "\f100"; }
 /* BORDER RADIUS */
 /*******************************************************************************************************************************************/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
@@ -317,8 +383,37 @@ img {
 	padding: 28px 0; }
 .looking-outerblk ul li .single-contentblk .list-topblock i {
 	font-size: 74px; }
+.looking-outerblk ul li .single-contentblk .list-topblock i:before {
+    font-size: 36px;
+    color: #535b5e;
+    font-weight: bold;
+    line-height: 60px;
+}
+.looking-outerblk ul li .single-contentblk .list-topblock i.m-icon-hiker:before {
+display:block;
+}
 .looking-outerblk ul li .single-contentblk .list-topblock h5 {
-	padding: 22px 15px 0; }
+	padding: 22px 15px 0; direction:ltr;}
+.looking-outerblk ul li .single-contentblk .list-topblock h5 span{
+	font-size:12px;
+	vertical-align:top;
+	line-height:15px;
+}
+.looking-outerblk ul li .single-contentblk .list-topblock h5 span.eng{
+	font-family:Arial;
+font-size:29px;
+display:inline-block;
+margin-top:4px;
+}
+.looking-outerblk ul li h5:before {
+	content: '';
+	margin-right:5px;
+	display: inline-block;
+	height: 30px;
+	width: 126px;
+	vertical-align:bottom;
+	background: url('/images/Wakeuplogo.svg') no-repeat bottom;
+}
 .looking-outerblk ul li .single-contentblk .list-mainblock {
 	width: 100%;
 	height: auto;
