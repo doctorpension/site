@@ -87,7 +87,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	font-family:"fbspoileren-regular", Arial, Helvetica, sans-serif;
+	font-family:"fbspoileren-regular", 'Lato', Arial, Helvetica, sans-serif;
 	vertical-align: baseline; }
 
 input:focus, input:active, textarea:focus, textarea:active, a:focus, a:active {
@@ -98,7 +98,7 @@ ul, ol, h1, h2, h3, h4, h5, h6, p {
 	padding: 0; }
 
 body {
-	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", 'Lato', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 22px;
 	background: #FFFFFF;
@@ -387,10 +387,18 @@ img {
 .looking-outerblk ul li .single-contentblk .list-topblock i.m-icon-hiker:before {
 display:block;
 }
-.looking-outerblk ul li .single-contentblk .list-topblock h5 {
+.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock h5 ,
+.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock h5 span{
+	font-family:'Lato';
+	font-size: 26px;
+	line-height:34px;
+	padding: 0 15px 0;
+	color: #222526; }
+.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock h5{
 	padding: 22px 15px 0; direction:ltr;}
-.looking-outerblk ul li .single-contentblk .list-topblock h5 span{
+.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock h5 span{
 	font-size:12px;
+	padding:0px;
 	vertical-align:top;
 	line-height:15px;
 }
@@ -3999,10 +4007,6 @@ div.drum figure {
 	display: inline-block;
 	text-align: center;
 	width: 100%; }
-.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock h5 {
-	font-size: 33px;
-	padding: 0 15px 0;
-	color: #222526; }
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock h6 {
 	text-align: center;
 	font-size: 25px;

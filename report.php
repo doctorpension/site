@@ -24,6 +24,7 @@
 		<link href="css/wakeupicons.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/layout.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 		<!--CONSOLESOFTWARE CSS FILE-->
 		<link href="css/cs_style.css" rel="stylesheet">

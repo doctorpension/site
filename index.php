@@ -25,7 +25,7 @@
 		<link href="css/wakeupicons.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/layout.css" rel="stylesheet">
-
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<!--CONSOLESOFTWARE CSS FILE-->
 		<link href="css/cs_style.css" rel="stylesheet">
 
@@ -124,7 +124,7 @@
 							<div class="single-contentblk">
 								<div class="list-topblock"><i class="m-icon-hiker"></i>
 									<div class="list-head">
-										<h5><span class='eng'>&#38;</span>&nbsp;Go<span>&trade;<span></h5>
+										<h5>&#38; Go<span>&trade;<span></h5>
 									</div>
 									<div class="list-mainblock">
 										<ul>
