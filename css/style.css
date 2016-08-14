@@ -8,11 +8,6 @@
 	src: url("../fonts/fbspoileren-regular-webfont.eot?") format("eot"), url("../fonts/fbspoileren-regular-webfont.woff") format("woff"), url("../fonts/fbspoileren-regular-webfont.ttf") format("truetype"), url("../fonts/fbspoileren-regular-webfont.svg#fbspoileren-regular") format("svg");
 	font-weight: normal;
 	font-style: normal; }
-@font-face {
-	font-family: "fbspoileren-regular-english";
-	src: url("../fonts/fbspoileren-regular-webfont-english.eot?") format("eot"), url("../fonts/fbspoileren-regular-webfont-english.woff") format("woff"), url("../fonts/fbspoileren-regular-webfont-english.ttf") format("truetype"), url("../fonts/fbspoileren-regular-webfont-english.svg#fbspoileren-regular") format("svg");
-	font-weight: normal;
-	font-style: normal; }
 
 @font-face {
   font-family: "Flaticon";
@@ -92,7 +87,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	font-family:"fbspoileren-regular", "fbspoileren-regular-english", Arial, Helvetica, sans-serif;
+	font-family:"fbspoileren-regular", Arial, Helvetica, sans-serif;
 	vertical-align: baseline; }
 
 input:focus, input:active, textarea:focus, textarea:active, a:focus, a:active {
@@ -103,7 +98,7 @@ ul, ol, h1, h2, h3, h4, h5, h6, p {
 	padding: 0; }
 
 body {
-	font-family: "fbspoileren-regular", "fbspoileren-regular-english", Arial, Helvetica, sans-serif;
+	font-family: "fbspoileren-regular", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 22px;
 	background: #FFFFFF;
