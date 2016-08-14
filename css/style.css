@@ -54,6 +54,7 @@
 
 .m-icon-hiker:before {
   content: "\e900";
+font-size:60px;
   -moz-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     -o-transform: scaleX(-1);
