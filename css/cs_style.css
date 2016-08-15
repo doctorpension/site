@@ -143,8 +143,6 @@ canvas {
 	font-size: 18px; }
 
 @media only screen and (max-width: 479px) {
-	.banner-outercont.banner-new .banner-content h2 {
-		font-size: 40px; }
 
 	.cd-headline.type .cd-words-wrapper {
 		font-size: 30px; }

@@ -2449,8 +2449,7 @@
 
 	.heading-top h5 {
 		margin-left: 9px;
-		font-size: 28px; }
-
+	}
 	.heading-top {
 		margin-bottom: 20px; }
 
@@ -2761,7 +2760,6 @@ right:-32px;left:auto;}
 		max-width: 106px; }
 
 	.heading-top h5 {
-		font-size: 22px;
 		margin-left: 5px; }
 
 	#bar-chart {
@@ -2803,7 +2801,10 @@ right:-32px;left:auto;}
 		padding: 0px; }
 
 	.banner-outercont.banner-new .banner-content h2 {
-		font-size: 26px; }
+		font-size: 40px; }
+	.banner-outercont.banner-new .banner-content h2 br{
+		display:none;
+	}
 	.banner-outercont.banner-new .animation-text {
 		padding-top: 10px; } }
 /*new pages*/
