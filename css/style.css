@@ -5461,21 +5461,21 @@ animation:thumb-pulse 2s infinite;
 
 @-webkit-keyframes thumb-pulse {
 	0% {
-		-webkit-box-shadow: 0 0 0 0 #435CC8; }
+		-webkit-box-shadow: 0 0 0 0 #565757; }
 	70% {
-		-webkit-box-shadow: 0 0 0 4px #435CC8; }
+		-webkit-box-shadow: 0 0 0 4px #565757; }
 	100% {
-		-webkit-box-shadow: 0 0 0 0 #435CC8; } }
+		-webkit-box-shadow: 0 0 0 0 #565757; } }
 @keyframes thumb-pulse {
 	0% {
-		-moz-box-shadow: 0 0 0 0 #435CC8;
-		box-shadow: 0 0 0 0 #435CC8; }
+		-moz-box-shadow: 0 0 0 0 #565757;
+		box-shadow: 0 0 0 0 #565757; }
 	70% {
-		-moz-box-shadow: 0 0 0 4px #435CC8;
-		box-shadow: 0 0 0 4px #435CC8; }
+		-moz-box-shadow: 0 0 0 4px #565757;
+		box-shadow: 0 0 0 4px #565757; }
 	100% {
-		-moz-box-shadow: 0 0 0 0 #435CC8;
-		box-shadow: 0 0 0 0 #435CC8; } }
+		-moz-box-shadow: 0 0 0 0 #565757;
+		box-shadow: 0 0 0 0 #565757; } }
 /*new pages */
 #mizrachi-testimonial .modal-dialog .modal-content,
 #mizrachi-testimonial .modal-dialog{
