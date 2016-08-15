@@ -5435,7 +5435,7 @@ animation:thumb-pulse 2s infinite;
 		-webkit-box-shadow: 0 0 0 4px #435CC8; }
 	100% {
 		-webkit-box-shadow: 0 0 0 0 #435CC8; } }
-@keyframes pulse {
+@keyframes thumb-pulse {
 	0% {
 		-moz-box-shadow: 0 0 0 0 #435CC8;
 		box-shadow: 0 0 0 0 #435CC8; }
