@@ -122,7 +122,9 @@
 						<!--single section-->
 						<li>
 							<div class="single-contentblk">
-								<div class="list-topblock"><i class="m-icon-hiker"></i>
+								<div class="list-topblock">
+									<!--img src='/images/hiker_outline.png' height='50' alt='Wakeup And Go!'/-->
+		<i class=' icon icon-hiker-outline'></i>
 									<div class="list-head">
 										<h5>&#38; Go<span>&trade;<span></h5>
 									</div>
