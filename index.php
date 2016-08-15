@@ -50,10 +50,10 @@
 				<div class="path-outer">
 					<div class="cs_path_outer_container">
 						<img class="cs_path_outer_img01 cs_path_outer_img cs_path_outer_img_visible"
-							 src="images/content/path_img1.png" alt="">
-						<img class="cs_path_outer_img02 cs_path_outer_img" src="images/content/path_img2.png" alt="">
-						<img class="cs_path_outer_img03 cs_path_outer_img" src="images/content/path_img3.png" alt="">
-						<img class="cs_path_outer_img04 cs_path_outer_img" src="images/content/path_img4.png" alt="">
+							 src="images/maslul1.svg" alt="">
+						<img class="cs_path_outer_img02 cs_path_outer_img" src="images/maslul2.svg" alt="">
+						<img class="cs_path_outer_img03 cs_path_outer_img" src="images/maslul3.svg" alt="">
+						<img class="cs_path_outer_img04 cs_path_outer_img" src="images/maslul4.svg" alt="">
 					</div>
 				</div>
 				<div class="banner-imgblk"><img src="images/content/main_bannerbg-new.jpg" alt="Banner img"></div>
@@ -61,7 +61,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6">
-								<h2>להגדיל את הפנסיה שלך עם ייעוץ פנסיוני אובייקטיבי
+								<h2>להגדיל את הפנסיה שלך<br/> עם ייעוץ פנסיוני אובייקטיבי
 									<div class="animation-text cd-intro">
 										<div class="cd-headline letters type"><span class="cd-words-wrapper waiting"> <b
 																														 class="is-visible">מותאם אישית</b> <b>בלי עמלות נסתרות</b> <b>בלי סוכנים</b> <b>בלי ניירת</b> </span>
@@ -176,7 +176,7 @@
 				<span ></span>
 				<div class="container">
 					<div class="heading-top">
-						<h5>אתה בידיים טובות</h5>
+						<h5>אתם בידיים טובות</h5>
 					</div>
 					<div class="detail-section">
 						<div class="graph-details">
@@ -230,8 +230,7 @@
 			<section class="content-maincont three-blockouter newthree-blk">
 				<div class="container">
 					<div class="firsl-mainblk">
-						<h2>תרגיש בטוח, <br>
-							המידע שלך מאובטח</h2>
+<h2>תרגישו בטוח המידע מאובטח ומשמש רק לצורך הייעוץ</h2>
 					</div>
 					<div class="icon-outer"><img src="images/info-img.jpg" alt=""/></div>
 					<div class="listingouter">
