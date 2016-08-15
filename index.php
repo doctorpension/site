@@ -75,23 +75,6 @@
 					</div>
 				</div>
 			</section>
-			<!--End Banner section-->
-
-			<!--Begin Mizrachi Banner section section_02-->
-			<!--section class="top-sliderblock pension-block"  id="cs_section_02">
-				<span></span>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="pension-text">
-								<img src="images/slide_image_new.png" alt="img"><span>בחר במערכת <i><img
-																										 src="images/wakeup_logo-cont.png"></i> לבחינת המערך הפנסיוני של לקוחותיו</span></div>
-						</div>
-					</div>
-				</div>
-			</section-->
-			<!--Begin slider section-->
-
 			<!--Begin content section-->
 			<section id='cs_section_02' class="content-maincont looking-outerblk new-looking-outerblk">
 				<div class="container">
