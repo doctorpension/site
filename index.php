@@ -61,13 +61,13 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6">
-								<h2>להגדיל את הפנסיה שלך<br/> עם ייעוץ פנסיוני אובייקטיבי
+								<h1>להגדיל את הפנסיה שלך<br/> עם ייעוץ פנסיוני אובייקטיבי
 									<div class="animation-text cd-intro">
 										<div class="cd-headline letters type"><span class="cd-words-wrapper waiting"> <b
 																														 class="is-visible">מותאם אישית</b> <b>בלי עמלות נסתרות</b> <b>בלי סוכנים</b> <b>בלי ניירת</b> </span>
 										</div>
 									</div>
-								</h2>
+								</h1>
 								<!-- cd-intro -->
 								<a href="https://dev.doctorpension.com/survey.php" class="btn btn-default link-button">בואו נצא
 									לדרך</a></div>

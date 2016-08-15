@@ -289,12 +289,6 @@ img {
 	-moz-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	width: 100%; }
-.banner-outercont .banner-content h2 {
-	color: #FFFFFF;
-	letter-spacing: -1px;
-	line-height: 72px;
-	padding-bottom: 80px;
-	 }
 
 .btn.btn-default.main-btn {
 	width: auto;
@@ -4186,7 +4180,7 @@ div.drum figure {
 	-moz-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	width: 100%; }
-.banner-outercont.banner-new .banner-content h2 {
+.banner-outercont.banner-new .banner-content h1 {
 	color: #FFFFFF;
 	letter-spacing: -1px;
 	line-height: 72px;
