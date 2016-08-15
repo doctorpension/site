@@ -502,7 +502,7 @@
 
 													<h6>כיסוי ביטוחי היום:</h6>
 													<a href="javascript:void(0);" class="thumbspopup-trigger"><img
-																												   src="images/insurance-hand.png" alt=""> </a></div>
+																												   src="images/insurance-hand.png" height='86' width='86' alt="קליק כאן לפרטים נוספים אודות הכיסוי הביטוחי שלך"> </a></div>
 												<p class='rec_partial'>אהבת את ההמלצות שלנו? לחץ למטה ליישום ההמלצות.
 													<span>ניתן ליישם את כל ההמלצות או רק את חלקן.</span>
 													<span>שתף חבר וקבל מנוי לחצי שנה לשירותי הניטור התקופתי שלנו
