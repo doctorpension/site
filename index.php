@@ -106,8 +106,8 @@
 									</div>
 									<div class="list-mainblock">
 										<ul>
-<li>ייעוץ פנסיה אובייקטיבי חד פעמי</li>
-											<li>דוח ייעוץ פנסיה אובייקטיבי</li>
+<li>ריכוז חסכונותיך לפנסיה עד היום</li>
+											<li>ייעוץ פנסיה אובייקטיבי חד פעמי</li>
 											<li>התאמת החיסכון לפרופיל האישי</li>
 										</ul>
 									</div>
@@ -123,16 +123,15 @@
 						<li>
 							<div class="single-contentblk">
 								<div class="list-topblock">
-									<!--img src='/images/hiker_outline.png' height='50' alt='Wakeup And Go!'/-->
 		<i class=' icon icon-hiker-outline'></i>
 									<div class="list-head">
-										<h5>&#38; Go<span>&trade;<span></h5>
+										<h5>Go<span>&trade;<span></h5>
 									</div>
 									<div class="list-mainblock">
 										<ul>
 											<li>יישום דיגיטאלי של המלצות הייעוץ</li>
 											<li>הפחתת דמי הניהול</li>
-											<li>ריכוז בקרה תקופתית של התיק למשך שנה</li>
+											<li>בקרה תקופתית למשך שנה</li>
 										</ul>
 									</div>
 									<div class="round-box">
