@@ -2645,11 +2645,7 @@
 	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock {
 		padding: 10px; }
 
-	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li span {
-		font-size: 14px; }
-
 	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock em {
-		font-size: 18px;
 		padding-left: 0px;
 		padding-right: 50px;
 		width: 100%;
@@ -2659,17 +2655,21 @@
 		height: 20px; }
 
 	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock span {
-		font-size: 17px;
 		width: 100%;
 		float: left;
 		text-align: right;
 		line-height: 20px;
 		height: 20px; }
+	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock ul li span,
+	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.down-block .single-tabblock ul li span,
+	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.down-block .single-tabblock ul li em,
+	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock ul li em {
+		font-size:17px;
+	}
+
 	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock span i.alrm-icon {
 		top: 7px; }
 
-	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li em {
-		font-size: 14px; }
 
 	.bottom-outercont .bothaf-singleblk .riskblock-outer .pensions-outer .half-block .inner-txtcontblk .single-blockhlf p {
 		font-size: 14px; }
