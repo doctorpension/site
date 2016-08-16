@@ -514,7 +514,7 @@
 												<div class="button-outer cs_button-outer bottom-blk">
 													<button class="link-button implement cs_link-button implement" type="submit"
 															value="Submit">
-															<span class='eng'>&amp;Go<sup>&trade;</sup></span>
+															<span class='eng'>&amp; Go<sup>&trade;</sup></span>
 													<i class="fa fa-angle-left" aria-hidden="true"></i></button>
 												</div>
 											</div>

@@ -2082,6 +2082,17 @@
 		padding:10px;
 		text-align:center;
 		font-size: 18px; }
+		.rec_partial .wake-call, .content-maincont.common-blk.subtop-content .top-cont-blk h1.wake-call{
+			font-size:25px;
+			margin-bottom:10px;
+			line-height:28px;
+		}
+		.rec_partial .wake-call strong, .content-maincont.common-blk.subtop-content .top-cont-blk h1.wake-call strong{
+			margin-top:0px;
+		}
+	.insurance-inner .rec_partial .wake-call img, .content-maincont.common-blk.subtop-content .top-cont-blk h1.wake-call img{
+		margin-top:0px;
+	}
 	.content-maincont.common-blk.subtop-content .top-cont-blk span i {
 		padding-left: 10px;}
 
@@ -2247,7 +2258,7 @@
 		font-size: 20px;
 		margin-bottom: 22px; }
 
-	.insurance-inner img {
+	.insurance-inner .insurance-title img {
 		max-width: 70px;
 		margin:10px auto 0px;   
 	}

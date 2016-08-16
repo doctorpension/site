@@ -4363,10 +4363,11 @@ div.drum figure {
 	background-image: url('/images/WakeUpLogoWhite.png');
 	background-repeat: no-repeat;
 	background-size: 107px;
-	background-position: 29% 64%;
+	background-position: 32% 64%;
 }
 .insurance-inner .link-button span{
-	width:159px;
+	width:166px;
+	font-weight:bold;
 	display:inline-block;
 	text-align:right;
 	font-size:23px;
