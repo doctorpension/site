@@ -62,7 +62,7 @@
 									<a href="#firstpopup" class="link-button popupbtns">הבנתי</a>
 								</div>
 								<!--main popover-->
-
+								<h1 class='wake-call eng'><img src='images/wakeup_logo.png'/><strong class='eng'>Call<sup>&trade;</sup></strong></h1>
 								<div class="date-block" id="topblock">
 									<p>תאריך הפקת דוח: 11/06/2016</p>
 								</div>
@@ -503,14 +503,19 @@
 													<h6>כיסוי ביטוחי היום:</h6>
 													<a href="javascript:void(0);" class="thumbspopup-trigger"><img
 																												   src="images/insurance-hand.png" height='86' width='86' alt="קליק כאן לפרטים נוספים אודות הכיסוי הביטוחי שלך"> </a></div>
-												<p class='rec_partial'>אהבת את ההמלצות שלנו? לחץ למטה ליישום ההמלצות.
-													<span>ניתן ליישם את כל ההמלצות או רק את חלקן.</span>
-													<span>שתף חבר וקבל מנוי לחצי שנה לשירותי הניטור התקופתי שלנו
-											וגם פרגן לנו עם פוסט לפייסבוק</span></p>
+												<div class='rec_partial'>
+				התקדם אל
+				<div class="wake-call eng">
+					<strong class="eng">&amp; Go<sup>™</sup></strong>
+					<img src="images/wakeup_logo.png">
+				</div>
+על מנת ליישם את כל המלצותינו או את חלקן
+												</div>
 												<div class="button-outer cs_button-outer bottom-blk">
 													<button class="link-button implement cs_link-button implement" type="submit"
-															value="Submit">יישם
-														המלצות<i class="fa fa-angle-left" aria-hidden="true"></i></button>
+															value="Submit">
+															<span class='eng'>&amp;Go<sup>&trade;</sup></span>
+													<i class="fa fa-angle-left" aria-hidden="true"></i></button>
 												</div>
 											</div>
 										</div>

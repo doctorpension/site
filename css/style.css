@@ -106,6 +106,7 @@ ul, ol, h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0; }
 
+.eng{font-family:'Lato' !important; direction:ltr;}	
 body {
 	font-family: "fbspoileren-regular", 'Lato', Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -2011,6 +2012,7 @@ ul.listing-outer:after {
 .content-maincont.common-blk p {
 	font-size: 36px;
 	line-height: 37px; }
+
 .content-maincont.common-blk .date-block {
 	float: right;
 	width: 100%;
@@ -2894,6 +2896,49 @@ div.drum figure {
 .content-maincont.common-blk.subtop-content .top-cont-blk .date-block p {
 	font-size: 24px;
 	 }
+
+.rec_partial .wake-call,
+.content-maincont.common-blk.subtop-content .top-cont-blk h1.wake-call{
+	display:block;
+	line-height:40px;
+	margin-bottom:0px;
+	font-size:40px;
+}
+.rec_partial .wake-call{
+	display:inline-block;
+	width:225px;
+	vertical-align:bottom;
+	margin-top:4px;
+}
+
+.rec_partial .wake-call strong,
+.content-maincont.common-blk.subtop-content .top-cont-blk h1.wake-call strong{
+	font-weight:normal;
+	vertical-align:top;
+	margin-top:-2px;
+	display:inline-block;
+}
+.rec_partial .wake-call strong{
+	float:right;
+	font-size:27px;
+	margin-bottom:-7px;
+}
+.rec_partial .wake-call sup,
+.content-maincont.common-blk.subtop-content .top-cont-blk h1.wake-call sup{
+	vertical-align:top;
+	font-size:14px;
+}
+.insurance-inner .rec_partial .wake-call img,
+.content-maincont.common-blk.subtop-content .top-cont-blk h1.wake-call img{
+	height:41px;
+	margin-right:10px;
+	vertical-align:bottom;
+	margin-top:4px;
+}
+.insurance-inner .rec_partial .wake-call img{
+	float:right;
+	height:32px;
+}	
 
 .content-maincont.common-blk.subtop-content .top-cont-blk h1 {
 	margin-bottom: 27px; }
@@ -4305,8 +4350,8 @@ div.drum figure {
 	color: #525a5e; }
 .insurance-inner img {
 	display: table-cell; }
-.insurance-inner p {
-	font-size: 24px;
+.insurance-inner div.rec_partial {
+	font-size: 30px;
 	color: #525a5e;
 	line-height: 31px;
 }
@@ -4315,6 +4360,19 @@ div.drum figure {
 	line-height: 59px;
 	padding: 0 29px;
 	font-size: 30px;
+	background-image: url('/images/WakeUpLogoWhite.png');
+	background-repeat: no-repeat;
+	background-size: 107px;
+	background-position: 29% 64%;
+}
+.insurance-inner .link-button span{
+	width:159px;
+	display:inline-block;
+	text-align:right;
+	font-size:23px;
+}
+.insurance-inner .link-button span sup{
+	font-size:14px;
 }
 .insurance-inner i {
 	padding-right: 11px;
