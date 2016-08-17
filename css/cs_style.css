@@ -96,6 +96,7 @@ canvas {
 		padding: 0px !important; }
 
 	.logo_blk a {
+		z-index:999;
 		position: absolute;
 		top: 11px;
 		left: 45%; }
@@ -152,12 +153,10 @@ canvas {
 @media only screen and (max-width: 479px) {
 	.banner-outercont.banner-new.newquote-outer li.cycle-slide img {
 		position: relative;
-		left: -250px;
 		margin: 0px;
 		max-width: none;
 		float: left; }
 	.banner-outercont.banner-new.newquote-outer li.cycle-slide:nth-child(3) img {
-		left:-350px;
 	}
 	   
 	}
