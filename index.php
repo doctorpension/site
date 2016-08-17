@@ -11,7 +11,7 @@
 <html class="no-js" lang="he" dir="rtl" xml:lang="he" itemscope itemtype="http://schema.org/Article">
 	<head>
 		<meta charset="utf-8">
-		<title>Home | Wakeup</title>
+		<title>Home | WakeUp</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="description" content="">
 		<meta name="author" content="">
