@@ -2946,7 +2946,7 @@ div.drum figure {
 .content-maincont.common-blk.subtop-content .top-cont-blk .bottom-arrow {
 	margin-top: 24px; }
 
-.content-maincont.common-blk.subtop-content .top-cont-blk span {
+.content-maincont.common-blk.subtop-content .top-cont-blk > span {
 	width: 100%;
 	height: auto;
 	float: left;

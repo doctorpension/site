@@ -11,7 +11,7 @@
 <html class="no-js" lang="he" dir="rtl" xml:lang="he" itemscope itemtype="http://schema.org/Article">
 	<head>
 		<meta charset="utf-8">
-		<title>Inner | Wakeup</title>
+		<title>Inner | WakeUp</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="description" content="WakeUp WebSite">
 		<meta name="author" content="">
@@ -57,7 +57,7 @@
 								<div class="mainpop-over">
 									<p>ברוכים הבאים לדוח הייעוץ הפנסיוני שלך.<br/>
 										מימין מופיעות הקופות שיש ברשותך כיום.<br/>
-										משמאל מופיעות המלצות Wakeup
+										משמאל מופיעות המלצות <span class='eng'>WakeUp</span>
 									</p>
 									<a href="#firstpopup" class="link-button popupbtns">הבנתי</a>
 								</div>
@@ -342,11 +342,11 @@
 													<div class="inner-txtcontblk">
 														<div class="single-blockhlf">
 															<h6>₪589,998</h6>
-															<p>סכום חד פעמי בעת פרישה </p>
+															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
 															<h6>₪5,000</h6>
-															<p>קצבה צפויה בעת פרישה</p>
+																<p>קצבה צפויה לפרישה</p>
 														</div>
 													</div>
 												</div>
@@ -381,11 +381,11 @@
 													<div class="inner-txtcontblk">
 														<div class="single-blockhlf">
 															<h6>₪589,998</h6>
-															<p>סכום חד פעמי בעת פרישה </p>
+															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
 															<h6>₪8,406</h6>
-															<p>קצבה צפויה בעת פרישה</p>
+																<p>קצבה צפויה לפרישה</p>
 														</div>
 													</div>
 												</div>
