@@ -78,7 +78,6 @@
 			<!--Begin content section-->
 			<section id='cs_section_02' class="content-maincont looking-outerblk new-looking-outerblk">
 				<div class="container">
-					<h5>כמה זה עולה</h5>
 					<ul>
 						<!--single section-->
 						<li><a href='survey.php'>
@@ -108,7 +107,7 @@
 								<div class="list-topblock">
 		<i class=' icon icon-hiker-outline'></i>
 									<div class="list-head">
-										<h5>Go<span>&trade;<span></h5>
+										<h5>&amp; Go<span>&trade;<span></h5>
 									</div>
 									<div class="list-mainblock">
 										<ul>
@@ -118,7 +117,7 @@
 										</ul>
 									</div>
 									<div class="round-box">
-										<span>&#8362;99</span>
+										<span>&#8362;199</span>
 										<span class='small-price'>בלבד לזמן מוגבל</span>
 									</div>
 								</div>
@@ -178,13 +177,13 @@
 									<li>
 										<div data-percentage="90" class="bar">
 											<div class="disc-outr">
-											<p>גידול של ₪1,900 בפנסיה החודשית עם WakeUp*</p>											
+											<p>גידול של ₪1,900 בפנסיה החודשית עם <span class='eng'>WakeUp</span>*</p>											
 </div>
 										</div>
-										<span>עם WakeUp</span></li>
+										<span>עם <span class='eng'>WakeUp</span></span></li>
 									<li>
 										<div data-percentage="50" class="bar"></div>
-										<span>בלי WakeUp</span></li>
+										<span>בלי <span class='eng'>WakeUp</span></span></li>
 								</ul>
 								<ul id="numbers">
 									<li><span>₪20,000</span></li>

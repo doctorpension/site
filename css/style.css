@@ -4025,7 +4025,7 @@ div.drum figure {
 	width: 100%;
 	height: auto;
 	float: left;
-	padding: 26px 0 42px; }
+	padding: 56px 0 42px; }
 .looking-outerblk.new-looking-outerblk h5 {
 	font-size: 36px;
 	text-align: center;
@@ -5183,7 +5183,7 @@ font-size:75%;
 	opacity: 1; }
 #chart #bars li:first-child .bar {
 	background: #f9dc08; }
-#chart #bars li span {
+#chart #bars li > span {
 	color: #4c5d63;
 	width: 100%;
 	position: absolute;
