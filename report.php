@@ -1,3 +1,118 @@
+<?php
+if(isset($_GET['num'])){
+	$suffix = $_GET['num'];
+}
+$file = 'raw/reports' . $suffix . '.json';
+$rawData = file_get_contents($file);
+$d = json_decode($rawData);
+if(!count($d)){
+	die('Seems error parsing JSON!');	
+}
+$d = processData($d);
+
+function processData($d){
+
+	// count element in each
+	$arr = array('gemel','hishtalmut','minahalim','pension');
+	$arr2 = array('current_holdings','recommended_holdings');
+	foreach($arr as $a){
+		$t = $a.'_count';
+		foreach($arr2 as $b){
+			$d->$b->$t = count($d->$b->$a);
+		}
+	}
+
+	// make total
+	foreach($arr as $a){
+		$t2 = $a.'_amount';
+		foreach($arr2 as $b){
+			if(!isset($d->$b->total_amount)){
+				$d->$b->total_amount = 0;
+			}
+			$d->$b->$t2 = 0;
+			foreach($d->$b->$a as $c){
+				$d->$b->$t2 += $c->amount; 
+				$d->$b->total_amount += $c->amount; 
+			}			
+		}
+	}
+	// make percentage
+	foreach($arr as $a){
+		$a1 = $a.'_amount';
+		$t2 = $a.'_percent';
+		foreach($arr2 as $b){
+			$d->$b->$t2 = 0;
+			if($d->$b->$a1 && $d->$b->total_amount){
+				$d->$b->$t2 = round(($d->$b->$a1/$d->$b->total_amount)*100);
+			}
+		}
+	}
+	// process bells :)
+	$d = processBell($d, $arr);
+
+	return $d;
+}
+
+function cl($msg){
+	if(isset($_REQUEST['tsDebug'])){
+		//	echo "<script>console.log('$msg')</script>";
+		echo "<!-- $msg -->\n";
+	}
+}
+function processBell($d, $arr){
+	foreach($arr as $x){
+		cl('////////////////////// processing '.$x);
+		$y = $x.'Bell';
+		$d->$y = true;
+		$a = $d->current_holdings->$x;
+		$b = $d->recommended_holdings->$x;
+		if(count($a) == count($b)){
+			cl('count of companies match [count:' .count($a).' vs '.count($b).']');
+			$d->$y = false;
+			foreach($a as $cn){
+				$cAmnt = $cn->amount;
+				$cNm = $cn->name;
+				cl('processing company: ' . $cNm . '(Amount:' . $cAmnt.')');
+				$cNmFound=false;
+				foreach($b as $rd){
+					if($rd->name == $cNm){
+						$cNmFound=true;
+
+						if($rd->amount == $cAmnt){
+							$d->$y = false;
+						}else{
+							cl($x.' -> '.$cNm.' amount MISMATCH '.$cAmnt.' vs '.$rd->amount);
+							$d->$y = true;
+							continue;
+						}
+					}
+				}
+				if($cNmFound===false){
+					cl('company name '.$cNm.' not found in recommended data');
+					$d->$y = true;
+				}
+			}
+		}else{
+			cl('count of companies DONT match [count:' .count($a).' vs '.count($b).']');
+			continue;
+		}
+	}
+
+
+
+	return $d;
+}
+
+function get_http_response_code($url) {
+	$headers = get_headers($url);
+	return substr($headers[0], 9, 3);
+}
+
+//echo '<pre style="color:red; background-color:yellow; margin-top:200px;">------------<br>';
+//print_r($d);
+//echo '<br>-------</pre>';
+//exit;
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js ie6 oldie" lang="en" itemscope itemtype="http://schema.org/Article"> <![endif]-->
@@ -67,11 +182,11 @@
 									<p>תאריך הפקת דוח: 11/06/2016</p>
 								</div>
 								<!--Making Text closer in size to the sentense below-->
-								<div class="cs_subpage_title">היי רון,</div>
-								<p class='top_summary'>יש לך נכון להיום <br/><strong> 258,258 ₪</strong> בחסכונותיך לפנסיה <br>
+								<div class="cs_subpage_title">היי <?=$d->first_name;?>,</div>
+								<p class='top_summary'>יש לך נכון להיום <br/><strong> <?=number_format($d->current_holdings->current_total);?> ₪</strong> בחסכונותיך לפנסיה <br>
 									המלצותינו אובייקטיביות ומותאמות אישית לצרכיך</p>
 								<span id="guide-template"><i
-															 class="fa fa-check"></i>הצבירה שלך לגיל הפרישה יכולה לגדול <strong>ב 453,302 ₪</strong> אם תבחר ליישם את המלצותינו.</span>
+															 class="fa fa-check"></i>הצבירה שלך לגיל הפרישה יכולה לגדול <strong>ב  <?=number_format($d->recommended_holdings->projected_total - $d->current_holdings->projected_total);?> ₪</strong> אם תבחר ליישם את המלצותינו.</span>
 
 							</div>
 						</div>
@@ -118,8 +233,11 @@
 													<label>קופת גמל</label>
 												</div>
 												<ul>
-													<li><span>אקסלנס נשואה גמל מט”ח</span><em>₪13,458</em></li>
-													<li><span>אנליסט קופות גמל בע”מ</span><em>₪21,566</em></li>
+													<?php 
+												foreach($d->current_holdings->gemel as $row){
+echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>	
 												</ul>
 											</div>
 										</div>
@@ -139,7 +257,11 @@
 													<label>קרן השתלמות</label>
 												</div>
 												<ul>
-													<li><span>מגדל קהל השתלמות</span><em>₪43,501</em></li>
+													<?php 
+												foreach($d->current_holdings->hishtalmut as $row){
+													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>
 												</ul>
 											</div>
 										</div>
@@ -149,8 +271,11 @@
 													<label>ביטוח מנהלים</label>
 												</div>
 												<ul>
-													<li><span>איילון חברה לביטוח</span><em>₪11,287</em></li>
-													<li><span>הפינקס חברה לביטוח בע”מ</span><em>₪91,187</em></li>
+												<?php 
+												foreach($d->current_holdings->minahalim as $row){
+													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>
 												</ul>
 											</div>
 										</div>
@@ -160,8 +285,11 @@
 													<label>קרן פנסיה</label>
 												</div>
 												<ul>
-													<li><span>מיטב דש גמל ופנסיה בע”מ</span><em>₪31,273</em></li>
-													<li><span>הלמן - אלדובי קופות גמל ופנסיה בע”מ</span><em>₪45,986</em></li>
+													<?php 
+												foreach($d->current_holdings->pension as $row){
+													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>
 												</ul>
 											</div>
 										</div>
@@ -192,13 +320,18 @@
 													<label>קופת גמל</label>
 												</div>
 												<ul>
-													<li><span>פסגות קופות גמל ופנסיה בע”מ</span> <em>₪35,024</em></li>
+													<?php 
+												foreach($d->recommended_holdings->gemel as $row){
+													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>
 												</ul>
 											</div>
 										</div>
+										
 										<!--second bold bell-->
 										<div class="single-tabblock rightsec-blk" id="secondpopup">
-											<div class="alrm-icon normalpop">
+											<div class="<?php if($d->gemelBell) { ?>alrm-icon<?php }?> normalpop">
 												<!--normal popover-->
 												<div class="normalpop-over long">
 													<p>זהו תיק החיסכון הפנסיוני המומלץ לך.
@@ -212,18 +345,23 @@
 												<!--normal popover-->
 											</div>
 											<div class="alrm-icon closepopover"></div>
+
 											<div class="cont-singleouterblock new-cont">
 												<div class="compare-fieldtitle">
 													<label>קרן השתלמות</label>
 												</div>
 												<ul>
-													<li><span>אלטשולר שחם גמל ופנסיה בע”מ</span> <em>₪65,067</em></li>
+												<?php 
+												foreach($d->recommended_holdings->hishtalmut as $row){
+													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>
 												</ul>
 											</div>
 										</div>
 										<!--third bold bell-->
 										<div class="single-tabblock rightthird-blk" id="thirdpopup">
-											<div class="alrm-icon normalpop">
+											<div class="<?php if($d->hishtalmutBell) { ?>alrm-icon<?php }?> normalpop">
 											</div>
 											<div class="alrm-icon closepopover"></div>
 											<div class="cont-singleouterblock new-cont">
@@ -231,20 +369,28 @@
 													<label>ביטוח מנהלים</label>
 												</div>
 												<ul>
-													<li><span>איילון חברה לביטוח בע”מ</span><em>₪102,474</em></li>
+												<?php 
+												foreach($d->recommended_holdings->minahalim as $row){
+													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>
 												</ul>
 											</div>
 										</div>
 										<!--fourth bold bell-->
 										<div class="single-tabblock rightfourth-blk">
-											<div class="alrm-icon normalpop"></div>
+											<div class="<?php if($d->minahalimBell) { ?>alrm-icon <?php }?>normalpop"></div>
 											<div class="alrm-icon closepopover"></div>
 											<div class="cont-singleouterblock new-cont">
 												<div class="compare-fieldtitle">
 													<label>קרן פנסיה</label>
 												</div>
 												<ul>
-													<li><span>מנורה מבטחים פנסיה וגמל בע”מ</span><em>₪55,693</em></li>
+												<?php 
+												foreach($d->recommended_holdings->pension as $row){
+													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
+												}
+												?>
 												</ul>
 											</div>
 										</div>
@@ -334,18 +480,18 @@
 											<div class="pensions-outer">
 												<div class="half-block">
 													<div class="inner-txtcontblk rightcontblk">
-														<h5>₪258,258</h5>
+												<h5>₪<?=number_format($d->current_holdings->projected_total);?></h5>
 														<p>החסכון הפנסיוני שלך היום</p>
 													</div>
 												</div>
 												<div class="half-block">
 													<div class="inner-txtcontblk">
 														<div class="single-blockhlf">
-															<h6>₪589,998</h6>
+																<h6>₪<?=number_format($d->current_holdings->retirement->one_time_settlement);?></h6>
 															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
-															<h6>₪5,000</h6>
+															<h6>₪<?=number_format($d->current_holdings->retirement->monthly_pension);?></h6>
 																<p>קצבה צפויה לפרישה</p>
 														</div>
 													</div>
@@ -356,13 +502,14 @@
 												<div class="progress-outercon">
 													<div class="start-blk">שמרני</div>
 													<div class="endvalue">אגרסיבי</div>
-													<div class="link-btnblk"><a href="javascript:void(0);"
-																				class="button-main-blk thumbs-down"> <i
-																														class=" wake-icon14"></i><span><strong>רמת סיכון גבוהה!</strong>קליק להסבר</span></a>
+											<div class="link-btnblk risk_level<?=$d->current_holdings->risk_level;?>" style="left:<?=(100 - ($d->current_holdings->risk_level * 9.9));?>%">
+												<?php 
+												$thumb = $d->current_holdings->risk_matches ? 'thumbs-up':'thumbs-down';
+												?>
+												<a href="javascript:void(0);" class="button-main-blk <?=$thumb;?>"> <i class=" wake-icon14"></i><span><strong>רמת סיכון גבוהה!</strong>קליק להסבר</span></a> </div>
 													</div>
 												</div>
-											</div>
-											<div class="feesouter-cont"><span><em>₪3,000</em>דמי ניהול חזויים לשנה</span></div>
+									<div class="feesouter-cont"> <span><em>₪<?=number_format($d->current_holdings->yearly_fees);?></em>דמי ניהול חזויים לשנה</span> </div>
 										</div>
 										<!--risk block section-->
 									</div>
@@ -373,18 +520,18 @@
 											<div class="pensions-outer">
 												<div class="half-block">
 													<div class="inner-txtcontblk rightcontblk">
-														<h5>₪258,258</h5>
+												<h5>₪<?=number_format($d->recommended_holdings->projected_total);?></h5>
 														<p>החסכון הפנסיוני שלך היום</p>
 													</div>
 												</div>
 												<div class="half-block high-block">
 													<div class="inner-txtcontblk">
 														<div class="single-blockhlf">
-															<h6>₪589,998</h6>
+															<h6>₪<?=number_format($d->recommended_holdings->retirement->one_time_settlement);?></h6>
 															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
-															<h6>₪8,406</h6>
+													<h6>₪<?=number_format($d->recommended_holdings->retirement->monthly_pension);?></h6>
 																<p>קצבה צפויה לפרישה</p>
 														</div>
 													</div>
@@ -395,19 +542,22 @@
 												<div class="progress-outercon">
 													<div class="start-blk">שמרני</div>
 													<div class="endvalue">אגרסיבי</div>
-													<div class="link-btnblk"><a class="button-main-blk thumbs-up"
-																				href="javascript:void(0);"> <i
-																											   class=" wake-iconup"></i><span><strong>רמת סיכון טובה!</strong>קליק להסבר</span></a>
+											<div class="link-btnblk risk_level<?=$d->recommended_holdings->risk_level;?>" style="left:<?=(100 - ($d->recommended_holdings->risk_level * 9.9));?>%"> 
+												<?php 
+												$thumb = $d->recommended_holdings->risk_matches ? 'thumbs-up':'thumbs-down';
+												?>
+												<a class="button-main-blk <?=$thumb;?>" href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון טובה!</strong>קליק להסברs</span></a> </div>
 													</div>
 												</div>
+									<div class="feesouter-cont"> <span><em>₪<?=number_format($d->recommended_holdings->yearly_fees);?></em>דמי ניהול חזויים לשנה</span> </div>
 											</div>
-											<div class="feesouter-cont"><span><em>₪1,000</em>דמי ניהול חזויים לשנה</span></div>
+											
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול
-								<strong>ב 453,302 ₪</strong> אם תבחר ליישם את המלצותינו.
+								<strong><?=number_format($d->recommended_holdings->projected_total - $d->current_holdings->projected_total);?></strong> אם תבחר ליישם את המלצותינו.
 							</div>
 							<div class="insurance-block">
 								<div class="container">

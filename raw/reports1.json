@@ -1,0 +1,135 @@
+{
+	"first_name": "רון",
+	"current_holdings": {
+		"current_total": 222111,
+		"projected_total": 100011,
+		"retirement": {
+			"one_time_settlement": 589998,
+			"monthly_pension": 8406
+		},
+		"handicap": {
+			"one_time_settlement": 589998,
+			"monthly_pension": 8406
+		},
+		"heirs": {
+			"one_time_settlement": 589998,
+			"monthly_pension": 8406
+		},
+		"yearly_fees": 3124,
+		"risk_level": 8,
+		"risk_matches": 1,
+		"gemel": [{
+			"name": "אקסלנס נשואה גמל מט”ח",
+			"amount": "13450",
+			"risk_level": "1",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}],
+		"hishtalmut": [{
+			"name": "מגדל קהל השתלמות",
+			"amount": "44033",
+			"risk_level": "3",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}],
+		"minahalim": [{
+			"name": "איילון חברה לביטוח",
+			"amount": "5000",
+			"risk_level": "4",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}, {
+			"name": "הפינקס חברה לביטוח בע”מ",
+			"amount": "100000",
+			"risk_level": "5",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}],
+		"pension": [{
+			"name": "מיטב דש גמל ופנסיה בע”מ",
+			"amount": "30000",
+			"risk_level": "6",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}, {
+			"name": "מיטב דש גמל ופנסיה בע”מ",
+			"amount": "60000",
+			"risk_level": "7",
+			"management_fee_accumulate": "",
+			"management_fee_depossit": "",
+			"change": 20
+		}]
+
+	},
+	"recommended_holdings": {
+		"current_total": 333111,
+		"projected_total": 1234561,
+		"retirement": {
+			"one_time_settlement": 650652,
+			"monthly_pension": 9911
+		},
+		"handicap": {
+			"one_time_settlement": 589998,
+			"monthly_pension": 9911
+		},
+		"heirs": {
+			"one_time_settlement": 589998,
+			"monthly_pension": 9911
+		},
+		"yearly_fees": 1212,
+		"risk_level": 7,
+		"risk_matches": 1,
+		"gemel": [{
+			"name": "אקסלנס נשואה גמל מט”ח",
+			"amount": "13500",
+			"risk_level": "1",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}],
+		"hishtalmut": [{
+			"name": "מגדל קהל השתלמות",
+			"amount": "44033",
+			"risk_level": "3",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}],
+		"minahalim": [{
+			"name": "איילון חברה לביטוח",
+			"amount": "12012",
+			"risk_level": "4",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}, {
+			"name": "הפינקס חברה לביטוח בע”מ",
+			"amount": "102000",
+			"risk_level": "5",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}],
+		"pension": [{
+			"name": "מיטב דש גמל ופנסיה בע”מ",
+			"amount": "20111",
+			"risk_level": "6",
+			"management_fee_accumulate": "",
+			"management_fee_deposit": "",
+			"change": 20
+		}, {
+			"name": "מיטב דש גמל ופנסיה בע”מ",
+			"amount": "45990",
+			"risk_level": "7",
+			"management_fee_accumulate": "",
+			"managsement_fee_depossit": "",
+			"change": 20
+		}]
+	}
+
+}
