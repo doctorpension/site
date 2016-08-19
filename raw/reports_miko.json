@@ -1,0 +1,70 @@
+{
+	"firstName" : "רון",
+	"currentPolicies" : [
+		{
+		  "fundType" : ..,
+		  "fundName" : "",
+		  "depositFee" : ..,
+		  "accumulationFee" : ..,
+		  "totalBalance" : ..,
+		  "investmentTrackInfos" : [
+		  	{
+		  	  "trackName" : "",
+		  	  "balance" : ..
+		  	},
+		  	...
+		  ],
+		  "betterFitProfile" : ..,
+		  "improvedFees" : ..
+		},
+		...
+	],
+	"currentPortfolioAggregated" : {
+		"totalBalance" : ..,
+		"projectedLumpSumAtRetirement" : ..,
+		"projectedPensionAtRetirement" : ..,
+		"riskLevel" : ..,
+		"projectedAnnualFees" : ..
+	},
+	"recommendedPolicies" : [
+		{
+		  "fundType" : ..,
+		  "fundName" : "",
+		  "depositFee" : ..,
+		  "accumulationFee" : ..,
+		  "totalBalance" : ..,
+		  "investmentTrackInfos" : [
+		  	{
+		  	  "trackName" : "",
+		  	  "balance" : ..
+		  	},
+		  	...
+		  ],
+		  "betterFitProfile" : ..,
+		  "improvedFees" : ..
+		},
+		...
+	],
+	"recommendedPortfolioAggregated" : {
+		"totalBalance" : ..,
+		"projectedLumpSumAtRetirement" : ..,
+		"projectedPensionAtRetirement" : ..,
+		"riskLevel" : ..,
+		"projectedAnnualFees" : ..
+	},
+	"insurance" : {
+	 "fit" : true/false,
+	 "currentCoverages" : {
+	  "disabilityPension" : ...,
+	  "survivorPension" : ...,
+	  "disabilityBenefit" : ...,
+	  "survivorBenefit" : ...
+	 },
+	 "recommendedCoverages" : {
+	  "disabilityPension" : ...,
+	  "survivorPension" : ...,
+	  "disabilityBenefit" : ...,
+	  "survivorBenefit" : ...
+	 }
+	}
+}

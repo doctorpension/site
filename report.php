@@ -4,114 +4,9 @@ if(isset($_GET['num'])){
 }
 $file = 'raw/reports' . $suffix . '.json';
 $rawData = file_get_contents($file);
-$d = json_decode($rawData);
-if(!count($d)){
-	die('Seems error parsing JSON!');	
-}
-$d = processData($d);
+$data = json_decode($rawData);
+$report = new Report($data);
 
-function processData($d){
-
-	// count element in each
-	$arr = array('gemel','hishtalmut','minahalim','pension');
-	$arr2 = array('current_holdings','recommended_holdings');
-	foreach($arr as $a){
-		$t = $a.'_count';
-		foreach($arr2 as $b){
-			$d->$b->$t = count($d->$b->$a);
-		}
-	}
-
-	// make total
-	foreach($arr as $a){
-		$t2 = $a.'_amount';
-		foreach($arr2 as $b){
-			if(!isset($d->$b->total_amount)){
-				$d->$b->total_amount = 0;
-			}
-			$d->$b->$t2 = 0;
-			foreach($d->$b->$a as $c){
-				$d->$b->$t2 += $c->amount; 
-				$d->$b->total_amount += $c->amount; 
-			}			
-		}
-	}
-	// make percentage
-	foreach($arr as $a){
-		$a1 = $a.'_amount';
-		$t2 = $a.'_percent';
-		foreach($arr2 as $b){
-			$d->$b->$t2 = 0;
-			if($d->$b->$a1 && $d->$b->total_amount){
-				$d->$b->$t2 = round(($d->$b->$a1/$d->$b->total_amount)*100);
-			}
-		}
-	}
-	// process bells :)
-	$d = processBell($d, $arr);
-
-	return $d;
-}
-
-function cl($msg){
-	if(isset($_REQUEST['tsDebug'])){
-		//	echo "<script>console.log('$msg')</script>";
-		echo "<!-- $msg -->\n";
-	}
-}
-function processBell($d, $arr){
-	foreach($arr as $x){
-		cl('////////////////////// processing '.$x);
-		$y = $x.'Bell';
-		$d->$y = true;
-		$a = $d->current_holdings->$x;
-		$b = $d->recommended_holdings->$x;
-		if(count($a) == count($b)){
-			cl('count of companies match [count:' .count($a).' vs '.count($b).']');
-			$d->$y = false;
-			foreach($a as $cn){
-				$cAmnt = $cn->amount;
-				$cNm = $cn->name;
-				cl('processing company: ' . $cNm . '(Amount:' . $cAmnt.')');
-				$cNmFound=false;
-				foreach($b as $rd){
-					if($rd->name == $cNm){
-						$cNmFound=true;
-
-						if($rd->amount == $cAmnt){
-							$d->$y = false;
-						}else{
-							cl($x.' -> '.$cNm.' amount MISMATCH '.$cAmnt.' vs '.$rd->amount);
-							$d->$y = true;
-							continue;
-						}
-					}
-				}
-				if($cNmFound===false){
-					cl('company name '.$cNm.' not found in recommended data');
-					$d->$y = true;
-				}
-			}
-		}else{
-			cl('count of companies DONT match [count:' .count($a).' vs '.count($b).']');
-			continue;
-		}
-	}
-
-
-
-	return $d;
-}
-
-function get_http_response_code($url) {
-	$headers = get_headers($url);
-	return substr($headers[0], 9, 3);
-}
-
-//echo '<pre style="color:red; background-color:yellow; margin-top:200px;">------------<br>';
-//print_r($d);
-//echo '<br>-------</pre>';
-//exit;
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
@@ -182,11 +77,11 @@ function get_http_response_code($url) {
 									<p>תאריך הפקת דוח: 11/06/2016</p>
 								</div>
 								<!--Making Text closer in size to the sentense below-->
-								<div class="cs_subpage_title">היי <?=$d->first_name;?>,</div>
-								<p class='top_summary'>יש לך נכון להיום <br/><strong> <?=number_format($d->current_holdings->current_total);?> ₪</strong> בחסכונותיך לפנסיה <br>
+								<div class="cs_subpage_title">היי <?=$d->firstName;?>,</div>
+								<p class='top_summary'>יש לך נכון להיום <br/><strong> <?=number_format($report->getTotal('current'));?> ₪</strong> בחסכונותיך לפנסיה <br>
 									המלצותינו אובייקטיביות ומותאמות אישית לצרכיך</p>
 								<span id="guide-template"><i
-															 class="fa fa-check"></i>הצבירה שלך לגיל הפרישה יכולה לגדול <strong>ב  <?=number_format($d->recommended_holdings->projected_total - $d->current_holdings->projected_total);?> ₪</strong> אם תבחר ליישם את המלצותינו.</span>
+															 class="fa fa-check"></i>הצבירה שלך לגיל הפרישה יכולה לגדול <strong>ב  <?=number_format($report->getIncrease());?> ₪</strong> אם תבחר ליישם את המלצותינו.</span>
 
 							</div>
 						</div>
@@ -234,7 +129,7 @@ function get_http_response_code($url) {
 												</div>
 												<ul>
 													<?php 
-												foreach($d->current_holdings->gemel as $row){
+												foreach($report->getBoxFunds('current', 'gemel') as $row){
 echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>	
@@ -258,7 +153,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												</div>
 												<ul>
 													<?php 
-												foreach($d->current_holdings->hishtalmut as $row){
+												foreach($report->getBoxFunds('current', 'hishtalmut') as $row){
 													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>
@@ -272,7 +167,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												</div>
 												<ul>
 												<?php 
-												foreach($d->current_holdings->minahalim as $row){
+												foreach($report->getBoxFunds('current', 'minahalim') as $row){
 													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>
@@ -286,7 +181,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												</div>
 												<ul>
 													<?php 
-												foreach($d->current_holdings->pension as $row){
+												foreach($report->getBoxFunds('current', 'pensia') as $row){
 													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>
@@ -321,7 +216,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												</div>
 												<ul>
 													<?php 
-												foreach($d->recommended_holdings->gemel as $row){
+												foreach($report->getBoxFunds('', 'gemel') as $row){
 													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>
@@ -352,7 +247,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												</div>
 												<ul>
 												<?php 
-												foreach($d->recommended_holdings->hishtalmut as $row){
+												foreach($report->getBoxFunds('', 'hishtalmut') as $row){
 													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>
@@ -370,7 +265,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												</div>
 												<ul>
 												<?php 
-												foreach($d->recommended_holdings->minahalim as $row){
+												foreach($report->getBoxFunds('', 'minahalim') as $row){
 													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>
@@ -387,7 +282,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												</div>
 												<ul>
 												<?php 
-												foreach($d->recommended_holdings->pension as $row){
+												foreach($report->getBoxFunds('', 'pensia') as $row){
 													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->amount).'</em></li>';
 												}
 												?>
@@ -480,18 +375,18 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 											<div class="pensions-outer">
 												<div class="half-block">
 													<div class="inner-txtcontblk rightcontblk">
-												<h5>₪<?=number_format($d->current_holdings->projected_total);?></h5>
+												<h5>₪<?=number_format($report->getTotal('current'));?></h5>
 														<p>החסכון הפנסיוני שלך היום</p>
 													</div>
 												</div>
 												<div class="half-block">
 													<div class="inner-txtcontblk">
 														<div class="single-blockhlf">
-																<h6>₪<?=number_format($d->current_holdings->retirement->one_time_settlement);?></h6>
+																<h6>₪<?=number_format($report->getSettlement('current'));?></h6>
 															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
-															<h6>₪<?=number_format($d->current_holdings->retirement->monthly_pension);?></h6>
+															<h6>₪<?=number_format($report->getPension('current'));?></h6>
 																<p>קצבה צפויה לפרישה</p>
 														</div>
 													</div>
@@ -502,14 +397,14 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<div class="progress-outercon">
 													<div class="start-blk">שמרני</div>
 													<div class="endvalue">אגרסיבי</div>
-											<div class="link-btnblk risk_level<?=$d->current_holdings->risk_level;?>" style="left:<?=(100 - ($d->current_holdings->risk_level * 9.9));?>%">
+											<div class="link-btnblk risk_level<?=$report->getRisk('current');?>" style="left:<?=(100 - ($report->getRisk('current') * 9.9));?>%">
 												<?php 
-												$thumb = $d->current_holdings->risk_matches ? 'thumbs-up':'thumbs-down';
+												$thumb = $report->riskMatches('current');
 												?>
 												<a href="javascript:void(0);" class="button-main-blk <?=$thumb;?>"> <i class=" wake-icon14"></i><span><strong>רמת סיכון גבוהה!</strong>קליק להסבר</span></a> </div>
 													</div>
 												</div>
-									<div class="feesouter-cont"> <span><em>₪<?=number_format($d->current_holdings->yearly_fees);?></em>דמי ניהול חזויים לשנה</span> </div>
+									<div class="feesouter-cont"> <span><em>₪<?=number_format($report->getYearlyFee('current'));?></em>דמי ניהול חזויים לשנה</span> </div>
 										</div>
 										<!--risk block section-->
 									</div>
@@ -520,18 +415,18 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 											<div class="pensions-outer">
 												<div class="half-block">
 													<div class="inner-txtcontblk rightcontblk">
-												<h5>₪<?=number_format($d->recommended_holdings->projected_total);?></h5>
+												<h5>₪<?=number_format($report->getTotal('recommended'));?></h5>
 														<p>החסכון הפנסיוני שלך היום</p>
 													</div>
 												</div>
 												<div class="half-block high-block">
 													<div class="inner-txtcontblk">
 														<div class="single-blockhlf">
-															<h6>₪<?=number_format($d->recommended_holdings->retirement->one_time_settlement);?></h6>
+															<h6>₪<?=number_format($report->getSettlement('recommended'));?></h6>
 															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
-													<h6>₪<?=number_format($d->recommended_holdings->retirement->monthly_pension);?></h6>
+													<h6>₪<?=number_format($report->getPension('recommended'));?></h6>
 																<p>קצבה צפויה לפרישה</p>
 														</div>
 													</div>
@@ -542,14 +437,14 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<div class="progress-outercon">
 													<div class="start-blk">שמרני</div>
 													<div class="endvalue">אגרסיבי</div>
-											<div class="link-btnblk risk_level<?=$d->recommended_holdings->risk_level;?>" style="left:<?=(100 - ($d->recommended_holdings->risk_level * 9.9));?>%"> 
+											<div class="link-btnblk risk_level<?=$report->getRisk('recommended');?>" style="left:<?=(100 - ($report->getRisk('recommended') * 9.9));?>%"> 
 												<?php 
-												$thumb = $d->recommended_holdings->risk_matches ? 'thumbs-up':'thumbs-down';
+												$thumb = $report->riskMatches('recommended');
 												?>
 												<a class="button-main-blk <?=$thumb;?>" href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון טובה!</strong>קליק להסברs</span></a> </div>
 													</div>
 												</div>
-									<div class="feesouter-cont"> <span><em>₪<?=number_format($d->recommended_holdings->yearly_fees);?></em>דמי ניהול חזויים לשנה</span> </div>
+									<div class="feesouter-cont"> <span><em>₪<?=number_format($report->getYearlyFee('recommended'));?></em>דמי ניהול חזויים לשנה</span> </div>
 											</div>
 											
 										</div>
@@ -557,7 +452,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 								</div>
 							</div>
 							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול
-								<strong><?=number_format($d->recommended_holdings->projected_total - $d->current_holdings->projected_total);?></strong> אם תבחר ליישם את המלצותינו.
+								<strong><?=number_format($report->total_increase);?></strong> אם תבחר ליישם את המלצותינו.
 							</div>
 							<div class="insurance-block">
 								<div class="container">
