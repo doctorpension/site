@@ -15,7 +15,7 @@ class Portfolio{
 	var $isTakzivit = false;
 	
 	
-	__construct($policies, $aggregations){
+	function __construct($policies, $aggregations){
 		$this->pensia = new Product();
 		$this->hishtalmut = new Product();
 		$this->gemel = new Product();
@@ -29,7 +29,7 @@ class Portfolio{
 	function setProducts($policies){
 		foreach($policies as $current_policy){
 			$this_fund = new Fund($current_policy);
-			switch($this_fund->getType){
+			switch($this_fund->getType()){
 				case 'pensia':
 					$this->pensia->addFund($this_fund);
 					break;
@@ -53,7 +53,8 @@ class Portfolio{
 		$this->totalProjectedLump = $aggregations['projectedLumpSumAtRetirement'];
 		$this->totalPension = $aggregations['projectedPensionAtRetirement'];
 		$this->riskLevel = $aggregations['riskLevel'];
-		$this->riskMatches = $aggregations['riskMatches'];
+		//$this->riskMatches = $aggregations['riskMatches'];
+		$this->riskMatches = 0;
 		$this->annualFees = $aggregations['projectedAnnualFees'];
 	}
 	

@@ -8,6 +8,7 @@
 *****************************/
 
 class Report{
+	var $raw_data;
 	var $firstName;
 	var $currentPortfolio;
 	var $recommendedPortfolio;
@@ -15,14 +16,17 @@ class Report{
 	var $total_increase;
 	var $isTakzivit;
 	
-	
-	function loadData($json){
-		$all_data = json_decode($json, true);
-		$this->firstName = $all_data['firstName'];
-		$this->currentPortfolio = new Portfolio($all_data['currentPolicies'], $all_data['currentPortfolioAggregated']);
-		$this->recommendedPortfolio = new Portfolio($all_data['recommendedPolicies'], $all_data['recommendedPortfolioAggregated']);
-		$this->insurance = $all_data['insurance'];
-		$this->total_increase = ($this->recommendedPortfolio->$totalProjectedLump - $this->currentPortfolio->totalProjectedLump);
+	function __construct($account_id){
+		$this->loadData($account_id);
+	}
+
+	function loadData($account_id){
+		$this->raw_data = Wakeup::getReport($account_id);
+		$this->firstName = $this->raw_data['firstName'];
+		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated']);
+		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated']);
+		$this->insurance = $this->raw_data['insurance'];
+		$this->total_increase = ($this->recommendedPortfolio->totalProjectedLump - $this->currentPortfolio->totalProjectedLump);
 		$this->isTakzivit = $this->currentPortfolio->isTakzivit;
 	}
 	
