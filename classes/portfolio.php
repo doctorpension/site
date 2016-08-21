@@ -13,13 +13,14 @@ class Portfolio{
 	var $riskMatches;
 	var $annualFees;
 	var $isTakzivit = false;
+	var $insurance;
 	
-	
-	function __construct($policies, $aggregations){
+	function __construct($policies, $aggregations, $insurance){
 		$this->pensia = new Product();
 		$this->hishtalmut = new Product();
 		$this->gemel = new Product();
 		$this->minhalim = new Product();
+		$this->insurance = new Insurance($insurance);
 		$this->setAggregations($aggregations);
 		$this->setProducts($policies);
 		$this->setProductAggregations();

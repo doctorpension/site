@@ -486,12 +486,12 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 																			<li>סכום חד פעמי</li>
 																		</ul>
 																		<ul>
-																			<li>₪4,000</li>
-																			<li>₪50,000</li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('current', 'disabilityPension')?></li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('current', 'disabilityBenefit')?></li>
 																		</ul>
 																		<ul>
-																			<li>₪6,000</li>
-																			<li>₪600,000</li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('current', 'survivorPension')?></li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('current', 'survivorBenefit')?></li>
 																		</ul>
 																	</div>
 
@@ -507,12 +507,12 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 																			<li>סכום חד פעמי</li>
 																		</ul>
 																		<ul>
-																			<li>₪4,000</li>
-																			<li>₪50,000</li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('recommended', 'disabilityPension')?></li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('recommended', 'disabilityBenefit')?></li>
 																		</ul>
 																		<ul>
-																			<li>₪6,000</li>
-																			<li>₪600,000</li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('recommended', 'survivorPension')?></li>
+																		<li>₪<?php echo $report->getInsuranceFormatted('recommended', 'survivorBenefit')?></li>
 																		</ul>
 																	</div>
 																</div>

@@ -23,8 +23,8 @@ class Report{
 	function loadData($account_id){
 		$this->raw_data = Wakeup::getReport($account_id);
 		$this->firstName = $this->raw_data['firstName'];
-		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated']);
-		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated']);
+		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated'], $this->raw_data['insurance']['currentCoverages']);
+		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages']);
 		$this->insurance = $this->raw_data['insurance'];
 		$this->total_increase = ($this->recommendedPortfolio->totalProjectedLump - $this->currentPortfolio->totalProjectedLump);
 		$this->isTakzivit = $this->currentPortfolio->isTakzivit;
@@ -67,7 +67,13 @@ class Report{
 		return $this->getPortfolio($portfolio)->riskMatches;
 	}
 	
+	function getInsurance($portfolio, $benefit){
+		return $this->getPortfolio($portfolio)->insurance->getBenefit($benefit);
+	}
 
+	function getInsuranceFormatted($portfolio, $benefit){
+		return number_format($this->getInsurance($portfolio, $benefit), 0);
+	}
 }
 /*
 FROM ANIL'S ORIGINAL WORK ON REPORT
