@@ -250,7 +250,8 @@
 <img src="images/content/dona.jpg"
 	srcset="images/content/dona_mobile.jpg 420w,
 			images/content/dona_landscape.jpg 700w,
-			images/content/dona_tablet.jpg 1052w"/>
+			images/content/dona_tablet.jpg 1052w,
+images/content/dona.jpg"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -271,7 +272,8 @@
 <img src="images/content/roni.jpg"
 	srcset="images/content/roni_mobile.jpg 420w,
 			images/content/roni_landscap.jpg 700w,
-			images/content/roni_tablet.jpg 1052w"/>
+			images/content/roni_tablet.jpg 1052w,
+images/content/roni.jpg"/>
 </picture>								
 
 						<div class="slider-contentarea">
@@ -293,7 +295,8 @@
 <img src="images/content/yael.jpg"
 		srcset="images/content/yael_mobile.jpg 420w,
 			images/content/yael_landscape.jpg 700w,
-			images/content/yael_tablet.jpg 1052w"/>
+			images/content/yael_tablet.jpg 1052w,
+images/content/yael.jpg"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -315,7 +318,8 @@
 <img src="images/content/tal.jpg"
 		srcset="images/content/tal_mobile.jpg 420w,
 				images/content/tal_landscape.jpg 700w,
-				images/content/tal_tablet.jpg 1052w"/>
+				images/content/tal_tablet.jpg 1052w,
+images/content/tal.jpg"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -336,7 +340,8 @@
 <img src="images/content/iris.jpg"
 	srcset="images/content/iris_mobile.jpg 420w,
 			images/content/iris_landscape.jpg 700w,
-			images/content/iris_tablet.jpg 1052"/>
+			images/content/iris_tablet.jpg 1052w,
+		images/content/iris.jpg"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -357,7 +362,8 @@
 <img src="images/content/eyal.jpg" 
 		srcset="images/content/eyal_mobile.jpg 420w,
 				images/content/eyal_landscape.jpg 700w,
-				images/content/eyal_tablet.jpg 1052w"/>
+				images/content/eyal_tablet.jpg 1052w,
+			images/content/eyal.jpg"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
