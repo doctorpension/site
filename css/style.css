@@ -2940,6 +2940,14 @@ div.drum figure {
 	height:32px;
 }	
 
+.insurance-inner .thumbspopup-trigger.down img{
+	 -moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
 .content-maincont.common-blk.subtop-content .top-cont-blk h1 {
 	margin-bottom: 27px; }
 
