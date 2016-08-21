@@ -56,7 +56,9 @@
 						<img class="cs_path_outer_img04 cs_path_outer_img" src="images/maslul4.svg" alt="">
 					</div>
 				</div>
-				<div class="banner-imgblk"><img src="images/content/main_bannerbg-new.jpg" alt="Banner img"></div>
+				<div class="banner-imgblk">
+<img src="images/home_wakeup_banner_1920.jpg"/>
+				</div>
 				<div class="banner-content">
 					<div class="container">
 						<div class="row">
@@ -82,7 +84,8 @@
 						<!--single section-->
 						<li><a href='survey.php'>
 							<div class="single-contentblk">
-								<div class="list-topblock"><i class="flaticon-music"></i>
+								<div class="list-topblock">
+									<img class='home-product' src='/images/wakeup_bed.svg'/>
 									<div class="list-head">
 										<h5>Call <span>&trade;</span></h5>
 									</div>
@@ -105,7 +108,7 @@
 						<li>
 							<div class="single-contentblk">
 								<div class="list-topblock">
-		<i class=' icon icon-hiker-outline'></i>
+									<img class='home-product' src='/images/hiker_outline.svg'/>
 									<div class="list-head">
 										<h5>&amp; Go<span>&trade;<span></h5>
 									</div>
@@ -242,9 +245,12 @@
 					<li data-cycle-pager-template="<a href=# class='first-blk cycle-hover'>דנה</a>">
 <picture>
   <source srcset="images/content/dona_mobile.jpg" media="(max-width: 410px)">
-  <source srcset="images/content/dona_landscape.jpg" media="(orientation: landscape) and (max-width: 767px)">
-  <source srcset="images/content/dona_tablet.jpg" media="(orientation: landscape) and (max-width: 1048px)">
-<img src="images/content/dona.jpg"/>
+  <source srcset="images/content/dona_landscape.jpg" media=" (max-width: 767px)">
+  <source srcset="images/content/dona_tablet.jpg" media=" (max-width: 1048px)">
+<img src="images/content/dona.jpg"
+	srcset="images/content/dona_mobile.jpg 420w,
+			images/content/dona_landscape.jpg 700w,
+			images/content/dona_tablet.jpg 1052w"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -260,9 +266,12 @@
 					<li data-cycle-pager-template="<a href=# class='sec-blk cycle-hover'>רני</a>">
 <picture>
   <source srcset="images/content/roni_mobile.jpg" media="(max-width: 410px)">
-  <source srcset="images/content/roni_landscape.jpg" media="(orientation: landscape) and (max-width: 767px)">
-  <source srcset="images/content/roni_tablet.jpg" media="(orientation: landscape) and (max-width: 1048px)">
-<img src="images/content/roni.jpg"/>
+  <source srcset="images/content/roni_landscape.jpg" media=" (max-width: 767px)">
+  <source srcset="images/content/roni_tablet.jpg" media=" (max-width: 1048px)">
+<img src="images/content/roni.jpg"
+	srcset="images/content/roni_mobile.jpg 420w,
+			images/content/roni_landscap.jpg 700w,
+			images/content/roni_tablet.jpg 1052w"/>
 </picture>								
 
 						<div class="slider-contentarea">
@@ -279,9 +288,12 @@
 					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover'>יעל</a>">
 <picture>
   <source srcset="images/content/yael_mobile.jpg" media="(max-width: 410px)">
-  <source srcset="images/content/yael_landscape.jpg" media="(orientation: landscape) and (max-width: 767px)">
-  <source srcset="images/content/yael_tablet.jpg" media="(orientation: landscape) and (max-width: 1048px)">
-<img src="images/content/yael.jpg"/>
+  <source srcset="images/content/yael_landscape.jpg" media=" (max-width: 767px)">
+  <source srcset="images/content/yael_tablet.jpg" media=" (max-width: 1048px)">
+<img src="images/content/yael.jpg"
+		srcset="images/content/yael_mobile.jpg 420w,
+			images/content/yael_landscape.jpg 700w,
+			images/content/yael_tablet.jpg 1052w"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -298,9 +310,12 @@
 					<li data-cycle-pager-template="<a href=# class='sec-blk cycle-hover'>טל</a>">
 <picture>
   <source srcset="images/content/tal_mobile.jpg" media="(max-width: 410px)">
-  <source srcset="images/content/tal_landscape.jpg" media="(orientation: landscape) and (max-width: 767px)">
-  <source srcset="images/content/tal_tablet.jpg" media="(orientation: landscape) and (max-width: 1048px)">
-<img src="images/content/tal.jpg"/>
+  <source srcset="images/content/tal_landscape.jpg" media=" (max-width: 767px)">
+  <source srcset="images/content/tal_tablet.jpg" media=" (max-width: 1048px)">
+<img src="images/content/tal.jpg"
+		srcset="images/content/tal_mobile.jpg 420w,
+				images/content/tal_landscape.jpg 700w,
+				images/content/tal_tablet.jpg 1052w"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -316,9 +331,12 @@
 					<li data-cycle-pager-template="<a href=# class='fifth-blk cycle-hover'>איריס </a>">
 <picture>
   <source srcset="images/content/iris_mobile.jpg" media="(max-width: 410px)">
-  <source srcset="images/content/iris_landscape.jpg" media="(orientation: landscape) and (max-width: 767px)">
-  <source srcset="images/content/iris_tablet.jpg" media="(orientation: landscape) and (max-width: 1048px)">
-<img src="images/content/iris.jpg"/>
+  <source srcset="images/content/iris_landscape.jpg" media=" (max-width: 767px)">
+  <source srcset="images/content/iris_tablet.jpg" media=" (max-width: 1048px)">
+<img src="images/content/iris.jpg"
+	srcset="images/content/iris_mobile.jpg 420w,
+			images/content/iris_landscape.jpg 700w,
+			images/content/iris_tablet.jpg 1052"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">
@@ -334,9 +352,12 @@
 					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover'>אייל</a>">
 <picture>
   <source srcset="images/content/eyal_mobile.jpg" media="(max-width: 410px)">
-  <source srcset="images/content/eyal_landscape.jpg" media="(orientation: landscape) and (max-width: 767px)">
-  <source srcset="images/content/eyal_tablet.jpg" media="(orientation: landscape) and (max-width: 1048px)">
-<img src="images/content/eyal.jpg"/>
+  <source srcset="images/content/eyal_landscape.jpg" media=" (max-width: 767px)">
+  <source srcset="images/content/eyal_tablet.jpg" media=" (max-width: 1048px)">
+<img src="images/content/eyal.jpg" 
+		srcset="images/content/eyal_mobile.jpg 420w,
+				images/content/eyal_landscape.jpg 700w,
+				images/content/eyal_tablet.jpg 1052w"/>
 </picture>								
 						<div class="slider-contentarea">
 							<div class="container">

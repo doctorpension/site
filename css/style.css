@@ -277,7 +277,8 @@ img {
 	text-align: center; }
 .banner-outercont .banner-imgblk img {
 	float: none;
-	width: 100%; }
+ #width: 100%;
+ }
 .banner-outercont .banner-content {
 	float: left;
 	right: 0;
@@ -388,9 +389,10 @@ img {
     font-weight: bold;
     line-height: 60px;
 }
-.looking-outerblk ul li .single-contentblk .list-topblock img {
+.looking-outerblk ul li .single-contentblk .list-topblock img.home-product {
 	display:block;
 	margin:0px auto;
+		height:70px;
 	  -moz-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -851,7 +853,8 @@ ul.like-outercont li .listcont-blk p {
 	top: 0px;
 	z-index: 999; }
 .main-topseaction .banner-imgblk img {
-	width: 100%; }
+	/*width: 100%;*/
+}
 .main-topseaction .banner-content {
 	float: left;
 	left: 50%;
