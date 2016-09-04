@@ -88,6 +88,10 @@ class Report{
 	function getInsuranceFormatted($portfolio, $benefit){
 		return number_format($this->getInsurance($portfolio, $benefit), 0);
 	}
+
+	function getWorstCase($portfolio){
+		return $this->getPortfolio($portfolio)->worstCase;
+	}
 }
 /*
 FROM ANIL'S ORIGINAL WORK ON REPORT

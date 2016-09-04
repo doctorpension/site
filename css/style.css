@@ -3451,6 +3451,33 @@ div.drum figure {
 	background: #54c9cc; }
 .bottom-outercont .bothaf-singleblk .riskblock-outer.success-bock .progress-outercon .link-btnblk .button-main-blk:before {
 	border-color: transparent transparent #54c9cc; }
+.worst-case-scenario{display:none;
+	width: 250px;
+    background: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size:21px;
+	top:54%;
+	right:20%;
+	z-index:1000;
+	position:absolute;
+}
+.worst-case-scenario span{
+    cursor: pointer;
+    background: #004C67;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: block;
+    height: 30px;
+    padding: 3px;
+    width: 30px;
+    font-size: 16px;
+    color: white;
+    font-family: Lato;
+}
+
 .bottom-outercont .bothaf-singleblk .riskblock-outer .feesouter-cont {
 	width: 100%;
 	height: auto;

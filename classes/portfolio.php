@@ -16,6 +16,7 @@ class Portfolio{
 	var $isTakzivit = false;
 	var $insurance;
 	var $insuranceMatches;
+	var $worstCase;
 	
 	var $riskFitTexts = array('GOOD' => 'טובה', 'HIGH' => 'גבוהה', 'LOW' => 'נמוכה');
 
@@ -60,6 +61,8 @@ class Portfolio{
 		$this->riskLevel = $aggregations['riskLevel'];
 		$this->riskLevelFit = $aggregations['riskLevelFit'];
 		$this->annualFees = $aggregations['projectedAnnualFees'];
+		//$this->worstCase = $aggregations['worstCase'];
+		$this->worstCase = 20;
 	}
 	
 	function setProductAggregations(){

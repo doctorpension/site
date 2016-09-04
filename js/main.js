@@ -647,4 +647,14 @@ function checkIfViewed(elem) {
 
 /* Report Page Doc Ready */
 $(document).ready(function () {
+	$('a.button-main-blk').click(function(){showWorstCase(this);});
+	$('.worst-case-scenario span').click(function(){hideWorstCase(this);});
 });
+
+function showWorstCase(obj){
+  $(obj).closest('.progress-con').next('.worst-case-scenario').show();
+}
+
+function hideWorstCase(obj){
+	$(obj).parent().hide();
+}
