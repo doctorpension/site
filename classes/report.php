@@ -74,6 +74,9 @@ class Report{
 		return $this->getPortfolio($portfolio)->riskMatches();
 	}
 	
+	function getRiskFitText($portfolio){
+		return $this->getPortfolio($portfolio)->riskFitText();
+	}
 	function insuranceMatches(){
 		return $this->currentPortfolio->insuranceMatches;
 	}

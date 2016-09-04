@@ -397,7 +397,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<?php 
 												$thumb = $report->riskMatches('current');
 												?>
-												<a href="javascript:void(0);" class="button-main-blk <?=$thumb;?>"> <i class=" wake-icon14"></i><span><strong>רמת סיכון גבוהה!</strong>קליק להסבר</span></a> </div>
+													<a href="javascript:void(0);" class="button-main-blk <?=$thumb;?>"> <i class=" wake-icon14"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('current');?>!</strong>קליק להסבר</span></a> </div>
 													</div>
 												</div>
 									<div class="feesouter-cont"> <span><em>₪<?=number_format($report->getYearlyFee('current'));?></em>דמי ניהול חזויים לשנה</span> </div>
@@ -437,7 +437,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<?php 
 												$thumb = $report->riskMatches('recommended');
 												?>
-												<a class="button-main-blk <?=$thumb;?>" href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון טובה!</strong>קליק להסבר</span></a> </div>
+													<a class="button-main-blk <?=$thumb;?>" href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('recommended')?>!</strong>קליק להסבר</span></a> </div>
 													</div>
 												</div>
 									<div class="feesouter-cont"> <span><em>₪<?=number_format($report->getYearlyFee('recommended'));?></em>דמי ניהול חזויים לשנה</span> </div>

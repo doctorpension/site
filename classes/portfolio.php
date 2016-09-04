@@ -17,6 +17,8 @@ class Portfolio{
 	var $insurance;
 	var $insuranceMatches;
 	
+	var $riskFitTexts = array('GOOD' => 'טובה', 'HIGH' => 'גבוהה', 'LOW' => 'נמוכה');
+
 	function __construct($policies, $aggregations, $insurance){
 		$this->pensia = new Product();
 		$this->hishtalmut = new Product();
@@ -56,8 +58,7 @@ class Portfolio{
 		$this->totalProjectedLump = $aggregations['projectedLumpSumAtRetirement'];
 		$this->totalPension = $aggregations['projectedPensionAtRetirement'];
 		$this->riskLevel = $aggregations['riskLevel'];
-		//$this->riskLevelFit = $aggregations['riskLevelFit'];
-		$this->riskLevelFit = 0;
+		$this->riskLevelFit = $aggregations['riskLevelFit'];
 		$this->annualFees = $aggregations['projectedAnnualFees'];
 	}
 	
@@ -85,7 +86,11 @@ class Portfolio{
 	function riskMatches(){
 		return $this->riskLevelFit == 'GOOD';
 	}
-	
+
+	function riskFitText(){
+		return $this->riskFitTexts[$this->riskLevelFit];
+	}
 }
 
+	
 ?>
