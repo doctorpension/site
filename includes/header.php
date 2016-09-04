@@ -42,6 +42,9 @@
                     <a href="https://dev.doctorpension.com/survey.php"
                        class="btn btn-default link-button"> בואו נצא לדרך </a>
                 </div>
+				<div class='report-guide'>
+					<a href="/files/ReportGuide.pdf" target="_blank">עוד הסברים</a>
+				</div>
             </div>
         </div>
     </div>

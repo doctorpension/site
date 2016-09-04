@@ -667,6 +667,15 @@
 		margin: 0px;
 		padding: 0px; }
 
+	.report-guide{
+		position:absolute;
+		left:10px;
+		top:43px;
+	}
+
+	.homehd.header-sticky.header-fixed .report-guide{
+		top:-12px;
+	}
 	.banner-outercont .banner-imgblk {
 		position: relative; }
 
@@ -1601,6 +1610,9 @@
 		max-width: 940px;
 		margin-left: -470px; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.report-guide a{
+		height:30px;
+	}
 	.path-outer{
 		max-width:85px;
 	}
@@ -2828,3 +2840,12 @@ right:-32px;left:auto;}
 	max-width:85px;
 }
 }
+@media all and (orientation: landscape) and (max-width: 767px) {
+	.homehd.header-sticky.header-fixed .report-guide{
+		top:0px;
+	}
+	.homehd.header-sticky.header-fixed .navbar-default{
+		top:-5px;
+	}
+}
+

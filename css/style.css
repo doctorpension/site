@@ -4577,6 +4577,24 @@ div.drum figure {
 body.account-section .homehd .call-action{
 	display:none;
 }
+.report-guide{
+	display:none;
+}
+body.account-section#report_body .report-guide{ 
+	display:inline-block;
+	float:left;
+}
+
+.report-guide a{
+	display:block;
+	height:40px;
+	width:30px;
+	background:url('/images/guide_cue.png') no-repeat bottom;
+	text-indent:-2000px;
+}
+.report-guide a:hover{
+	background-image:url('/images/guide_cue_on.png');
+}
 .slider h3 {
 	background: red;
 	color: #3498db;
