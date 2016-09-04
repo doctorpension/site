@@ -1601,6 +1601,9 @@
 		max-width: 940px;
 		margin-left: -470px; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.path-outer{
+		max-width:85px;
+	}
 	.chart-outercont ul li {
 		width: 50%; }
 
@@ -2819,3 +2822,9 @@ right:-32px;left:auto;}
 	.banner-outercont.banner-new .animation-text {
 		padding-top: 10px; } }
 /*new pages*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1280px) and (min-device-width: 768px){
+.path-outer {
+	max-width:85px;
+}
+}
