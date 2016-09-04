@@ -68,7 +68,7 @@ $report = new Report($_SESSION['user']);
 									<a href="#firstpopup" class="link-button popupbtns">הבנתי</a>
 								</div>
 								<!--main popover-->
-								<h1 class='wake-call eng'><img src='images/wakeup_logo.png'/><strong class='eng'>Call<sup>&trade;</sup></strong></h1>
+								<h1 class='wake-call eng'><img src='images/wakeup_logo_outlined.png'/><strong class='eng'>Call<sup>&trade;</sup></strong></h1>
 								<div class="date-block" id="topblock">
 									<p>תאריך הפקת דוח: 11/06/2016</p>
 								</div>
@@ -96,7 +96,7 @@ $report = new Report($_SESSION['user']);
 									<div class="header-outercont hidden-xs" id="sticky">
 										<div class="header-innercont">
 											<h4>מצבך היום</h4>
-											<h4>המלצות <img src='images/wakeup_logo.png'/></h4>
+											<h4>המלצות <img src='images/wakeup_logo_outlined.png'/></h4>
 										</div>
 									</div>
 
@@ -186,7 +186,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 										</div>
 									</div>
 									<div class="listing-singleblk right-blk">
-										<h4 class="visible-xs cs_chart_equilibre">המלצות <img src='images/wakeup_logo.png'/></h4>
+										<h4 class="visible-xs cs_chart_equilibre">המלצות <img src='images/wakeup_logo_outlined.png'/></h4>
 										<!--pie chart section-->
 										<div class="chart-outercont">
 											<div id="chartContainerleft" class="cs_chart_container">
@@ -347,7 +347,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 								</div>
 								<div class="single-leftblk">
 									<div class="main-popup-content">
-										<h5>ההמלצות <img src='images/wakeup_logo.png'/></h5>
+										<h5>ההמלצות <img src='images/wakeup_logo_outlined.png'/></h5>
 										<ul>
 											<li>הביצועים של הקופה הולמים את הפרופיל האישי שלך</li>
 											<li>דמי הניהול המצטברים בגין קופה זו יפחתו ביחס למצבך הקודם</li>
@@ -405,7 +405,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 										<!--risk block section-->
 									</div>
 									<div class="bothaf-singleblk left-block cs_bottom_blocks_left">
-										<h4>המלצות <img src='images/wakeup_logo.png'/></h4>
+										<h4>המלצות <img src='images/wakeup_logo_outlined.png'/></h4>
 										<!--risk block section-->
 										<div class="riskblock-outer success-bock">
 											<div class="pensions-outer">
@@ -466,7 +466,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 																<div class="single-fildout small-box">&nbsp;</div>
 																<div class="single-fildout"><span>מצבך היום</span></div>
 																<div class="single-fildout hidden-xs"><span>המלצות <img
-																														src='images/wakeup_logo.png'/></span></div>
+																														src='images/wakeup_logo_outlined.png'/></span></div>
 															</div>
 															<div class="single-popblock">
 																<div class="single-fildout small-box">
@@ -496,7 +496,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 																	</div>
 
 																	<div class="single-fildout visible-xs"><span>המלצות <img
-																															 src='images/wakeup_logo.png'/></span></div>
+																															 src='images/wakeup_logo_outlined.png'/></span></div>
 																</div>
 																<div class="single-fildout mobicontent-box active-block">
 																	<div class="mobiheader-block  visible-xs">נכות</div>
@@ -548,7 +548,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 				התקדם אל
 				<div class="wake-call eng">
 					<strong class="eng">&amp; Go<sup>™</sup></strong>
-					<img src="images/wakeup_logo.png">
+					<img src="images/wakeup_logo_outlined.png">
 				</div>
 על מנת ליישם את כל המלצותינו או את חלקן
 												</div>
