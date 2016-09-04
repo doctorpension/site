@@ -222,7 +222,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 										
 										<!--second bold bell-->
 										<div class="single-tabblock rightsec-blk" id="secondpopup">
-											<div class="<?php if($d->gemelBell) { ?>alrm-icon<?php }?> normalpop">
+											<div class="alrm-icon normalpop">
 												<!--normal popover-->
 												<div class="normalpop-over long">
 													<p>זהו תיק החיסכון הפנסיוני המומלץ לך.
@@ -542,8 +542,8 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 													<!--close popover-->
 
 													<h6>כיסוי ביטוחי היום:</h6>
-													<a href="javascript:void(0);" class="thumbspopup-trigger"><img
-																												   src="images/insurance-hand.png" height='86' width='86' alt="קליק כאן לפרטים נוספים אודות הכיסוי הביטוחי שלך"> </a></div>
+													<a href="javascript:void(0);" class="thumbspopup-trigger <?php echo $report->insuranceMatches() ? 'up' : 'down';?>">
+						<img  src="images/thumbs_up.png" height='84' width='84' alt="קליק כאן לפרטים נוספים אודות הכיסוי הביטוחי שלך"> </a></div>
 												<div class='rec_partial'>
 				התקדם אל
 				<div class="wake-call eng">

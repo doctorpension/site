@@ -14,6 +14,7 @@ class Portfolio{
 	var $annualFees;
 	var $isTakzivit = false;
 	var $insurance;
+	var $insuranceMatches;
 	
 	function __construct($policies, $aggregations, $insurance){
 		$this->pensia = new Product();

@@ -24,6 +24,7 @@ class Report{
 		$this->raw_data = Wakeup::getReport($account_id);
 		$this->firstName = $this->raw_data['firstName'];
 		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated'], $this->raw_data['insurance']['currentCoverages']);
+		$this->currentPortfolio->insuranceMatches = $this->raw_data['insurance']['fit'];
 		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages']);
 		$this->insurance = $this->raw_data['insurance'];
 		$this->total_increase = ($this->recommendedPortfolio->totalProjectedLump - $this->currentPortfolio->totalProjectedLump);
@@ -65,6 +66,10 @@ class Report{
 	
 	function riskMatches($portfolio){
 		return $this->getPortfolio($portfolio)->riskMatches;
+	}
+	
+	function insuranceMatches(){
+		return $this->currentPortfolio->riskMatches;
 	}
 	
 	function getInsurance($portfolio, $benefit){
