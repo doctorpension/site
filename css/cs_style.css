@@ -221,7 +221,7 @@ canvas {
 	#guide-template br {
 		display: block; }
 
-	img[src$="wakeup_logo.png"] {
+	img[src$="wakeup_logo_outlined.png"] {
 		max-height: 32px;
 		margin-bottom: -6px; }
 
