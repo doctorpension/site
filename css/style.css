@@ -4872,7 +4872,10 @@ body.account-section .homehd .call-action{
 	display: block;
 	color: #FFFFFF;
 	font-size: 25px; }
-
+.slider-contentarea span.eng{
+ 	display:inline;
+  font-size:inherit;	
+}
 .newquote-banner .quote-block {
 	float: right;
 	width: 100%;

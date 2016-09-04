@@ -257,7 +257,7 @@ images/content/dona.jpg"/>
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
-										<p>כשנכנסתי לראשונה לשוק העבודה WakeUp עזרו לי לבחור את הקופות הכי טובות ומתאימות
+										<p>כשנכנסתי לראשונה לשוק העבודה <span class='eng'>WakeUp</span> עזרו לי לבחור את הקופות הכי טובות ומתאימות
 											בשבילי. הם גם אפשרו לי להצטרף אל הקופות בקלות דרך האתר. </p>
 										<span class="cycle-hover">דנה</span></div>
 								</div>
@@ -280,7 +280,7 @@ images/content/roni.jpg"/>
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
-										<p>אחרי שהחלפתי כמה מעסיקים, WakeUp החזירו לי את השליטה על הפנסיה שלי, והמליצו לי לבצע
+										<p>אחרי שהחלפתי כמה מעסיקים, <span class='eng'>WakeUp</span> החזירו לי את השליטה על הפנסיה שלי, והמליצו לי לבצע
 											מספר שינויים שעשויים להגדיל את הפנסיה שלי בגיל הפרישה באופן משמעותי. </p>
 										<span class="cycle-hover">רני </span></div>
 								</div>
@@ -302,7 +302,7 @@ images/content/yael.jpg"/>
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
-										<p>בזכות WakeUp הבנתי סוף סוף כמה כסף כבר חסכתי לפנסיה, אבל יותר חשוב, היכן כדאי לי
+										<p>בזכות <span class='eng'>WakeUp</span> הבנתי סוף סוף כמה כסף כבר חסכתי לפנסיה, אבל יותר חשוב, היכן כדאי לי
 											להמשיך לחסוך לפנסיה, כדי לקבל ביצועים יותר טובים ולשלם פחות דמי ניהול, כך שהרווחתי
 											פעמיים! </p>
 										<span class="cycle-hover">יעל</span></div>
@@ -325,7 +325,7 @@ images/content/tal.jpg"/>
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
-										<p>ההמלצות של WakeUp נתפרו היטב למצב המשפחתי החדש שלי, עם מסלולי השקעה ההולמים את גילי
+										<p>ההמלצות של <span class='eng'>WakeUp</span> נתפרו היטב למצב המשפחתי החדש שלי, עם מסלולי השקעה ההולמים את גילי
 											הצעיר יחסית, אבל עם כיסוי ביטוחי הולם לילדיי. </p>
 										<span class="cycle-hover">טל</span></div>
 								</div>
@@ -347,7 +347,7 @@ images/content/tal.jpg"/>
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
-										<p>כעובדת סוציאלית בתחילת דרכי, WakeUp המליצו לי על הקופות ומסלולי הביטוח המתאימים לגילי
+										<p>כעובדת סוציאלית בתחילת דרכי,<span class='eng'> WakeUp</span> המליצו לי על הקופות ומסלולי הביטוח המתאימים לגילי
 											ולמצבי המשפחתי, כך שכל הכסף שאני חוסכת נשאר לפנסיה שלי.</p>
 										<span class="cycle-hover">איריס </span></div>
 								</div>
@@ -369,7 +369,7 @@ images/content/tal.jpg"/>
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
-										<p>מאז שנרשמתי לשירות של WakeUp אני מרגיש שיש לי "שומר ראש פנסיוני", שמלווה אותי לאורך
+										<p>מאז שנרשמתי לשירות של <span class='eng'>WakeUp</span> אני מרגיש שיש לי "שומר ראש פנסיוני", שמלווה אותי לאורך
 											זמן, ושעושה הכול כדי להביא אותי לגיל הפרישה עם מקסימום כסף בכיס שלי. </p>
 										<span class="cycle-hover">אייל</span></div>
 								</div>
