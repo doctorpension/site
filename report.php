@@ -74,7 +74,7 @@ $report = new Report($_SESSION['user']);
 								</div>
 								<!--Making Text closer in size to the sentense below-->
 								<div class="cs_subpage_title">היי <?=$report->firstName;?>,</div>
-								<p class='top_summary'>יש לך נכון להיום <br/><strong> <?=number_format($report->getTotal('current'));?> ₪</strong> בחסכונותיך לפנסיה <br>
+								<p class='top_summary'>יש לך נכון להיום <br/><strong> <?=number_format($report->getCurrentTotal());?> ₪</strong> בחסכונותיך לפנסיה <br>
 									המלצותינו אובייקטיביות ומותאמות אישית לצרכיך</p>
 								<span id="guide-template"><i
 															 class="fa fa-check"></i>הצבירה שלך לגיל הפרישה יכולה לגדול <strong>ב  <?=number_format($report->getIncrease());?> ₪</strong> אם תבחר ליישם את המלצותינו.</span>
@@ -371,8 +371,8 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 											<div class="pensions-outer">
 												<div class="half-block">
 													<div class="inner-txtcontblk rightcontblk">
-												<h5>₪<?=number_format($report->getTotal('current'));?></h5>
-														<p>החסכון הפנסיוני שלך היום</p>
+												<h5>₪<?=number_format($report->getProjectedTotal('current'));?></h5>
+														<p>צבירה צפויה לפרישה</p>
 													</div>
 												</div>
 												<div class="half-block">
@@ -411,8 +411,8 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 											<div class="pensions-outer">
 												<div class="half-block">
 													<div class="inner-txtcontblk rightcontblk">
-												<h5>₪<?=number_format($report->getTotal('recommended'));?></h5>
-														<p>החסכון הפנסיוני שלך היום</p>
+												<h5>₪<?=number_format($report->getProjectedTotal('recommended'));?></h5>
+														<p>צבירה צפויה לפרישה</p>
 													</div>
 												</div>
 												<div class="half-block high-block">

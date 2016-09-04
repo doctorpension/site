@@ -22,9 +22,11 @@ class Report{
 
 	function loadData($account_id){
 		$this->raw_data = Wakeup::getReport($account_id);
+	//	echo 'the raw data:' . var_export($this->raw_data, 1);
 		$this->firstName = $this->raw_data['firstName'];
 		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated'], $this->raw_data['insurance']['currentCoverages']);
 		$this->currentPortfolio->insuranceMatches = $this->raw_data['insurance']['fit'];
+		$this->currentPortfolio->totalBalance = $this->raw_data['totalBalance'];
 		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages']);
 		$this->insurance = $this->raw_data['insurance'];
 		$this->total_increase = ($this->recommendedPortfolio->totalProjectedLump - $this->currentPortfolio->totalProjectedLump);
@@ -52,10 +54,14 @@ class Report{
 		return $this->getPortfolio($portfolio)->totalPension;
 	}
 	
-	function getTotal($portfolio){
-		return $this->getPortfolio($portfolio)->totalBalance;
+	function getProjectedTotal($portfolio){
+		return $this->getPortfolio($portfolio)->projectedTotalBalance;
 	}
 	
+	function getCurrentTotal(){
+		return $this->currentPortfolio->totalBalance;
+	}
+
 	function getRisk($portfolio){
 		return $this->getPortfolio($portfolio)->riskLevel;
 	}
@@ -65,11 +71,11 @@ class Report{
 	}
 	
 	function riskMatches($portfolio){
-		return $this->getPortfolio($portfolio)->riskMatches;
+		return $this->getPortfolio($portfolio)->riskMatches();
 	}
 	
 	function insuranceMatches(){
-		return $this->currentPortfolio->riskMatches;
+		return $this->currentPortfolio->insuranceMatches;
 	}
 	
 	function getInsurance($portfolio, $benefit){

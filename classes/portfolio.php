@@ -2,15 +2,16 @@
 
 class Portfolio{
 
+	var $totalBalance;
 	var $pensia;
 	var $hishtalmut;
 	var $gemel;
 	var $minhalim;
-	var $totalBalance;
+	var $projectedTotalBalance;
 	var $totalProjectedLump;
 	var $totalPension;
 	var $riskLevel;
-	var $riskMatches;
+	var $riskLevelFit;
 	var $annualFees;
 	var $isTakzivit = false;
 	var $insurance;
@@ -51,20 +52,20 @@ class Portfolio{
 	}
 
 	function setAggregations($aggregations){
-		$this->totalBalance = $aggregations['totalBalance'];
+		$this->projectedTotalBalance = $aggregations['projectedTotalBalance'];
 		$this->totalProjectedLump = $aggregations['projectedLumpSumAtRetirement'];
 		$this->totalPension = $aggregations['projectedPensionAtRetirement'];
 		$this->riskLevel = $aggregations['riskLevel'];
-		//$this->riskMatches = $aggregations['riskMatches'];
-		$this->riskMatches = 0;
+		//$this->riskLevelFit = $aggregations['riskLevelFit'];
+		$this->riskLevelFit = 0;
 		$this->annualFees = $aggregations['projectedAnnualFees'];
 	}
 	
 	function setProductAggregations(){
-		$this->pensia->setPercent($this->totalBalance);
-		$this->hishtalmut->setPercent($this->totalBalance);
-		$this->gemel->setPercent($this->totalBalance);
-		$this->minhalim->setPercent($this->totalBalance);
+		$this->pensia->setPercent($this->projectedTotalBalance);
+		$this->hishtalmut->setPercent($this->projectedTotalBalance);
+		$this->gemel->setPercent($this->projectedTotalBalance);
+		$this->minhalim->setPercent($this->projectedTotalBalance);
 	}
 	
 	function getProduct($product_name){
@@ -79,6 +80,10 @@ class Portfolio{
 				return $this->minhalim;
 		}
 		
+	}
+
+	function riskMatches(){
+		return $this->riskLevelFit == 'GOOD';
 	}
 	
 }
