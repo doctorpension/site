@@ -29,7 +29,7 @@ class Report{
 		$this->currentPortfolio->totalBalance = $this->raw_data['totalBalance'];
 		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages']);
 		$this->insurance = $this->raw_data['insurance'];
-		$this->total_increase = ($this->recommendedPortfolio->totalProjectedLump - $this->currentPortfolio->totalProjectedLump);
+		$this->total_increase = ($this->recommendedPortfolio->projectedTotalBalance - $this->currentPortfolio->projectedTotalBalance);
 		$this->isTakzivit = $this->currentPortfolio->isTakzivit;
 	}
 	
