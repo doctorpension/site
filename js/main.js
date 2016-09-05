@@ -651,8 +651,6 @@ $(document).ready(function () {
 	$('a.button-main-blk').click(function(){showWorstCase(this);});
 	$('.worst-case-scenario span').click(function(){hideWorstCase(this);});
 	$('a.refer-link').click(function(){showRefer();});
-	$('#refer-friend-pop span.x').click(function(){hideRefer();});
-
 });
 
 function showWorstCase(obj){
@@ -666,8 +664,8 @@ function hideWorstCase(obj){
 function showRefer(){
 	jQuery('#refer-friend-pop').bPopup({
 		closeClass: 'x',
-		modalClose: false
-	});
-
-		
+		modalClose: false,
+		positionStyle: 'fixed'
+	},
+		function() { console.log('about to set z index to 999999'); jQuery('#refer-friend-pop').css('z-index', 999999999); });
 }

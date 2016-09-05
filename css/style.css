@@ -2958,16 +2958,16 @@ a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
 	border-radius:5px;
 	margin:0px auto;
 	box-shadow: -1px 5px 24px 0px rgba(0,0,0,0.75);
-	width:720px;
+	width:650px;
 }
 #refer-friend-pop .top_container{
 	position:relative;
 }
 #refer-friend-pop .top{
-	width:720px;
-	height:286px;
+	width:650px;
+	height:258px;
 	display:block;
-	background:url('/images/refer-friend720.jpg') no-repeat;
+	background:url('/images/refer-friend650.jpg') no-repeat;
 	position:relative;
 	border-radius:5px 5px 0px 0px;
 }
@@ -2990,7 +2990,7 @@ a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
 	font-weight:bold;
 	position:absolute;
 	right:0px;
-	top:70px;
+	top:40px;
 	width:45%;
 	padding:10px;
 }
@@ -3007,14 +3007,13 @@ left:50%;
   border-bottom: 15px solid #FFF;
 }
 #refer-friend-pop .main{
-	padding:20px;
+	padding:5px;
 	font-size:20px;
 position:relative;
 }
 #refer-friend-pop .main h2{
 	font-size:40px;
 	text-align:center;
-	margin-bottom:20px;
 }
 #refer-friend-pop .main .share{
 	float:right;
@@ -3024,7 +3023,7 @@ position:relative;
 	position:relative;
 	width:136px;
 	height:145px;
-	margin:20px auto;
+	margin:0px auto;
 }
 #refer-friend-pop .main .share span{
 	display:inline-block;
@@ -3091,21 +3090,21 @@ position:relative;
 	background-size:35%;
 }
 #refer-friend-pop .main p{
-	font-size:20px;
-	line-height:25px;
+	font-size:18px;
+	line-height:22px;
 	width:80%;
 	text-align:center;
-	margin:20px auto;
+	margin:10px auto;
 }
 #refer-friend-pop .main br{
 	clear:both;
 }
 #refer-friend-pop button.link-button {
-    margin: 20px auto;
+    margin: 10px auto;
     display: block;
     font-size: 40px;
-    height: 60px;
-    width: 250px;
+    height: 50px;
+    width: 200px;
 }
 .content-maincont.common-blk.subtop-content .top-cont-blk h1 {
 	margin-bottom: 27px; }
