@@ -4615,7 +4615,7 @@ body.account-section#report_body .report-guide{
 .report-guide a{
 	display:block;
 	height:40px;
-	width:30px;
+	width:35px;
 	background:url('/images/guide_cue.png') no-repeat bottom;
 	text-indent:-2000px;
 }
