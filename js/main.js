@@ -649,6 +649,9 @@ function checkIfViewed(elem) {
 $(document).ready(function () {
 	$('a.button-main-blk').click(function(){showWorstCase(this);});
 	$('.worst-case-scenario span').click(function(){hideWorstCase(this);});
+	$('a.refer-link').click(function(){showRefer();});
+	$('#refer-friend-pop span.x').click(function(){hideRefer();});
+
 });
 
 function showWorstCase(obj){
@@ -657,4 +660,13 @@ function showWorstCase(obj){
 
 function hideWorstCase(obj){
 	$(obj).parent().hide();
+}
+
+function showRefer(){
+	jQuery('#refer-friend-pop').bPopup({
+		closeClass: 'x',
+		modalClose: false
+	});
+
+		
 }

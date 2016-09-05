@@ -576,17 +576,57 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 															<span class='eng'>&amp; Go<sup>&trade;</sup></span>
 													<i class="fa fa-angle-left" aria-hidden="true"></i></button>
 												</div>
+<a class='refer-link'>שתף חבר וקבלו שניכם הטבה</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+<div id='refer-friend-pop'>
+<div class='top_container'>
+	<span class='x'>X</span>
+	<div class='top'>
+	</div>
+
+<h4>
+	שתף עם חברים ותוכל לזכות עד 50% הנחה
+</h4> 
+</div>
+	<div class='main'>
+<span class='arrow-up'></span>
+		<div class='share'>
+		<h2> שתף</h2>
+		<div class='social-container'>
+		<span class='facebook'>פייסבוק</span>
+<span class='twitter'>טוויטר</span>
+<span class='email'>מייל</span>
+</div>
+<p>		שלח את ההטבות של <span class='eng'>WakeUp</span>
+לחברים</p>
+		</div>
+		<div class='win'>
+			<h2>
+וזכה
+</h2>
+			<div class='questionnaire'>
+				<span class='man'>חבר</span>
+<p> כל חבר שימלא שאלון תוך 14 יום יזכה אותך ב 5% הנחה  </p>
+			</div>
+			<div class='join'>
+				<span class='gift'>מתנה</span>
+<p> כל חבר שיצתרף ל<span class='eng'>WakeUp</span> יזכה אותך ב 50% הנחה ואוטומטית יקבל 15% הנחה </p>
+			</div>
+		</div>
+<br/>
+	</div>
+<button class="link-button">
+שתף
+</button>
+</div>
 					</div>
 
 					<!--tab section-->
-
-				</div>
 			</section>
 			<!--End Page Content-->
 
