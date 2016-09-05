@@ -382,8 +382,10 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
-															<h6>₪<?=number_format($report->getPension('current'));?></h6>
-																<p>קצבה צפויה לפרישה</p>
+													<h6>
+															₪<?=number_format($report->getPension('current'));?></h6>
+																<p <?php if($report->isTakzivit){ echo 'class="takzivit"';}?>> 
+קצבה צפויה לפרישה</p>
 														</div>
 													</div>
 												</div>
@@ -428,8 +430,10 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 															<p>סכום חד פעמי צפוי לפרישה</p>
 														</div>
 														<div class="single-blockhlf">
-													<h6>₪<?=number_format($report->getPension('recommended'));?></h6>
-																<p>קצבה צפויה לפרישה</p>
+													<h6>
+₪<?=number_format($report->getPension('recommended'));?></h6>
+																<p <?php if($report->isTakzivit){ echo 'class="takzivit"';}?>> 
+קצבה צפויה לפרישה</p>
 														</div>
 													</div>
 												</div>
@@ -458,8 +462,11 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 									</div>
 								</div>
 							</div>
+							<div class='pensia-takzivit <?php if(!$report->isTakzivit){ echo 'hidden';}?>'>
+<sup>1</sup>הסכום כולל את הפנסיה התקציבית שלך
+</div>
 							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול ב
-								<strong>₪<?=number_format($report->getIncrease());?></strong> אם תבחר ליישם את המלצותינו.
+								<strong>₪<?=number_format($report->getIncrease());?> </strong> אם תבחר ליישם את המלצותינו.
 							</div>
 							<div class="insurance-block">
 								<div class="container">

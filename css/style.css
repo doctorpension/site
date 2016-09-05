@@ -3337,6 +3337,20 @@ div.drum figure {
 	padding: 0px;
 	font-weight: normal;
 	font-family: "fbspoileren-bold"; }
+.bottom-outercont .bothaf-singleblk .riskblock-outer .pensions-outer .half-block .inner-txtcontblk .single-blockhlf p.takzivit:before {
+	content: '1';
+	line-height:9px;
+	font-size:15px;
+	margin-left:-3px;
+	vertical-align:top;
+}
+.pensia-takzivit{
+	font-size:20px;
+	line-height:10px;
+	margin-bottom:20px;
+	display:block;
+	clear:both;
+}
 .bottom-outercont .bothaf-singleblk .riskblock-outer .pensions-outer .half-block.high-block .inner-txtcontblk {
 	background: none; }
 .bottom-outercont .bothaf-singleblk .riskblock-outer p {
