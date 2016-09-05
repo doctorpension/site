@@ -27,7 +27,9 @@ class Report{
 		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated'], $this->raw_data['insurance']['currentCoverages']);
 		$this->currentPortfolio->insuranceMatches = $this->raw_data['insurance']['fit'];
 		$this->currentPortfolio->totalBalance = $this->raw_data['totalBalance'];
+		$this->currentPortfolio->worstCase = 30;
 		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages']);
+		$this->recommendedPortfolio->worstCase = 15;
 		$this->insurance = $this->raw_data['insurance'];
 		$this->total_increase = ($this->recommendedPortfolio->projectedTotalBalance - $this->currentPortfolio->projectedTotalBalance);
 		$this->isTakzivit = $this->currentPortfolio->isTakzivit;
