@@ -458,8 +458,8 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 									</div>
 								</div>
 							</div>
-							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול
-								<strong><?=number_format($report->total_increase);?></strong> אם תבחר ליישם את המלצותינו.
+							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול ב
+								<strong>₪<?=number_format($report->getIncrease());?></strong> אם תבחר ליישם את המלצותינו.
 							</div>
 							<div class="insurance-block">
 								<div class="container">
