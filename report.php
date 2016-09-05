@@ -126,7 +126,7 @@ $report = new Report($_SESSION['user']);
 												<ul>
 													<?php 
 												foreach($report->getBoxFunds('current', 'gemel') as $row){
-echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>	
 												</ul>
@@ -150,7 +150,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<ul>
 													<?php 
 												foreach($report->getBoxFunds('current', 'hishtalmut') as $row){
-													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>
 												</ul>
@@ -164,7 +164,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<ul>
 												<?php 
 												foreach($report->getBoxFunds('current', 'minhalim') as $row){
-													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>
 												</ul>
@@ -178,7 +178,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<ul>
 													<?php 
 												foreach($report->getBoxFunds('current', 'pensia') as $row){
-													echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>
 												</ul>
@@ -213,7 +213,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<ul>
 													<?php 
 												foreach($report->getBoxFunds('', 'gemel') as $row){
-													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>
 												</ul>
@@ -244,7 +244,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<ul>
 												<?php 
 												foreach($report->getBoxFunds('', 'hishtalmut') as $row){
-													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>
 												</ul>
@@ -262,7 +262,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<ul>
 												<?php 
 												foreach($report->getBoxFunds('', 'minhalim') as $row){
-													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>
 												</ul>
@@ -279,7 +279,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 												<ul>
 												<?php 
 												foreach($report->getBoxFunds('', 'pensia') as $row){
-													echo '<li data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 												}
 												?>
 												</ul>
@@ -291,13 +291,13 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 							<!--popup blocks section-->
 
 							<!--popup blocks section-->
-							<!--first popup-->
-							<div class="new-popupouter firstsub-popupblk">
+							<!--current portfolio popup-->
+							<div class="new-popupouter firstsub-popupblk current">
 								<div class="close-pop"><i class="wake-cross"></i></div>
 								<div class="">
 									<div class="main-popup-content">
 										<div class="top-popblock">
-											<h5>אקסלנס גמל מט”ח מסלו<span>₪ 13,458</span></h5>
+											<h5><span>₪ 13,458</span></h5>
 											<ul>
 												<li>
 													<label>דמי ניהול מצבירה</label>
@@ -355,7 +355,7 @@ echo '<li  data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.
 									</div>
 								</div>
 							</div>
-							<!--first popup-->
+							<!--recommendations popup-->
 
 							<!--popup blocks section-->
 

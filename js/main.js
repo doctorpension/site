@@ -188,26 +188,20 @@ jQuery(function () {
 
 	function setupFundDetailPops() {
 		console.log('about to setup fund deatils');
-		$('.down-block .single-tabblock').click(function () {
+		$('.down-block .single-tabblock ul li').click(function () {
 			if (jQuery(this).hasClass('active-tabover')) {
 				console.log('this has an active tabover class');
 			}
 			else {
-				jQuery('.firstsub-popupblk').bPopup({
-					closeClass: 'close-pop',
-					modalClose: false
-				});
+				showDetails($(this).data('name'), $(this).data('details'), 'current');
 			}
 		});
-		$('.right-blk .single-tabblock').click(function () {
+		$('.right-blk .single-tabblock ul li').click(function () {
 			if (jQuery(this).hasClass('active-tabover')) {
 				console.log('this has an active tabover class');
 			}
 			else {
-				jQuery('.newfirstsub-popupblk').bPopup({
-					closeClass: 'close-pop',
-					modalClose: false
-				});
+				showDetails($(this).data('name'), $(this).data('details'), 'recommendations');
 			}
 		});
 
@@ -668,4 +662,20 @@ function showRefer(){
 		positionStyle: 'fixed'
 	},
 		function() { console.log('about to set z index to 999999'); jQuery('#refer-friend-pop').css('z-index', 999999999); });
+}
+
+function showDetails(title, details, popup_class){
+	var the_det = details.split(' ');
+	var html = '<h5>' + title + '<span>₪' + the_det[0] + '</span></h5>' +
+			'<ul><li><label>דמי ניהול מצבירה</label><span>' +
+			the_det[1] + '%</span></li><li><label>דמי ניהול מצבירה</label>' +
+			'<span>' + the_det[2] + '%</span></li></ul>';
+	var right_string = the_det[3] * 10;
+ 	right_string += "%";
+	$('.new-popupouter.' + popup_class + ' .main-popup-content .top-popblock').html(html);
+	jQuery('.new-popupouter.' + popup_class + ' .main-popup-content .progress-con .link-btnblk').css('right', right_string);
+	jQuery('.new-popupouter.' + popup_class).bPopup({
+		closeClass: 'close-pop',
+		modalClose: false
+	});
 }

@@ -9,6 +9,7 @@ class Fund{
 	var $match_profile;
 	var $better_fit_profile;
 	var $improved_fees;
+	var $formatted_data;
 	
 	var $fund_types = array('KEREN_PENSIA_HADASHA_MEKIFA' => 'pensia' ,
                     'KEREN_PENSIA_HADASHA_CLALIT' =>  'pensia' ,
@@ -27,6 +28,7 @@ class Fund{
 		$this->total_balance = $info['totalBalance'];
 		$this->match_profile = $info['betterFitProfile'];
 		$this->improved_fees = $info['improvedFees'];
+		$this->formatted_data = "" .  number_format($this->total_balance) . " 0.3 " . $this->deposit_fee . " " . $this->risk_level;
 	}
 
 	function getType(){
