@@ -10,7 +10,8 @@ jQuery(function () {
 			return;
 		}
 		var div_top = $('#sticky-anchor').offset().top;
-		if (window_top > div_top) {
+		var div_bottom = $('.bluebottomboxspan').offset().top;
+		if (window_top > div_top && window_top < div_bottom) {
 			$('#sticky').addClass('stick');
 			$('#sticky-anchor').height($('#sticky').outerHeight());
 		} else {
