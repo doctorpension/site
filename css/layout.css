@@ -2657,12 +2657,9 @@
 		line-height: 43px;
 		padding-left: 10px; } }
 @media only screen and (max-width: 479px) {
-	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock {
-		padding: 10px; }
 
 	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock em {
 		padding-left: 0px;
-		padding-right: 50px;
 		width: 100%;
 		float: left;
 		text-align: right;
