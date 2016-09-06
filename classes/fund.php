@@ -5,6 +5,7 @@ class Fund{
 	var $type;
 	var $risk_level;
 	var $deposit_fee;
+	var $accumulation_fee;
 	var $total_balance;
 	var $match_profile;
 	var $better_fit_profile;
@@ -25,10 +26,11 @@ class Fund{
 		//$this->risk_level = $info['risk_level'];
 		$this->risk_level = 3;
 		$this->deposit_fee = $info['depositFee'];
+		$this->accumulation_fee = $info['accumulationFee'];
 		$this->total_balance = $info['totalBalance'];
 		$this->match_profile = $info['betterFitProfile'];
 		$this->improved_fees = $info['improvedFees'];
-		$this->formatted_data = "" .  number_format($this->total_balance) . " 0.3 " . $this->deposit_fee . " " . $this->risk_level;
+		$this->formatted_data =  number_format($this->total_balance) . " " . $this->deposit_fee . " " . $this->accumulation_fee . " " . $this->risk_level;
 	}
 
 	function getType(){
