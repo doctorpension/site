@@ -233,7 +233,7 @@ $report = new Report($_SESSION['user']);
 													<label>ביטוח מנהלים</label>
 												</div>
 												<?php 
-												$report->getBoxFunds('', 'minhalim') ;
+												$report->displayBoxFunds('', 'minhalim') ;
 												?>
 											</div>
 										</div>
