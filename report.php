@@ -585,9 +585,6 @@ $report = new Report($_SESSION['user']);
 		</div>
 <br/>
 	</div>
-<button class="link-button">
-שתף
-</button>
 </div>
 					</div>
 
