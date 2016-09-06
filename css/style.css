@@ -2958,12 +2958,14 @@ a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
 	margin:0px auto;
 	box-shadow: -1px 5px 24px 0px rgba(0,0,0,0.75);
 	width:650px;
+	max-width:95%;
 }
 #refer-friend-pop .top_container{
 	position:relative;
 }
 #refer-friend-pop .top{
 	width:650px;
+	max-width:100%;
 	height:258px;
 	display:block;
 	background:url('/images/refer-friend650.jpg') no-repeat;

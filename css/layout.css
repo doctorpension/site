@@ -1411,7 +1411,26 @@
 	.clip-img {
 		left: 23px;
 		top: -17px;
-		width: 30px; } }
+		width: 30px; } 
+		#refer-friend-pop .top{
+			height:200px;
+		}
+		#refer-friend-pop  h4{
+			top:10px;
+			width:auto;
+		}
+#refer-friend-pop .main .share,
+#refer-friend-pop .main .win{
+	width:100%;
+}
+#refer-friend-pop .main .social-container{
+	display:none;	
+}
+#refer-friend-pop .main .win span{
+	width:40px;
+	height:40px;
+}
+	}
 /*new pages*/
 @font-face {
 	font-family: "fbspoileren-bold";
