@@ -123,13 +123,7 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>קופת גמל</label>
 												</div>
-												<ul>
-													<?php 
-												foreach($report->getBoxFunds('current', 'gemel') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
-												?>	
-												</ul>
+												<?php $report->displayBoxFunds('current', 'gemel');?>
 											</div>
 										</div>
 										<div class="single-tabblock sec-blk" id='secondpopup-mob'>
@@ -147,13 +141,9 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>קרן השתלמות</label>
 												</div>
-												<ul>
 													<?php 
-												foreach($report->getBoxFunds('current', 'hishtalmut') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
+												$report->displayBoxFunds('current', 'hishtalmut') ;
 												?>
-												</ul>
 											</div>
 										</div>
 										<div class="single-tabblock third-blk" id='thirdpopup-mob'>
@@ -161,13 +151,9 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>ביטוח מנהלים</label>
 												</div>
-												<ul>
 												<?php 
-												foreach($report->getBoxFunds('current', 'minhalim') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
+												$report->displayBoxFunds('current', 'minhalim');
 												?>
-												</ul>
 											</div>
 										</div>
 										<div class="single-tabblock fourth-blk">
@@ -175,13 +161,8 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>קרן פנסיה</label>
 												</div>
-												<ul>
 													<?php 
-												foreach($report->getBoxFunds('current', 'pensia') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
-												?>
-												</ul>
+												$report->displayBoxFunds('current', 'pensia'); ?>
 											</div>
 										</div>
 									</div>
@@ -210,13 +191,9 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>קופת גמל</label>
 												</div>
-												<ul>
 													<?php 
-												foreach($report->getBoxFunds('', 'gemel') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
-												?>
-												</ul>
+												$report->displayBoxFunds('', 'gemel');
+?>
 											</div>
 										</div>
 										
@@ -241,13 +218,9 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>קרן השתלמות</label>
 												</div>
-												<ul>
 												<?php 
-												foreach($report->getBoxFunds('', 'hishtalmut') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
+												$report->displayBoxFunds('', 'hishtalmut');
 												?>
-												</ul>
 											</div>
 										</div>
 										<!--third bold bell-->
@@ -259,13 +232,9 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>ביטוח מנהלים</label>
 												</div>
-												<ul>
 												<?php 
-												foreach($report->getBoxFunds('', 'minhalim') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
+												$report->getBoxFunds('', 'minhalim') ;
 												?>
-												</ul>
 											</div>
 										</div>
 										<!--fourth bold bell-->
@@ -276,13 +245,9 @@ $report = new Report($_SESSION['user']);
 												<div class="compare-fieldtitle">
 													<label>קרן פנסיה</label>
 												</div>
-												<ul>
 												<?php 
-												foreach($report->getBoxFunds('', 'pensia') as $row){
-													echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
-												}
+												$report->displayBoxFunds('', 'pensia');
 												?>
-												</ul>
 											</div>
 										</div>
 									</div>

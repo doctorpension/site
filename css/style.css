@@ -1070,7 +1070,6 @@ ul.listing-outer li.active a:hover {
 	background-color: rgba(0, 0, 0, 0.2); }
 .listing-singleblk .single-tabblock ul {
 	list-style: none;
-	display: table-cell;
 	vertical-align: middle; }
 .listing-singleblk .single-tabblock ul li {
 	border-top: #e9eef2 solid 1px;
@@ -3163,14 +3162,10 @@ position:relative;
 	padding-right: 24px;
 	padding-left: 0px; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock {
-	padding: 0px 0 10px 0px;
 	border: #FFFFFF solid 3px; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock:after {
 	bottom: 3px; }
-.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock span {
-	padding: 0 50px 0 0; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk .single-tabblock em {
-	padding-left: 35px;
 	color: #ffeb08; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock {
 	width: 100%;
@@ -3197,14 +3192,12 @@ position:relative;
 	border-radius: 5px; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock .cont-singleouterblock {
 	list-style: none;
-	display: table-cell;
 	vertical-align: middle;
 	cursor: pointer;
 	padding: 0px 0px; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul {
 	list-style: none;
-	display: table-cell;
-	vertical-align: middle;
+	margin-top:20px;
 	float: left;
 	width: 100%; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li {
@@ -3213,6 +3206,7 @@ position:relative;
 	line-height: 40px;
 	float: left;
 	width: 100%; }
+.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li.no-border,
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li:first-child {
 	border: none; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li em {
@@ -3267,7 +3261,7 @@ position:relative;
 	position: absolute;
 	content: "";
 	font-size: 9px;
-	right: 20px;
+	right: 10px;
 	top: 46%;
 	margin-top: -12px;
 	background: url(../images/alarm.png) no-repeat center center;

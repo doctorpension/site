@@ -15,7 +15,10 @@ class Report{
 	var $insurance;
 	var $total_increase;
 	var $isTakzivit;
+	var $boxRows = array();
 	
+	var $product_types = array('pensia', 'hishtalmut', 'gemel', 'minhalim');
+
 	function __construct($account_id){
 		$this->loadData($account_id);
 	}
@@ -30,11 +33,20 @@ class Report{
 		$this->currentPortfolio->worstCase = 30;
 		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages']);
 		$this->recommendedPortfolio->worstCase = 15;
+		$this->setBoxRows();
 		$this->insurance = $this->raw_data['insurance'];
 		$this->total_increase = ($this->recommendedPortfolio->projectedTotalBalance - $this->currentPortfolio->projectedTotalBalance);
 		$this->isTakzivit = $this->currentPortfolio->isTakzivit;
 	}
 	
+	function setBoxRows(){
+		foreach($this->product_types as $product){
+			$this->boxRows[$product] =  max(
+				sizeof($this->currentPortfolio->getProduct($product)->getFunds()), 
+				sizeof($this->recommendedPortfolio->getProduct($product)->getFunds())
+			);
+		}
+	}
 	
 	function getIncrease(){
 		return $this->total_increase;
@@ -44,8 +56,19 @@ class Report{
 		return $portfolio == 'current' ? $this->currentPortfolio : $this->recommendedPortfolio;
 	}
 	
+	function getBoxRows($product){
+		return $this->boxRows[$product];	
+	}
+
 	function getBoxFunds($portfolio, $product){
-		return $this->getPortfolio($portfolio)->getProduct($product)->getFunds();
+		$funds = $this->getPortfolio($portfolio)->getProduct($product)->getFunds(); 
+		$current_len = sizeof($funds);
+		$target_len = $this->getBoxRows($product);
+		while($current_len < $target_len){
+			$funds[] = '';
+			$current_len++;
+		}
+		return $funds;
 	}
 	
 	function getSettlement($portfolio){
@@ -94,6 +117,22 @@ class Report{
 	function getWorstCase($portfolio){
 		return $this->getPortfolio($portfolio)->worstCase;
 	}
+
+
+	function displayBoxFunds($portfolio, $product){
+	?><ul>
+			<?php 
+		foreach($this->getBoxFunds($portfolio, $product) as $row){
+			if(is_string($row)){
+				echo '<li class="no-border">&nbsp;</li>';
+			}
+			else{
+				echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+			}
+		}
+		?>	
+			</ul> <?php
+}
 }
 /*
 FROM ANIL'S ORIGINAL WORK ON REPORT
