@@ -127,7 +127,10 @@ class Report{
 				echo '<li class="no-border">&nbsp;</li>';
 			}
 			else{
-				echo '<li data-details="' . $row->formatted_data . '" data-name="' . $row->name . '" data-risk="'.$row->risk_level.'"><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+				echo '<li data-details="' . $row->formatted_data . 
+					'" data-name="' . $row->name . '" data-risk="'.
+					$row->risk_level.'" data-tracks=\'' . 
+					json_encode($row->tracks) . '\'><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
 			}
 		}
 		?>	

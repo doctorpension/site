@@ -193,7 +193,7 @@ jQuery(function () {
 				console.log('this has an active tabover class');
 			}
 			else {
-				showDetails($(this).data('name'), $(this).data('details'), 'current');
+				showDetails($(this).data('name'), $(this).data('details'), $(this).data('tracks'), 'current');
 			}
 		});
 		$('.right-blk .single-tabblock ul li').click(function () {
@@ -201,7 +201,7 @@ jQuery(function () {
 				console.log('this has an active tabover class');
 			}
 			else {
-				showDetails($(this).data('name'), $(this).data('details'), 'recommendations');
+				showDetails($(this).data('name'), $(this).data('details'), $(this).data('tracks'), 'recommendations');
 			}
 		});
 
@@ -664,9 +664,13 @@ function showRefer(){
 		function() { console.log('about to set z index to 999999'); jQuery('#refer-friend-pop').css('z-index', 999999999); });
 }
 
-function showDetails(title, details, popup_class){
+function showDetails(title, details, tracks, popup_class){
 	var the_det = details.split(' ');
-	var html = '<h5>' + title + '<span>₪' + the_det[0] + '</span></h5>' +
+	var html = '<h5>' + title + '</h5>'; 
+	for(var i in tracks){
+		html += '<h3>' + tracks[i]['name'] + '</h3>';
+	}
+		html += '<h5><span>₪' + the_det[0] + '</span></h5>'; 
 			'<ul><li><label>דמי ניהול מצבירה</label><span>' +
 			the_det[1] + '%</span></li><li><label>דמי ניהול מצבירה</label>' +
 			'<span>' + the_det[2] + '%</span></li></ul>';

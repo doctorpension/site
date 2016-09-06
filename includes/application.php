@@ -9,6 +9,7 @@ if(isset($_SESSION['user'])){
 	require_once('classes/report.php');
 	require_once('classes/product.php');
 	require_once('classes/insurance.php');
+	require_once('classes/track.php');
 }
 
 

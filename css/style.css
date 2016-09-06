@@ -4016,7 +4016,8 @@ position:relative;
 	font-size: 18px;
 	line-height: 28px;
 	color: #525a5e; }
-.new-popupouter .main-popup-content h5 {
+.new-popupouter .main-popup-content h5,
+.new-popupouter .main-popup-content h3 {
 	width: 100%;
 	height: auto;
 	float: left;
@@ -4032,6 +4033,11 @@ position:relative;
 	padding-top: 10px;
 	font-size: 30px;
 	font-family: "fbspoileren-bold";
+}
+.new-popupouter .main-popup-content h3 {
+	font-size:18px;
+	padding-bottom:0px;
+	line-height:20px;
 }
 .new-popupouter .main-popup-content .top-popblock {
 	width: 100%;
