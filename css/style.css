@@ -2951,7 +2951,18 @@ div.drum figure {
 	-ms-filter: "FlipH";
 }
 a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
-#refer-friend-pop{
+#show_video{
+	margin-top:100px;
+	cursor:pointer;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+#refer-friend-pop,
+#video_popup{
 	display:none;
 	background:#FFF;
 	border-radius:5px;
@@ -2959,6 +2970,9 @@ a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
 	box-shadow: -1px 5px 24px 0px rgba(0,0,0,0.75);
 	width:650px;
 	max-width:95%;
+}
+#video_popup iframe{
+	max-width:100%;
 }
 #refer-friend-pop .top_container{
 	position:relative;
@@ -3627,6 +3641,15 @@ position:relative;
 	z-index:1000;
 	position:absolute;
 }
+#video_popup{
+	width:auto;
+	height:auto;
+}
+#video_popup .content{
+	text-align:center;
+	padding:20px;
+}
+#video_popup span.x,
 .worst-case-scenario span,
 #refer-friend-pop span.x{
     cursor: pointer;
@@ -3644,6 +3667,9 @@ position:relative;
     font-family: Lato;
 	opacity:1;
 	z-index:99;
+}
+#video_popup span.x{
+	padding:5px 9px;
 }
 #refer-friend-pop span.x{
     padding: 4px 9px;

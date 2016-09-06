@@ -150,6 +150,9 @@
 								</div>
 								<div class="link-block"><a class="link-button" href="report.php">דוח לדוגמה</a></div>
 							</div>
+							<div class='col-sm-6'>
+								<img id='show_video' src='/images/play.png' alt='Play Video' height='100'/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -410,6 +413,12 @@ images/content/tal.jpg"/>
 			<?php include('includes/footer.php') ?>
 			<!--End Footer section-->
 		</div>
+<div id="video_popup">
+        <span class='x'>X</span>
+		<div class="content">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OQFv9rP_Q4c" frameborder="0" allowfullscreen></iframe>
+</div>
+    </div>
 		<!-- Le javascript
 ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
@@ -421,6 +430,7 @@ images/content/tal.jpg"/>
 		<!-- <script src="js/typetext.js"></script> -->
 		<script src="js/typed.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/plugins/bpopup.min.js"></script>
 
 		<!--CONSOLESOFTWARE JAVASCRIPT FILES-->
 		<script src="js/csjavascript/cs_maslul_nav.js"></script>

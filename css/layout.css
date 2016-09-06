@@ -206,6 +206,7 @@
 	.profile-block h5 {
 		font-size: 40px; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
 	.navbar-default .navbar-nav > li > a {
 		font-size: 16px;
 		padding: 6px 5px 7px; }
@@ -560,6 +561,7 @@
 		left: 35px;
 		width: 50px; } }
 @media only screen and (max-width: 991px) {
+	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
 	.riskblock-outer .pensions-outer .half-block .inner-txtcontblk .single-blockhlf h6 {
 		font-size: 21px; }
 	.riskblock-outer .pensions-outer .half-block .inner-txtcontblk p {
@@ -2771,6 +2773,7 @@ right:-32px;left:auto;}
 	.banner-outercont.banner-new.banner-second .progress-block {
 		padding: 25px 0 32px; }
 
+	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
 	.newarticle-single .newarticle-inner h6 {
 		font-size: 12px;
 		line-height: 14px; }
@@ -2855,8 +2858,10 @@ right:-32px;left:auto;}
 .path-outer {
 	max-width:85px;
 }
+	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
 }
 @media all and (orientation: landscape) and (max-width: 767px) {
+	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
 	.homehd.header-sticky.header-fixed .report-guide{
 		top:0px;
 	}

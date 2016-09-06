@@ -497,6 +497,17 @@ jQuery(function () {
 			setupFundDetailPops();
 		}
 	}
+
+	$('#show_video').click(function(){
+		$('#video_popup').bPopup({
+			closeClass: 'x'	
+		},
+		function() { 
+			jQuery('#video_popup').css('z-index', 999999999); }
+		);
+	});
+
+
 });
 function goToByScroll(id) {
 	// Remove "link" from the ID
