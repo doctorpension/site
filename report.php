@@ -576,7 +576,7 @@ $report = new Report($_SESSION['user']);
 </h2>
 			<div class='questionnaire'>
 				<span class='man'>חבר</span>
-<p> כל חבר שתוך 14 יום יחליט להתעורר עם <span class='eng'>WakeUp Call</span> יזכה אותך ב20 ₪ הנחה  </p>
+<p> כל חבר שתוך 14 יום יחליט להתעורר עם <span class='eng'>WakeUp Call</span> יזכה אותך ב 20 ₪ הנחה  </p>
 			</div>
 			<div class='join'>
 				<span class='gift'>מתנה</span>
