@@ -555,7 +555,7 @@ $report = new Report($_SESSION['user']);
 	</div>
 
 <h4>
-	שתף עם חברים ותוכל לזכות עד 50% הנחה
+	שתף עם חברים ותוכל לזכות בעד 100 ₪ הנחה
 </h4> 
 </div>
 	<div class='main'>
@@ -576,11 +576,11 @@ $report = new Report($_SESSION['user']);
 </h2>
 			<div class='questionnaire'>
 				<span class='man'>חבר</span>
-<p> כל חבר שימלא שאלון תוך 14 יום יזכה אותך ב 5% הנחה  </p>
+<p> כל חבר שתוך 14 יום יחליט להתעורר עם <span class='eng'>WakeUp Call</span> יזכה אותך ב20 ₪ הנחה  </p>
 			</div>
 			<div class='join'>
 				<span class='gift'>מתנה</span>
-<p> כל חבר שיצתרף ל<span class='eng'>WakeUp</span> יזכה אותך ב 50% הנחה ואוטומטית יקבל 15% הנחה </p>
+<p> כל חבר שיתקדם אל<span class='eng'>WakeUp &amp; Go </span> יקבל אוטומטית 20 ₪ הנחה </p>
 			</div>
 		</div>
 <br/>

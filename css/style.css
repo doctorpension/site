@@ -3072,9 +3072,15 @@ position:relative;
 }
 #refer-friend-pop .main .share span.eng,
 #refer-friend-pop .main .win span.eng{
-	display:inline;
+	color: #535b5e;
+	height:auto;
 	position:relative;
+display:inline;
 	background:none;
+}
+#refer-friend-pop .main .share span.eng:after, #refer-friend-pop .main .share span.eng:before, #refer-friend-pop .main .win span.eng:after, #refer-friend-pop .main .win span.eng:before{
+	content:'';
+	display:block;
 }
 #refer-friend-pop .main .win{
 	width:66%;
