@@ -73,6 +73,9 @@
 								<!-- cd-intro -->
 								<a href="https://dev.doctorpension.com/survey.php" class="btn btn-default link-button">בואו נצא
 									לדרך</a></div>
+							<div class='col-sm-6'>
+								<img id='show_video' src='/images/play.png' alt='Play Video' height='100'/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -149,9 +152,6 @@
 									</ul>
 								</div>
 								<div class="link-block"><a class="link-button" href="report.php">דוח לדוגמה</a></div>
-							</div>
-							<div class='col-sm-6'>
-								<img id='show_video' src='/images/play.png' alt='Play Video' height='100'/>
 							</div>
 						</div>
 					</div>
