@@ -15,15 +15,6 @@ include("includes/header.php");
 						<div class="col-sm-12">
 							<div class="top-cont-blk">
 
-								<!--main popover-->
-								<div class="mainpop-over">
-									<p>ברוכים הבאים לדוח הייעוץ הפנסיוני שלך.<br/>
-										מימין מופיעות הקופות שיש ברשותך כיום.<br/>
-										משמאל מופיעות המלצות <span class='eng'>WakeUp</span>
-									</p>
-									<a href="#firstpopup" class="link-button popupbtns">הבנתי</a>
-								</div>
-								<!--main popover-->
 								<h1 class='wake-call eng'><img src='images/wakeup_logo_outlined.png'/><strong class='eng'>Call<sup>&trade;</sup></strong></h1>
 								<div class="date-block" id="topblock">
 									<p>תאריך הפקת דוח: 11/06/2016</p>
@@ -48,6 +39,15 @@ include("includes/header.php");
 
 							<div class="listing_blk_tabs">
 								<div class="tab_container">
+								<!--main popover-->
+								<div class="mainpop-over">
+									<p>ברוכים הבאים לדוח הייעוץ הפנסיוני שלך.<br/>
+										מימין מופיעות הקופות שיש ברשותך כיום.<br/>
+										משמאל מופיעות המלצות <span class='eng'>WakeUp</span>
+									</p>
+									<a href="#firstpopup" class="link-button popupbtns">הבנתי</a>
+								</div>
+								<!--main popover-->
 										<div class='normalpop-over rightfourth-blk'>
 <p>
 צריך עוד הסברים?
