@@ -61,6 +61,21 @@ class WakeUp{
                 curl_close($ch);
                 return $output;
 	}
+
+	static function getHebEntities($text){
+		global $heb_entities;
+		$return_string = '';
+		$chrArray = preg_split('//u', $text, -1, PREG_SPLIT_NO_EMPTY);
+		foreach($chrArray as $char ) {
+			if(array_key_exists($char, $heb_entities)){
+				$return_string .=$heb_entities[$char];
+			}
+			else{
+				$return_string .= $char;
+			}
+		}
+		return $return_string;
+	}	
 }
 
 
