@@ -5812,3 +5812,43 @@ animation:thumb-pulse 2s infinite;
 	overflow-y:hidden;
 }
 
+/*Digital Forms Page */
+#form_body .content-maincont.common-blk h1 { 
+	font-size:50px;
+}
+#form_body .content-maincont.common-blk h2 { 
+	font-size:45px;
+}
+#form_body .row table{
+	width:100%;
+}
+#form_body .row table tr{
+	text-align:center;
+}
+#form_body .row table td{
+	padding:5px;
+}
+#form_body .row table td input{
+    max-width: 383px;
+    height: 48px;
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    border: 1px solid #535b5e;
+    padding: 5px;
+}
+#form_body #error, 
+#form_body #progress,
+#form_body #success{
+	display:none;
+font-size:25px;
+}
+#form_body .link-button{
+	line-height:0px;
+	height:40px;
+	font-size:40px;
+	padding:30px;
+}
+

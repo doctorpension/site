@@ -465,7 +465,7 @@ jQuery(function () {
 	}
 
 	jQuery('.link-button.implement').click(function () {
-		location.href = '/form.html';
+		location.href = '/digital_form.php';
 	});
 
 	jQuery("#bars li .bar").each(function (key, bar) {
@@ -507,6 +507,7 @@ jQuery(function () {
 		);
 	});
 
+	$('#digital_form').submit(function(e){e.preventDefault();sendForm(e);});
 
 });
 function goToByScroll(id) {
@@ -693,4 +694,22 @@ function showDetails(title, details, tracks, popup_class){
 		closeClass: 'close-pop',
 		modalClose: false
 	});
+}
+
+function sendForm(){
+	$('#form_container').hide();
+	$('#progress').show();
+	$.post('ajax/form.php',
+			$('#digital_form').serialize(),
+			function(data){
+				$('#progress').hide();
+				if(data.status == 'success'){
+					$('#success').show();
+				}
+				else{
+					$('#form_container').show();
+					$('#error').html(data.error).show();
+				}
+			});
+	return false;
 }
