@@ -2954,6 +2954,7 @@ div.drum figure {
 a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
 #show_video{
 	margin-top:100px;
+	margin-right:30px;
 	cursor:pointer;
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
