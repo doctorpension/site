@@ -374,7 +374,7 @@ images/content/tal.jpg"/>
 <div id="video_popup">
         <span class='x'>X</span>
 		<div class="content">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OQFv9rP_Q4c" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OQFv9rP_Q4c?autoplay=1" frameborder="0" allowfullscreen></iframe>
 </div>
     </div>
 		<!-- Le javascript
