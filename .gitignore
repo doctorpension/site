@@ -1,4 +1,7 @@
 *.swp
 deploy_changes
 includes/application.php
-
+raw/*
+!raw/data.json
+!raw/reports*
+!raw/move_pension.docx
