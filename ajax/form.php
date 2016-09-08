@@ -1,13 +1,12 @@
 <?php
 require_once('../includes/application.php');
-define('TEMPLATES_DIR', '/var/www/html/signnow/raw/'); 
-define('TEMPLATES_FILE', 'move_pension.docx'); 
+require_once(CLASSES_DIR . 'signnow.php');
 header('Content-Type: application/json');
 require_once(CLASSES_DIR . 'signnow.php');
 $file = isset($_REQUEST['testFile']) ? $_REQUEST['testFile'] : 'data.json';
+define('TEMPLATES_FILE', 'move_pension.docx'); 
 
-		define('DOCS_DIR', '/var/www/html/signnow/raw/');
-		$unoconvPath = 'sudo /usr/bin/unoconv ';
+$unoconvPath = 'sudo /usr/bin/unoconv ';
 
 // construct url form path and file
 $url = TEMPLATES_DIR .$file;
