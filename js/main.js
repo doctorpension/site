@@ -501,9 +501,11 @@ jQuery(function () {
 
 	$('#show_video').click(function(){
 		$('#video_popup').bPopup({
-			closeClass: 'x'	
+			closeClass: 'x'	,
+			onClose: function() { $('#video_popup iframe').attr('src', ''); }
 		},
 		function() { 
+			$('#video_popup iframe').attr('src', "https://www.youtube.com/embed/OQFv9rP_Q4c?autoplay=1");
 			jQuery('#video_popup').css('z-index', 999999999); }
 		);
 	});
