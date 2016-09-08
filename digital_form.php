@@ -2,53 +2,9 @@
 session_start();
 $_SESSION['user'] = 'sd';
 require_once('includes/application.php');
-?>
-<!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js ie6 oldie" lang="en" itemscope itemtype="http://schema.org/Article"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js ie7 oldie" lang="en" itemscope itemtype="http://schema.org/Article"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js ie8 oldie" lang="en" itemscope itemtype="http://schema.org/Article"> <![endif]-->
-<!--[if IE 9]>
-<html class="no-js ie9" lang="en" itemscope itemtype="http://schema.org/Article"> <![endif]-->
-
-<html class="no-js" lang="he" dir="rtl" xml:lang="he" itemscope itemtype="http://schema.org/Article">
-	<head>
-		<meta charset="utf-8">
-		<title>Inner | WakeUp</title>
-		<link rel="shortcut icon" href="favicon.ico"/>
-		<meta name="description" content="WakeUp WebSite">
-		<meta name="author" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-		<meta name="format-detection" content="telephone=no">
-
-		<!-- Le styles -->
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/font-awesome/font-awesome.css" rel="stylesheet">
-		<link href="css/wakeupicons.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/layout.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-		<!--CONSOLESOFTWARE CSS FILE-->
-		<link href="css/cs_style.css" rel="stylesheet">
-
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
-		<style type='text/css'>
-
-		</style>
-
-	</head>
-
-	<body class='account-section' id='form_body'>
-		<div class="main-outercon">
-			<!--Begin header section-->
-<?php include('includes/header.php'); ?>
+$body_class= 'account-section' ;
+$body_id = 'form_body';
+include('includes/header.php'); ?>
 			<!--End header section-->
 			<!--Begin Page Content-->
 			<section id="home" class="content-maincont common-blk subtop-content">
