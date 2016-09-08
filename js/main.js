@@ -101,6 +101,7 @@ jQuery(function () {
 							setUpScrolls();
 							setupFundDetailPops();
 							jQuery.cookie("tutorialDone", 1, { expires : 30 });
+							showLastPop();
 						}
 					});
 			}
@@ -712,4 +713,14 @@ function sendForm(){
 				}
 			});
 	return false;
+}
+
+function showLastPop(){
+	window.setTimeout(function(){
+	$('.rightfourth-blk').addClass('active-tabover');
+	}, 1500);
+}
+
+function hideLastPop(){
+	$('.rightfourth-blk').removeClass('active-tabover');
 }

@@ -48,6 +48,16 @@ include("includes/header.php");
 
 							<div class="listing_blk_tabs">
 								<div class="tab_container">
+										<div class='normalpop-over rightfourth-blk'>
+<p>
+צריך עוד הסברים?
+<br/>
+תמיד תוכל להקיש על
+<img src='/images/guide_cue_on.png'/>
+שלמעלה
+</p>
+<a href="javascript:hideLastPop()" class="link-button">הבנתי</a>
+</div>
 									<div id="sticky-anchor"></div>
 									<div class="header-outercont hidden-xs" id="sticky">
 										<div class="header-innercont">
@@ -65,7 +75,6 @@ include("includes/header.php");
 											</div>
 										</div>
 										<!--pie chart section-->
-
 										<div class="single-tabblock first-blk" id='firstpopup-mob'>
 											<div class="cont-singleouterblock old-cont">
 												<!--normal popover-->
