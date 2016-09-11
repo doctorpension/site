@@ -1425,6 +1425,9 @@
 #refer-friend-pop .main .win{
 	width:100%;
 }
+#refer-friend-pop .main .share span.eng:before, #refer-friend-pop .main .share span.eng:after{
+	content:'';display:inline;
+}
 #refer-friend-pop .main .social-container{
 	display:none;	
 }
