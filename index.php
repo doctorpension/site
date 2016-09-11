@@ -29,7 +29,7 @@ include('includes/header.php') ?>
 									</div>
 								</h1>
 								<!-- cd-intro -->
-								<a id='LG-Banner' href="https://dev.doctorpension.com/survey.php" class="btn btn-default link-button">בואו נצא
+								<a id='LG-Banner' href="https://dev2.doctorpension.com/survey.php" class="btn btn-default link-button">בואו נצא
 									לדרך</a></div>
 							<div class='col-sm-6'>
 								<img ='show_video' src='/images/play.png' alt='Play Video' height='100'/>
@@ -43,7 +43,7 @@ include('includes/header.php') ?>
 				<div class="container">
 					<ul>
 						<!--single section-->
-						<li><a href='survey.php' id='LG-Banner'>
+						<li><a href='https://dev2.doctorpension.com/survey.php' id='LG-Banner'>
 							<div class="single-contentblk">
 								<div class="list-topblock">
 									<img class='home-product' src='/images/wakeup_bed.svg'/>
