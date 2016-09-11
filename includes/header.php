@@ -12,7 +12,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title><?php if( isset($page_title)) echo $page_title;?> | WakeUp</title>
-		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<meta name="description" content="">
@@ -20,19 +19,19 @@
 		<meta name="format-detection" content="telephone=no">
 
 		<!-- Le styles -->
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/font-awesome/font-awesome.css" rel="stylesheet">
-		<link href="css/wakeupicons.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/layout.css" rel="stylesheet">
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/font-awesome/font-awesome.css" rel="stylesheet">
+		<link href="/css/wakeupicons.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<link href="/css/layout.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<!--CONSOLESOFTWARE CSS FILE-->
-		<link href="css/cs_style.css" rel="stylesheet">
+		<link href="/css/cs_style.css" rel="stylesheet">
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/respond.min.js"></script>
 <![endif]-->
 		<style type='text/css'>
 
@@ -77,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li><a href="index.php#kal_vepashut"> איך זה עובד</a></li>
+                                <li><a href="/index.php#kal_vepashut"> איך זה עובד</a></li>
                                 <li><a href="#">צוות המומחים שלנו </a></li>
                                 <li><a href="#">שאלות נפוצות</a></li>
 								
@@ -99,7 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--	navigation section-->
                 <div class="clienthd-area"><a href="#"><i class="wake-icon26"></i><span>אזור אישי</span></a></div>
                 <div class="call-action">
-                    <a id='LG-Header' href="https://dev.doctorpension.com/survey.php"
+                    <a id='LG-Header' href="https://dev2.doctorpension.com/survey.php"
                        class="btn btn-default link-button"> בואו נצא לדרך </a>
                 </div>
 				<div class='report-guide'>
