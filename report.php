@@ -15,7 +15,7 @@ include("includes/header.php");
 						<div class="col-sm-12">
 							<div class="top-cont-blk">
 
-								<h1 class='wake-call eng'><img src='images/wakeup_logo_outlined.png'/><strong class='eng'>Call<sup>&trade;</sup></strong></h1>
+								<h1 class='wake-call eng'><img src='/images/wakeup_logo_outlined.png'/><strong class='eng'>Call<sup>&trade;</sup></strong></h1>
 								<div class="date-block" id="topblock">
 									<p>תאריך הפקת דוח: 11/06/2016</p>
 								</div>
@@ -62,7 +62,7 @@ include("includes/header.php");
 									<div class="header-outercont hidden-xs" id="sticky">
 										<div class="header-innercont">
 											<h4>מצבך היום</h4>
-											<h4>המלצות <img src='images/wakeup_logo_outlined.png'/></h4>
+											<h4>המלצות <img src='/images/wakeup_logo_outlined.png'/></h4>
 										</div>
 									</div>
 
@@ -132,7 +132,7 @@ include("includes/header.php");
 										</div>
 									</div>
 									<div class="listing-singleblk right-blk">
-										<h4 class="visible-xs cs_chart_equilibre">המלצות <img src='images/wakeup_logo_outlined.png'/></h4>
+										<h4 class="visible-xs cs_chart_equilibre">המלצות <img src='/images/wakeup_logo_outlined.png'/></h4>
 										<!--pie chart section-->
 										<div class="chart-outercont">
 											<div id="chartContainerleft" class="cs_chart_container">
@@ -277,7 +277,7 @@ include("includes/header.php");
 								</div>
 								<div class="single-leftblk">
 									<div class="main-popup-content">
-										<h5>ההמלצות <img src='images/wakeup_logo_outlined.png'/></h5>
+										<h5>ההמלצות <img src='/images/wakeup_logo_outlined.png'/></h5>
 										<ul>
 											<li>הביצועים של הקופה הולמים את הפרופיל האישי שלך</li>
 											<li>דמי הניהול המצטברים בגין קופה זו יפחתו ביחס למצבך הקודם</li>
@@ -291,7 +291,7 @@ include("includes/header.php");
 
 						</div>
 						<div class='scroll_holder'>
-							<img src='images/swipe-hand.png' class='swipe'/>
+							<img src='/images/swipe-hand.png' class='swipe'/>
 							<div class="bottom-outercont">
 								<div class='bottom-scroller'>
 									<div class="bothaf-singleblk rightblk cs_bottom_blocks_right">
@@ -343,7 +343,7 @@ include("includes/header.php");
 										<!--risk block section-->
 									</div>
 									<div class="bothaf-singleblk left-block cs_bottom_blocks_left">
-										<h4>המלצות <img src='images/wakeup_logo_outlined.png'/></h4>
+										<h4>המלצות <img src='/images/wakeup_logo_outlined.png'/></h4>
 										<!--risk block section-->
 										<div class="riskblock-outer success-bock">
 											<div class="pensions-outer">
@@ -414,7 +414,7 @@ include("includes/header.php");
 																<div class="single-fildout small-box">&nbsp;</div>
 																<div class="single-fildout"><span>מצבך היום</span></div>
 																<div class="single-fildout hidden-xs"><span>המלצות <img
-																														src='images/wakeup_logo_outlined.png'/></span></div>
+																														src='/images/wakeup_logo_outlined.png'/></span></div>
 															</div>
 															<div class="single-popblock">
 																<div class="single-fildout small-box">
@@ -444,7 +444,7 @@ include("includes/header.php");
 																	</div>
 
 																	<div class="single-fildout visible-xs"><span>המלצות <img
-																															 src='images/wakeup_logo_outlined.png'/></span></div>
+																															 src='/images/wakeup_logo_outlined.png'/></span></div>
 																</div>
 																<div class="single-fildout mobicontent-box active-block">
 																	<div class="mobiheader-block  visible-xs">נכות</div>
@@ -491,12 +491,12 @@ include("includes/header.php");
 
 													<h6>כיסוי ביטוחי היום:</h6>
 													<a href="javascript:void(0);" class="thumbspopup-trigger <?php echo $report->insuranceMatches() ? 'up' : 'down';?>">
-						<img  src="images/thumbs_up.png" height='84' width='84' alt="קליק כאן לפרטים נוספים אודות הכיסוי הביטוחי שלך"> </a></div>
+						<img  src="/images/thumbs_up.png" height='84' width='84' alt="קליק כאן לפרטים נוספים אודות הכיסוי הביטוחי שלך"> </a></div>
 												<div class='rec_partial'>
 				התקדם אל
 				<div class="wake-call eng">
 					<strong class="eng">&amp; Go<sup>™</sup></strong>
-					<img src="images/wakeup_logo_outlined.png">
+					<img src="/images/wakeup_logo_outlined.png">
 				</div>
 על מנת ליישם את כל המלצותינו או את חלקן
 												</div>
@@ -566,20 +566,20 @@ include("includes/header.php");
 ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/plugins/jquery.cookie.js"></script>
-		<script src="js/migrate.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/plugins/jquery.cycle2.min.js"></script>
-		<script src="js/plugins/jquery.plugin.js"></script>
-		<script src="js/plugins/jquery.debouncedresize.js"></script>
-		<script src="js/plugins/bpopup.min.js"></script>
-		<script src="js/csjavascript/piechart.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/iscroll.js"></script>
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/plugins/jquery.cookie.js"></script>
+		<script src="/js/migrate.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/plugins/jquery.cycle2.min.js"></script>
+		<script src="/js/plugins/jquery.plugin.js"></script>
+		<script src="/js/plugins/jquery.debouncedresize.js"></script>
+		<script src="/js/plugins/bpopup.min.js"></script>
+		<script src="/js/csjavascript/piechart.js"></script>
+		<script src="/js/main.js"></script>
+		<script src="/js/iscroll.js"></script>
 
 		<!--CONSOLESOFTWARE ADDED JAVASCRIPT FILES-->
-		<script src="js/canvasjs.min.js"></script>
+		<script src="/js/canvasjs.min.js"></script>
 
 	</body>
 </html>

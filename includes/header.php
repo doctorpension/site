@@ -62,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row">
             <div class="col-sm-12">
                 <!--logo section-->
-                <div class="logo_blk"><a href="/index.php"><img class="cs_nav_bar_logo" src="images/wakeup_logo.png" alt="Logo"></a></div>
+                <div class="logo_blk"><a href="/index.php"><img class="cs_nav_bar_logo" src="/images/wakeup_logo.png" alt="Logo"></a></div>
                 <!--logo section-->
 
                 <!--	navigation section-->

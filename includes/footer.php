@@ -6,7 +6,7 @@
                     <div class="right-logo border">
                         <div class="wakeup-logo">
                             <a href="/index.php">
-                                <img src="images/wakeup_logo.png" alt="" style="max-height: none; margin-bottom: auto;"/>
+                                <img src="/images/wakeup_logo.png" alt="" style="max-height: none; margin-bottom: auto;"/>
                             </a>
                             <p>ייעוץ פנסיוני אישי, אובייקטיבי ואפקטיבי</p>
                         </div>
@@ -40,7 +40,7 @@
                         <div class="footernew-left">
                             <div class="newclienthd-area border-blknew">
                                 <a href="#"><i class="wake-icon26"></i><span>אזור אישי</span></a>
-                                <a href="https://dev.doctorpension.com/survey.php" class="btn btn-default main-btn">צא
+                                <a href="https://dev2.doctorpension.com/survey.php" class="btn btn-default main-btn">צא
                                     לדרך</a>
                             </div>
                         </div>
