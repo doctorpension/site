@@ -3,6 +3,10 @@ session_start();
 $_SESSION['user'] = 'sd';
 require_once('includes/application.php');
 $report = new Report($_SESSION['user']);
+if(isset($_SERVER['REDIRECT_URL'])){
+	//echo 'the user was redirected';
+	//CUSTOMIZE HERE
+}
 $page_title = 'Report';
 $body_class='account-section';
 $body_id = 'report_body';
