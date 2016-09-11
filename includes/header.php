@@ -86,9 +86,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li class="visible-xs"><a href="#">צור קשר</a></li>
 
 
-								
+
                                 <li class="mobile-client">
-                                    <div class="clienthd-area"><a href="#"><i
+                                    <div class="clienthd-area"><a id='Login_Header' href="#"><i
                                                 class="wake-icon26"></i><span>אזור אישי</span></a>
                                     </div>
                                 </li>
@@ -99,7 +99,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--	navigation section-->
                 <div class="clienthd-area"><a href="#"><i class="wake-icon26"></i><span>אזור אישי</span></a></div>
                 <div class="call-action">
-                    <a href="https://dev.doctorpension.com/survey.php"
+                    <a id='LG-Header' href="https://dev.doctorpension.com/survey.php"
                        class="btn btn-default link-button"> בואו נצא לדרך </a>
                 </div>
 				<div class='report-guide'>

@@ -29,10 +29,10 @@ include('includes/header.php') ?>
 									</div>
 								</h1>
 								<!-- cd-intro -->
-								<a href="https://dev.doctorpension.com/survey.php" class="btn btn-default link-button">בואו נצא
+								<a id='LG-Banner' href="https://dev.doctorpension.com/survey.php" class="btn btn-default link-button">בואו נצא
 									לדרך</a></div>
 							<div class='col-sm-6'>
-								<img id='show_video' src='/images/play.png' alt='Play Video' height='100'/>
+								<img ='show_video' src='/images/play.png' alt='Play Video' height='100'/>
 							</div>
 						</div>
 					</div>
@@ -43,7 +43,7 @@ include('includes/header.php') ?>
 				<div class="container">
 					<ul>
 						<!--single section-->
-						<li><a href='survey.php'>
+						<li><a href='survey.php' id='LG-Banner'>
 							<div class="single-contentblk">
 								<div class="list-topblock">
 									<img class='home-product' src='/images/wakeup_bed.svg'/>
@@ -109,7 +109,7 @@ include('includes/header.php') ?>
 										<li class="third-ball"><span class="pulse"></span>מיישמים את ההמלצות בקליק</li>
 									</ul>
 								</div>
-								<div class="link-block"><a class="link-button" href="report.php">דוח לדוגמה</a></div>
+								<div class="link-block"><a id='Sample_Report' class="link-button" href="report.php">דוח לדוגמה</a></div>
 							</div>
 						</div>
 					</div>
@@ -128,7 +128,7 @@ include('includes/header.php') ?>
 						<div class="graph-details">
 							<ul>
 								<li>אנחנו עובדים רק בשבילך. בלי עמלות נסתרות.</li>
-								<li>המערכת שלנו הוכיחה את עצמה כבר בקרב אלפים.<a class='mizrachi-ref' data-toggle="modal" data-target='#mizrachi-testimonial'>למידע נוסף</a></li>
+								<li>המערכת שלנו הוכיחה את עצמה כבר בקרב אלפים.<a class='mizrachi-ref' id='Mizrachi' data-toggle="modal" data-target='#mizrachi-testimonial'>למידע נוסף</a></li>
 								<li>אפשר להקטין את דמי הניהול ולהגדיל את הקצבה.</li>
 							</ul>
 						</div>
@@ -220,12 +220,12 @@ images/content/dona.jpg"/>
 									<div class="col-sm-12">
 										<p>כשנכנסתי לראשונה לשוק העבודה <span class='eng'>WakeUp</span> עזרו לי לבחור את הקופות הכי טובות ומתאימות
 											בשבילי. הם גם אפשרו לי להצטרף אל הקופות בקלות דרך האתר. </p>
-										<span class="cycle-hover">דנה</span></div>
+										<span class="cycle-hover" id='T-Dana'>דנה</span></div>
 								</div>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class='sec-blk cycle-hover'>רני</a>">
+					<li data-cycle-pager-template="<a href=# id='T-Roni' class='sec-blk cycle-hover'>רני</a>">
 <picture>
   <source srcset="images/content/roni_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/roni_landscape.jpg" media=" (max-width: 767px)">
