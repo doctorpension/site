@@ -27,11 +27,10 @@ class Report{
 		$this->raw_data = Wakeup::getReport($account_id);
 	//	echo 'the raw data:' . var_export($this->raw_data, 1);
 		$this->firstName = $this->raw_data['firstName'];
-		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated'], $this->raw_data['insurance']['currentCoverages']);
+		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated'], $this->raw_data['insurance']['currentCoverages'], $this->raw_data['totalBalance']);
 		$this->currentPortfolio->insuranceMatches = $this->raw_data['insurance']['fit'];
-		$this->currentPortfolio->totalBalance = $this->raw_data['totalBalance'];
 		$this->currentPortfolio->worstCase = 30;
-		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages']);
+		$this->recommendedPortfolio = new Portfolio($this->raw_data['recommendedPolicies'], $this->raw_data['recommendedPortfolioAggregated'], $this->raw_data['insurance']['recommendedCoverages'], $this->raw_data['totalBalance']);
 		$this->recommendedPortfolio->worstCase = 15;
 		$this->setBoxRows();
 		$this->insurance = $this->raw_data['insurance'];
@@ -118,7 +117,9 @@ class Report{
 		return $this->getPortfolio($portfolio)->worstCase;
 	}
 
-
+	function getProductPoints($portfolio){
+		return $this->getPortfolio($portfolio)->getProductPoints();
+	}
 	function displayBoxFunds($portfolio, $product){
 	?><ul>
 			<?php 

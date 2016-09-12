@@ -584,6 +584,9 @@ include("includes/header.php");
 
 		<!--CONSOLESOFTWARE ADDED JAVASCRIPT FILES-->
 		<script src="/js/canvasjs.min.js"></script>
-
+		<script type='text/javascript'>
+			var rightPoints = [<?php echo $report->getProductPoints('current');?>];
+			var leftPoints = [<?php echo $report->getProductPoints('recommended');?>];
+		</script>
 	</body>
 </html>

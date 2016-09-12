@@ -20,7 +20,7 @@ class Portfolio{
 	
 	var $riskFitTexts = array('GOOD' => 'טובה', 'HIGH' => 'גבוהה', 'LOW' => 'נמוכה');
 
-	function __construct($policies, $aggregations, $insurance){
+	function __construct($policies, $aggregations, $insurance, $totalBalance){
 		$this->pensia = new Product();
 		$this->hishtalmut = new Product();
 		$this->gemel = new Product();
@@ -28,6 +28,7 @@ class Portfolio{
 		$this->insurance = new Insurance($insurance);
 		$this->setAggregations($aggregations);
 		$this->setProducts($policies);
+		$this->totalBalance = $totalBalance;
 		$this->setProductAggregations();
 	}
 	
@@ -66,12 +67,19 @@ class Portfolio{
 	}
 	
 	function setProductAggregations(){
-		$this->pensia->setPercent($this->projectedTotalBalance);
-		$this->hishtalmut->setPercent($this->projectedTotalBalance);
-		$this->gemel->setPercent($this->projectedTotalBalance);
-		$this->minhalim->setPercent($this->projectedTotalBalance);
+		$this->pensia->setPercent($this->totalBalance);
+		$this->hishtalmut->setPercent($this->totalBalance);
+		$this->gemel->setPercent($this->totalBalance);
+		$this->minhalim->setPercent($this->totalBalance);
 	}
 	
+	function getProductPoints(){
+		return $this->minhalim->getPercent() . ',' .
+			 $this->hishtalmut->getPercent() . ',' .
+			 $this->gemel->getPercent() . ',' .
+			 $this->pensia->getPercent();
+	}
+
 	function getProduct($product_name){
 		switch($product_name){
 			case 'pensia':

@@ -11,9 +11,16 @@ class Product{
 	}
 
 	function setPercent($total){
-		$this->percent = $this->total/$total;
+		$this->percent = ($this->total/$total * 100);
 	}
 	
+	function getPercent($format = true){
+		if($format){
+			return number_format($this->percent, 2);
+		}
+		return $this->percent;
+	}
+
 	function getFunds(){
 		return $this->funds;
 	}
