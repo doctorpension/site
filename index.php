@@ -43,7 +43,7 @@ include('includes/header.php') ?>
 				<div class="container">
 					<ul>
 						<!--single section-->
-						<li><a href='https://dev2.doctorpension.com/survey.php' id='LG-Banner'>
+						<li><a href='https://dev2.doctorpension.com/survey.php' id='LG-WUCall'>
 							<div class="single-contentblk">
 								<div class="list-topblock">
 									<img class='home-product' src='/images/wakeup_bed.svg'/>
@@ -203,7 +203,7 @@ include('includes/header.php') ?>
 					data-cycle-slides="> li"
 					data-pause-on-hover=".cycle-hover"
 					data-cycle-pager="#per-slide-template">
-					<li data-cycle-pager-template="<a href=# class='first-blk id='T-Dana' cycle-hover'>דנה</a>">
+					<li data-cycle-pager-template="<a href=# class='first-blk  cycle-hover' id='T-Dana'>דנה</a>">
 <picture>
   <source srcset="images/content/dona_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/dona_landscape.jpg" media=" (max-width: 767px)">
