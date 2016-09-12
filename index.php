@@ -203,7 +203,7 @@ include('includes/header.php') ?>
 					data-cycle-slides="> li"
 					data-pause-on-hover=".cycle-hover"
 					data-cycle-pager="#per-slide-template">
-					<li data-cycle-pager-template="<a href=# class='first-blk cycle-hover'>דנה</a>">
+					<li data-cycle-pager-template="<a href=# class='first-blk id='T-Dana' cycle-hover'>דנה</a>">
 <picture>
   <source srcset="images/content/dona_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/dona_landscape.jpg" media=" (max-width: 767px)">
@@ -248,7 +248,7 @@ images/content/roni.jpg"/>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover'>יעל</a>">
+					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover' id='T-Yael'>יעל</a>">
 <picture>
   <source srcset="images/content/yael_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/yael_landscape.jpg" media=" (max-width: 767px)">
@@ -271,7 +271,7 @@ images/content/yael.jpg"/>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class='sec-blk cycle-hover'>טל</a>">
+					<li data-cycle-pager-template="<a href=# class='sec-blk cycle-hover' id='T-Tal'>טל</a>">
 <picture>
   <source srcset="images/content/tal_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/tal_landscape.jpg" media=" (max-width: 767px)">
@@ -293,7 +293,7 @@ images/content/tal.jpg"/>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class='fifth-blk cycle-hover'>איריס </a>">
+					<li data-cycle-pager-template="<a href=# class='fifth-blk cycle-hover' id='T-Iris'>איריס </a>">
 <picture>
   <source srcset="images/content/iris_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/iris_landscape.jpg" media=" (max-width: 767px)">
@@ -315,7 +315,7 @@ images/content/tal.jpg"/>
 							</div>
 						</div>
 					</li>
-					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover'>אייל</a>">
+					<li data-cycle-pager-template="<a href=# class='third-blk cycle-hover' id='T-Eyal'>אייל</a>">
 <picture>
   <source srcset="images/content/eyal_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/eyal_landscape.jpg" media=" (max-width: 767px)">

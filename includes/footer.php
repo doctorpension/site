@@ -32,15 +32,15 @@
                             <p>הירשם לרשימת התפוצה שלנו</p>
                             <form>
                                 <input type="text" placeholder="כתובת הדוא”ל שלך">
-                                <input type="submit" value="" class="btn btn-default main-btn">
+                                <input type="submit" value="" id='Email-Footer' class="btn btn-default main-btn">
                             </form>
                         </div>
                     </div>
                     <div class="footer-new cs_mobile_footer">
                         <div class="footernew-left">
                             <div class="newclienthd-area border-blknew">
-                                <a href="#"><i class="wake-icon26"></i><span>אזור אישי</span></a>
-                                <a href="https://dev2.doctorpension.com/survey.php" class="btn btn-default main-btn">צא
+                                <a href="#" id='Login_Footer'><i class="wake-icon26"></i><span>אזור אישי</span></a>
+                                <a id='LG-Footer' href="https://dev2.doctorpension.com/survey.php" class="btn btn-default main-btn">צא
                                     לדרך</a>
                             </div>
                         </div>
