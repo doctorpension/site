@@ -572,10 +572,10 @@ function renderCharts(){
 
 				// Chart sections parameters (y : value) - (color : assigned color)
 				dataPoints: [
-					{y: leftPoints[0], text: "ביטוח מנהלים",  cursor: "pointer", color: "#00BD9C"},
-					{y: leftPoints[1], text: "קרן השתלמות",  cursor: "pointer", color: "#9458B9"},
-					{y: leftPoints[2], text: "קופת גמל",  cursor: "pointer", color: "#6A69D5"},
-					{y: leftPoints[3], text: "קרן פנסיה",  cursor: "pointer", color: "#2C97DD"}
+					{y: leftPoints[0], text: "ביטוח מנהלים",  cursor: "pointer", color: "#00BD9C", mouseover: function(e){registerPie('Pie-RB','hover');}},
+					{y: leftPoints[1], text: "קרן השתלמות",  cursor: "pointer", color: "#9458B9", mouseover: function(e){registerPie('Pie-RH','hover');}},
+					{y: leftPoints[2], text: "קופת גמל",  cursor: "pointer", color: "#6A69D5", mouseover: function(e){registerPie('Pie-RG','hover');}},
+					{y: leftPoints[3], text: "קרן פנסיה",  cursor: "pointer", color: "#2C97DD", mouseover: function(e){registerPie('Pie-RP','hover');}},
 				]
 			},
 		]
@@ -601,10 +601,10 @@ function renderCharts(){
 
 				// Chart sections parameters (y : value) - (color : assigned color)
 				dataPoints: [
-					{y: rightPoints[0], text: "קרן פנסיה",   cursor: "pointer", color: "#44C6E6"},
-					{y: rightPoints[1], text: "קרן השתלמות",   cursor: "pointer", color: "#B07FCF"},
-					{y: rightPoints[2], text: "קופת גמל",   cursor: "pointer", color: "#6D8BD5"},
-					{y: rightPoints[3], text: "ביטוח מנהלים",   cursor: "pointer", color: "#63BDC0"}
+					{y: rightPoints[0], text: "ביטוח מנהלים",   cursor: "pointer", color: "#63BDC0", mouseover: function(e){registerPie('Pie-CB','hover');}},
+					{y: rightPoints[1], text: "קרן השתלמות",   cursor: "pointer", color: "#B07FCF", mouseover: function(e){registerPie('Pie-CH','hover');}},
+					{y: rightPoints[2], text: "קופת גמל",   cursor: "pointer", color: "#6D8BD5", mouseover: function(e){registerPie('Pie-CG','hover');}},
+					{y: rightPoints[3], text: "קרן פנסיה",   cursor: "pointer", color: "#44C6E6", mouseover: function(e){registerPie('Pie-CP','hover');}},
 				]
 			},
 		]
@@ -725,4 +725,12 @@ function showLastPop(){
 
 function hideLastPop(){
 	$('.rightfourth-blk').removeClass('active-tabover');
+}
+
+function registerPie(element, pEvent){
+	dataLayer.push({
+		'event' : pEvent,
+		'element' : element
+	});
+	console.log('pushed to dl: ', element, pEvent);
 }
