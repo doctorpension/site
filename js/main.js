@@ -730,6 +730,7 @@ function hideLastPop(){
 function registerPie(element,  percentage){
 	dataLayer.push({
 		event : 'Chart Hover',
+		eventAction:element,
 		pieChartSection : element,
 		pieChartSectionPercent : percentage
 	});
