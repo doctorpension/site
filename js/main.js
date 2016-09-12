@@ -572,10 +572,10 @@ function renderCharts(){
 
 				// Chart sections parameters (y : value) - (color : assigned color)
 				dataPoints: [
-					{y: leftPoints[0], text: "ביטוח מנהלים",  cursor: "pointer", color: "#00BD9C", mouseover: function(e){registerPie('Pie-RB','hover');}},
-					{y: leftPoints[1], text: "קרן השתלמות",  cursor: "pointer", color: "#9458B9", mouseover: function(e){registerPie('Pie-RH','hover');}},
-					{y: leftPoints[2], text: "קופת גמל",  cursor: "pointer", color: "#6A69D5", mouseover: function(e){registerPie('Pie-RG','hover');}},
-					{y: leftPoints[3], text: "קרן פנסיה",  cursor: "pointer", color: "#2C97DD", mouseover: function(e){registerPie('Pie-RP','hover');}},
+					{y: leftPoints[0], text: "ביטוח מנהלים",  cursor: "pointer", color: "#00BD9C", mouseover: function(e){registerPie('Pie-RB',leftPoints[0]);}},
+					{y: leftPoints[1], text: "קרן השתלמות",  cursor: "pointer", color: "#9458B9", mouseover: function(e){registerPie('Pie-RH',leftPoints[1]);}},
+					{y: leftPoints[2], text: "קופת גמל",  cursor: "pointer", color: "#6A69D5", mouseover: function(e){registerPie('Pie-RG',leftPoints[2]);}},
+					{y: leftPoints[3], text: "קרן פנסיה",  cursor: "pointer", color: "#2C97DD", mouseover: function(e){registerPie('Pie-RP',leftPoints[3]);}},
 				]
 			},
 		]
@@ -601,10 +601,10 @@ function renderCharts(){
 
 				// Chart sections parameters (y : value) - (color : assigned color)
 				dataPoints: [
-					{y: rightPoints[0], text: "ביטוח מנהלים",   cursor: "pointer", color: "#63BDC0", mouseover: function(e){registerPie('Pie-CB','hover');}},
-					{y: rightPoints[1], text: "קרן השתלמות",   cursor: "pointer", color: "#B07FCF", mouseover: function(e){registerPie('Pie-CH','hover');}},
-					{y: rightPoints[2], text: "קופת גמל",   cursor: "pointer", color: "#6D8BD5", mouseover: function(e){registerPie('Pie-CG','hover');}},
-					{y: rightPoints[3], text: "קרן פנסיה",   cursor: "pointer", color: "#44C6E6", mouseover: function(e){registerPie('Pie-CP','hover');}},
+					{y: rightPoints[0], text: "ביטוח מנהלים",   cursor: "pointer", color: "#63BDC0", mouseover: function(e){registerPie('Pie-CB',leftPoints[0]);}},
+					{y: rightPoints[1], text: "קרן השתלמות",   cursor: "pointer", color: "#B07FCF", mouseover: function(e){registerPie('Pie-CH',leftPoints[1]);}},
+					{y: rightPoints[2], text: "קופת גמל",   cursor: "pointer", color: "#6D8BD5", mouseover: function(e){registerPie('Pie-CG',leftPoints[2]);}},
+					{y: rightPoints[3], text: "קרן פנסיה",   cursor: "pointer", color: "#44C6E6", mouseover: function(e){registerPie('Pie-CP',leftPoints[3]);}},
 				]
 			},
 		]
@@ -727,10 +727,10 @@ function hideLastPop(){
 	$('.rightfourth-blk').removeClass('active-tabover');
 }
 
-function registerPie(element, pEvent){
+function registerPie(element,  percentage){
 	dataLayer.push({
-		'chartEvent' : pEvent,
-		'chartElement' : element
+		event : 'Chart Hover',
+		eventLabel : element,
+		eventValue : percentage
 	});
-	console.log('pushed to dl: ', element, pEvent);
 }
