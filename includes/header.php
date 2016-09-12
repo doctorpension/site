@@ -102,7 +102,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                        class="btn btn-default link-button"> בואו נצא לדרך </a>
                 </div>
 				<div class='report-guide'>
-					<a href="/files/ReportGuide.pdf" target="_blank">עוד הסברים</a>
+					<a href="/files/ReportGuide.pdf" id='Report_Guide' target="_blank">עוד הסברים</a>
 				</div>
             </div>
         </div>

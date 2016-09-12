@@ -49,7 +49,7 @@ include("includes/header.php");
 										מימין מופיעות הקופות שיש ברשותך כיום.<br/>
 										משמאל מופיעות המלצות <span class='eng'>WakeUp</span>
 									</p>
-									<a href="#firstpopup" class="link-button popupbtns">הבנתי</a>
+									<a href="#firstpopup" id='RepNote1' class="link-button popupbtns">הבנתי</a>
 								</div>
 								<!--main popover-->
 										<div class='normalpop-over rightfourth-blk'>
@@ -60,7 +60,7 @@ include("includes/header.php");
 <img src='/images/guide_cue_on.png'/>
 שלמעלה
 </p>
-<a href="javascript:hideLastPop()" class="link-button">הבנתי</a>
+<a href="javascript:hideLastPop()" class="link-button" id='RepNote4'>הבנתי</a>
 </div>
 									<div id="sticky-anchor"></div>
 									<div class="header-outercont hidden-xs" id="sticky">
@@ -87,7 +87,7 @@ include("includes/header.php");
 														קופה, ניתן ללחוץ עם הסמן
 														על שם הקופה.</p>
 													<p>לצפייה במידע נוסף לגבי כל קופה, ניתן ללחוץ עם הסמן על שם הקופה.</p>
-													<a href="#secondpopup" class="link-button popupbtns">הבנתי</a></div>
+													<a href="#secondpopup" class="link-button popupbtns" id='RepNote2' >הבנתי</a></div>
 												<!--normal popover-->
 												<div class="compare-fieldtitle">
 													<label>קופת גמל</label>
@@ -105,7 +105,7 @@ include("includes/header.php");
 														משמע שאיננו ממליצים לבצע לגביה
 														שינוי.
 													</p>
-													<a href="#topblock" class="link-button popupbtns">הבנתי</a></div>
+													<a href="#topblock" class="link-button popupbtns" id='RepNote3'>הבנתי</a></div>
 												<!--normal popover-->
 												<div class="compare-fieldtitle">
 													<label>קרן השתלמות</label>
