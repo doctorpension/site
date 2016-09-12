@@ -729,8 +729,8 @@ function hideLastPop(){
 
 function registerPie(element, pEvent){
 	dataLayer.push({
-		'event' : pEvent,
-		'element' : element
+		'chartEvent' : pEvent,
+		'chartElement' : element
 	});
 	console.log('pushed to dl: ', element, pEvent);
 }
