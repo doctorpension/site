@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                 </nav>
                 <!--	navigation section-->
-                <div class="clienthd-area"><a href="#"><i class="wake-icon26"></i><span>אזור אישי</span></a></div>
+                <div class="clienthd-area"><a href="#" id='Login_Header'><i class="wake-icon26"></i><span>אזור אישי</span></a></div>
                 <div class="call-action">
                     <a id='LG-Header' href="https://dev2.doctorpension.com/survey.php"
                        class="btn btn-default link-button"> בואו נצא לדרך </a>
