@@ -161,7 +161,7 @@ include("includes/header.php");
 													<label>קופת גמל</label>
 												</div>
 													<?php 
-												$report->displayBoxFunds('', 'gemel');
+												$report->displayBoxFunds('recommended', 'gemel');
 ?>
 											</div>
 										</div>
@@ -188,7 +188,7 @@ include("includes/header.php");
 													<label>קרן השתלמות</label>
 												</div>
 												<?php 
-												$report->displayBoxFunds('', 'hishtalmut');
+												$report->displayBoxFunds('recommended', 'hishtalmut');
 												?>
 											</div>
 										</div>
@@ -202,7 +202,7 @@ include("includes/header.php");
 													<label>ביטוח מנהלים</label>
 												</div>
 												<?php 
-												$report->displayBoxFunds('', 'minhalim') ;
+												$report->displayBoxFunds('recommended', 'minhalim') ;
 												?>
 											</div>
 										</div>
@@ -215,7 +215,7 @@ include("includes/header.php");
 													<label>קרן פנסיה</label>
 												</div>
 												<?php 
-												$report->displayBoxFunds('', 'pensia');
+												$report->displayBoxFunds('recommended', 'pensia');
 												?>
 											</div>
 										</div>
