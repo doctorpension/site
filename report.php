@@ -87,7 +87,7 @@ include("includes/header.php");
 														קופה, ניתן ללחוץ עם הסמן
 														על שם הקופה.</p>
 													<p>לצפייה במידע נוסף לגבי כל קופה, ניתן ללחוץ עם הסמן על שם הקופה.</p>
-													<a href="#secondpopup" class="link-button popupbtns" id='RepNote2' >הבנתי</a></div>
+													<a href="#secondpopup" class="link-button popupbtns" id='MRepNote2' >הבנתי</a></div>
 												<!--normal popover-->
 												<div class="compare-fieldtitle">
 													<label>קופת גמל</label>
@@ -105,7 +105,7 @@ include("includes/header.php");
 														משמע שאיננו ממליצים לבצע לגביה
 														שינוי.
 													</p>
-													<a href="#topblock" class="link-button popupbtns" id='RepNote3'>הבנתי</a></div>
+													<a href="#topblock" class="link-button popupbtns" id='MRepNote3'>הבנתי</a></div>
 												<!--normal popover-->
 												<div class="compare-fieldtitle">
 													<label>קרן השתלמות</label>
@@ -153,7 +153,7 @@ include("includes/header.php");
 													<p>לצפייה במידע נוסף לגבי כל
 														קופה, ניתן ללחוץ עם הסמן
 														על שם הקופה.</p>
-													<a href="#secondpopup" class="link-button popupbtns">הבנתי</a></div>
+													<a href="#secondpopup" class="link-button popupbtns" id='RepNote2'>הבנתי</a></div>
 												<!--normal popover-->
 											</div>
 											<div class="cont-singleouterblock new-cont">
@@ -177,7 +177,7 @@ include("includes/header.php");
 														משמע שאיננו ממליצים לבצע לגביה
 														שינוי.
 													</p>
-													<a id="cs_popup_to_charts" href="#topblock" class="link-button popupbtns">הבנתי</a>
+													<a id="cs_popup_to_charts" href="#topblock" class="link-button popupbtns" id='RepNote3'>הבנתי</a>
 												</div>
 												<!--normal popover-->
 											</div>
