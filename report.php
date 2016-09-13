@@ -381,7 +381,7 @@ include("includes/header.php");
 												<?php 
 												$thumb = $report->riskMatches('recommended');
 												?>
-													<a class="button-main-blk <?=$thumb;?>" id'RRisk' href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('recommended')?>!</strong>קליק להסבר</span></a> </div>
+													<a class="button-main-blk <?=$thumb;?>" id='RRisk' href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('recommended')?>!</strong>קליק להסבר</span></a> </div>
 													</div>
 												</div>
 												<div class='worst-case-scenario recommended'><span>X</span>במקרה של מפולת בשווקים
