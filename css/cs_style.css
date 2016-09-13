@@ -233,8 +233,7 @@ canvas {
 
 	.swipe {
 		position: absolute;
-		left: 250px;
-		top: 0;
+		top: 15px;
 		display: block;
 		height: 48px;
 		width: 48px; }

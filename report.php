@@ -71,6 +71,7 @@ include("includes/header.php");
 									</div>
 
 									<div class="listing-singleblk down-block">
+							<img src='/images/swipe-hand.png' class='swipe'/>
 
 										<h4 class="visible-xs cs_chart_equilibre_right">מצבך היום</h4>
 										<!--pie chart section-->
@@ -295,9 +296,9 @@ include("includes/header.php");
 
 						</div>
 						<div class='scroll_holder'>
-							<img src='/images/swipe-hand.png' class='swipe'/>
 							<div class="bottom-outercont">
 								<div class='bottom-scroller'>
+							<img src='/images/swipe-hand.png' class='swipe'/>
 									<div class="bothaf-singleblk rightblk cs_bottom_blocks_right">
 										<h4 class="cs_chart_equilibre_right_bottom">מצבך היום</h4>
 										<!--risk block section-->
