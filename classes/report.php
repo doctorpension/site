@@ -129,12 +129,14 @@ class Report{
 				echo '<li class="no-border">&nbsp;</li>';
 			}
 			else{
+				$class=$portfolio .'-box-' . $product; 
 				echo '<li data-details="' . $row->formatted_data . 
 					'" data-name="' . $row->name . '" data-risk="'.
 					$row->risk_level.'" data-tracks=\'' . 
 					json_encode($row->tracks) . '\'' .
-				    ' id=\'' . $portfolio .'-box-' . $product . '-' . $i++ . '\'' .
-					'><span>'.$row->name.'</span><em>₪'.number_format($row->total_balance).'</em></li>';
+				    ' id=\'' . $class . '-' . $i++ . '\' class=\'' . $class . '\'' .
+					'><span class=\'' . $class . '\'>'.$row->name.'</span>' .
+					'<em class=\'' . $class . '\'>₪'.number_format($row->total_balance).'</em></li>';
 			}
 		}
 		?>	
