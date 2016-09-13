@@ -333,7 +333,7 @@ include("includes/header.php");
 												<?php 
 												$thumb = $report->riskMatches('current');
 												?>
-													<a href="javascript:void(0);" class="button-main-blk <?=$thumb;?>"> <i class=" wake-icon14"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('current');?>!</strong>קליק להסבר</span></a> </div>
+													<a href="javascript:void(0);" id='CRisk' class="button-main-blk <?=$thumb;?>"> <i class=" wake-icon14"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('current');?>!</strong>קליק להסבר</span></a> </div>
 													</div>
 												</div>
 												<div class='worst-case-scenario current'><span>X</span>
@@ -381,7 +381,7 @@ include("includes/header.php");
 												<?php 
 												$thumb = $report->riskMatches('recommended');
 												?>
-													<a class="button-main-blk <?=$thumb;?>" href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('recommended')?>!</strong>קליק להסבר</span></a> </div>
+													<a class="button-main-blk <?=$thumb;?>" id'RRisk' href="javascript:void(0);" > <i class=" wake-iconup"></i><span><strong>רמת סיכון <?php echo $report->getRiskFitText('recommended')?>!</strong>קליק להסבר</span></a> </div>
 													</div>
 												</div>
 												<div class='worst-case-scenario recommended'><span>X</span>במקרה של מפולת בשווקים
@@ -494,7 +494,7 @@ include("includes/header.php");
 													<!--close popover-->
 
 													<h6>כיסוי ביטוחי היום:</h6>
-													<a href="javascript:void(0);" class="thumbspopup-trigger <?php echo $report->insuranceMatches() ? 'up' : 'down';?>">
+													<a href="javascript:void(0);" id='Insurance' class="thumbspopup-trigger <?php echo $report->insuranceMatches() ? 'up' : 'down';?>">
 						<img  src="/images/thumbs_up.png" height='84' width='84' alt="קליק כאן לפרטים נוספים אודות הכיסוי הביטוחי שלך"> </a></div>
 												<div class='rec_partial'>
 				התקדם אל
@@ -507,10 +507,10 @@ include("includes/header.php");
 												<div class="button-outer cs_button-outer bottom-blk">
 													<button class="link-button implement cs_link-button implement" type="submit"
 															value="Submit">
-															<span class='eng'>&amp; Go<sup>&trade;</sup></span>
-													<i class="fa fa-angle-left" aria-hidden="true"></i></button>
+															<span class='eng implement'>&amp; Go<sup>&trade;</sup></span>
+													<i class="fa fa-angle-left implement" aria-hidden="true"></i></button>
 												</div>
-<a class='refer-link'>שתף חבר וקבלו שניכם הטבה</a>
+<a class='refer-link' id='ReportRefer'>שתף חבר וקבלו שניכם הטבה</a>
 											</div>
 										</div>
 									</div>
