@@ -11,7 +11,7 @@ class Gmailer{
 		date_default_timezone_set('Europe/London');
 		$this->mailer->isSMTP();
 		$this->mailer->SMTPDebug = 0;
-		$this->mailer->setFrom('admin@doctorpension.com', 'WakeUp Pension');
+		$this->mailer->setFrom(DEFAULT_EMAIL_FROM_EMAIL, DEFAULT_EMAIL_FROM_NAME);
 		//$this->mailer->Debugoutput = 'html';
 		//set hebrew
 		$this->mailer->CharSet = 'UTF-8';
@@ -20,7 +20,7 @@ class Gmailer{
 		$this->mailer->SMTPSecure = 'tls';
 		$this->mailer->SMTPAuth = true;
 		$this->mailer->AuthType = 'XOAUTH2';
-		$this->mailer->oauthUserEmail = "admin@doctorpension.com";
+		$this->mailer->oauthUserEmail = OAUTH_USER_EMAIL;
 		$this->mailer->oauthClientId = OAUTH_CLIENT_ID;
 		$this->mailer->oauthClientSecret = OAUTH_CLIENT_SECRET;
 		$this->mailer->oauthRefreshToken = OAUTH_REFRESH_TOKEN;
