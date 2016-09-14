@@ -13,6 +13,11 @@ function doSwitch(){
 	$('a[href*="survey.php"]').each(function(){
 $(this).attr('href','javascript:showWait()');
 	});
+	$('.link-button.implement span.eng').css('width','auto').html('Let&#39;s Go!');
+	$('.link-button.implement').unbind('click').css('background-image', 'none').click(function () {
+		showWait();	
+	});
+
 }
 
 function loadSignupAction(){
