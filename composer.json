@@ -1,0 +1,10 @@
+{
+    "require": {
+                   "phpoffice/phpword": "v0.12.*",
+                        "dompdf/dompdf":"0.6.*",
+                        "phpmailer/phpmailer": "5.2.14",
+                        "league/oauth2-client": "^1.4",
+                        "league/oauth2-google": "^1.0",
+                        "google/apiclient" : "1.*"
+    }
+}
