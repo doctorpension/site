@@ -72,3 +72,37 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<?php 
+//if($_SERVER['HTTP_HOST'] == 'www.wakeuppension.com'){
+	?>
+	<div id='add-to-list-pop'>
+<div class='top_container'>
+	<span class='x'>X</span>
+<div><img src='/images/wakeup_logo.png'/>
+<h1>מזל טוב! עשית צעד ראשון לקראת
+עתיד פנסיוני טוב יותר...
+</h1>
+<h1>בקרוב נשיק את פעילותינו.
+</h1>
+	<div class='form'>
+	<p>הזינו דוא"ל ותהיו מהראשונים אליהם נפנה בעת ההשקה:
+</p>
+<div class='single-field'>
+<form id='waiting-list' onsubmit='return false'>
+<input type='email' name='email'/>
+</div>
+<button class="link-button cs_link-button" id='signupToList'>		
+עדכנו אותי
+</button>
+</form>
+</div>
+<div class='thank-you'>
+<h1>תודה!</h1>
+</div>
+	</div>
+</div>
+ 
+	<script type='text/javascript' src='js/wakeup.js'></script><?php
+//}
+?>

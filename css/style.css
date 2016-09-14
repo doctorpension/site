@@ -2964,6 +2964,7 @@ a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
 	-ms-filter: "FlipH";
 }
 #refer-friend-pop,
+#add-to-list-pop,
 #video_popup{
 	display:none;
 	background:#FFF;
@@ -3657,6 +3658,49 @@ display:inline;
 	text-align:center;
 	padding:20px;
 }
+#add-to-list-pop .thank-you{
+	display:none;
+}
+#add-to-list-pop .top_container{
+	padding:20px;
+	text-align:center;
+}
+#add-to-list-pop .top_container img{
+	display:block;
+	margin:0px auto;
+}
+#add-to-list-pop .top_container h1{
+	font-size: 50px;
+    line-height: 55px;
+	margin-bottom: 50px;
+}
+#add-to-list-pop .top_container .form{
+	width:80%;
+	margin:0px auto;
+}
+
+#add-to-list-pop .top_container p{
+	font-size:26px;	
+}
+#add-to-list-pop .top_container .single-field{
+	width:78%;
+}
+#add-to-list-pop .top_container .single-field input{
+	width:100%;
+	max-width:100%;
+	text-align:right;
+}
+#add-to-list-pop .top_container .single-field input.redBorder{
+	border:1px solid red;
+}
+#add-to-list-pop .top_container .link-button{
+    height: 47px;
+    float: right;
+    border-radius: 5px 0px 0px 5px;
+	padding:1px 6px;
+	font-size:26px;
+}
+#add-to-list-pop span.x,
 #video_popup span.x,
 .worst-case-scenario span,
 #refer-friend-pop span.x{
