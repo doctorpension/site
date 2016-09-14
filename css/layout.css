@@ -2877,7 +2877,7 @@ right:-32px;left:auto;}
 	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
 }
 @media all and (orientation: landscape) and (max-width: 767px) {
-	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
+	.banner-outercont.banner-new #show_video{margin-top:-100px;position:absolute;left:20px;}
 	.homehd.header-sticky.header-fixed .report-guide{
 		top:0px;
 	}
