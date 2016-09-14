@@ -2956,12 +2956,6 @@ a.refer-link{text-decoration:underline;font-size:25px;cursor:pointer;}
 	margin-top:100px;
 	margin-right:30px;
 	cursor:pointer;
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	filter: FlipH;
-	-ms-filter: "FlipH";
 }
 #refer-friend-pop,
 #add-to-list-pop,
