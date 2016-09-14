@@ -2774,7 +2774,7 @@ right:-32px;left:auto;}
 	.banner-outercont.banner-new.banner-second .progress-block {
 		padding: 25px 0 32px; }
 
-	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
+	.banner-outercont.banner-new #show_video{margin-top:-125px;height:60px;top:0px;position:absolute;left:20px;}
 	.newarticle-single .newarticle-inner h6 {
 		font-size: 12px;
 		line-height: 14px; }
