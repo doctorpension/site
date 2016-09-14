@@ -105,4 +105,7 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 if(strpos($_SERVER['HTTP_HOST'], 'wakeuppension.com') === true){
 	echo '<script type="text/javascript"> switchUrls = true;</script>';
 }
+else{
+	echo '<script type="text/javascript">//' . strpos($_SERVER['HTTP_HOST'], 'wakeuppension.com') . ';</script>';
+}
 	?>
