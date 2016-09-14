@@ -1,5 +1,6 @@
 <?php 
 $page_title = "Home";
+$body_id = 'index';
 
 include('includes/header.php') ?>
 			<!--End header section-->
