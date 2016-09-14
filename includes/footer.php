@@ -83,7 +83,7 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 <h1>בקרוב נשיק את פעילותינו.
 </h1>
 	<div class='form'>
-	<p>ה
+	<p>
 הזינו דוא"ל ותיהיו מהראשונים להנות מייעוץ שעובד בשבילכם
 </p>
 <div class='single-field'>
