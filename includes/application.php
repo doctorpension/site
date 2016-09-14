@@ -5,6 +5,7 @@ define("LIBS_DIR", __DIR__ . '/../libs/');
 define('TEMPLATES_DIR',__DIR__ .  '/../templates/'); 
 define('DOCS_DIR', __DIR__ . '/../generated_files');
 require_once(CLASSES_DIR . 'wakeup.php');
+require_once('credentials.php');
 
 if(isset($_SESSION['user'])){
 	require_once(CLASSES_DIR . 'report.php');
