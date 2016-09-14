@@ -179,7 +179,7 @@ include('includes/header.php') ?>
 					<div class="firsl-mainblk">
 <h2>תרגישו בטוח המידע מאובטח ומשמש רק לצורך הייעוץ</h2>
 					</div>
-					<div class="icon-outer"><img src="images/shield-icon.png" alt="המידע מאובטח" height='256'/></div>
+					<div class="icon-outer"><img src="images/shield-icon.png" alt="המידע מאובטח" /></div>
 					<div class="listingouter">
 						<ul>
 							<li>הצפנת ssl256 ביט</li>

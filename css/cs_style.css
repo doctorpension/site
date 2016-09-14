@@ -71,11 +71,13 @@ canvas {
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
 	/*and (max-width: 767px)*/
+	#index .homehd.header-sticky .call-action,
+	#index .homehd.header-sticky.header-fixed .call-action,
 	.call-action {
-		top: 0px; 
+		top: 4px; 
 	}
 	.cs_nav_bar_logo {
-		height: 20px !important; 
+		height: 30px !important; 
 	}	
 	.navbar-toggle {
 		margin-top: 5px;
@@ -101,9 +103,11 @@ canvas {
 		top: 11px;
 		left: 45%; }
 
+	#index .homehd.header-sticky .call-action 
 	.homehd.header-sticky .call-action {
 		top: 4px; }
 
+	#index .homehd.header-sticky.header-fixed .call-action 
 	.homehd.header-sticky.header-fixed .call-action {
 		top: 4px; } }
 /*CS FOOTER ----------------------------------*/
@@ -160,6 +164,12 @@ canvas {
 	}
 	   
 	}
+@media only screen and (max-width: 479px) and (orientation:landscape){
+	#show_video{
+		margin-top:-120px;
+	}
+		
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
 
 	.path-outer {

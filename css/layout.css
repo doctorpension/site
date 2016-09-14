@@ -2886,3 +2886,8 @@ right:-32px;left:auto;}
 	}
 }
 
+@media all and(max-width:767px) and (orientation:landscape){
+	#index .homehd.header-sticky .call-action{
+		top:4px;
+	}
+}
