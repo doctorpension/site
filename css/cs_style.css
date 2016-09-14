@@ -79,6 +79,9 @@ canvas {
 	.cs_nav_bar_logo {
 		height: 30px !important; 
 	}	
+	.report-guide{
+		top:2px;
+	}
 	.navbar-toggle {
 		margin-top: 5px;
 	}

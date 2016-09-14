@@ -672,11 +672,11 @@
 	.report-guide{
 		position:absolute;
 		left:10px;
-		top:43px;
+		top:65px;
 	}
 
 	.homehd.header-sticky.header-fixed .report-guide{
-		top:-12px;
+		top:-6px;
 	}
 	.banner-outercont .banner-imgblk {
 		position: relative; }
@@ -1986,6 +1986,9 @@
 		width: auto;
 		max-width: 200px;
 	}
+	#report_body .header-sticky.header-fixed .logo_blk img {
+		max-width:120px;
+	}
 
 	.header-sticky.header-fixed .logo_blk {
 		padding: 0px; }
@@ -2886,7 +2889,7 @@ right:-32px;left:auto;}
 	}
 }
 
-@media all and(max-width:767px) and (orientation:landscape){
+@media screen and(max-width:767px) and (orientation:landscape){
 	#index .homehd.header-sticky .call-action{
 		top:4px;
 	}
