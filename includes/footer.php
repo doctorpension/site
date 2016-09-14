@@ -73,9 +73,6 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 </script>
 <!--End of Tawk.to Script-->
 
-<?php 
-//if($_SERVER['HTTP_HOST'] == 'www.wakeuppension.com'){
-	?>
 	<div id='add-to-list-pop'>
 <div class='top_container'>
 	<span class='x'>X</span>
@@ -103,6 +100,9 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 	</div>
 </div>
  
-	<script type='text/javascript' src='js/wakeup.js'></script><?php
-//}
-?>
+	<script type='text/javascript' src='js/wakeup.js'></script>
+<?php 
+if($_SERVER['HTTP_HOST'] == 'www.wakeuppension.com'){
+	echo '<script type="text/javascript"> switchUrls = true;</script>';
+}
+	?>

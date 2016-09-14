@@ -1,3 +1,4 @@
+switchUrls = false;
 function showWait(){
 	$('#add-to-list-pop').bPopup({
 		closeClass: 'x',
@@ -5,6 +6,12 @@ function showWait(){
 	},
 	function() { 
 		jQuery('#add-to-list-pop').css('z-index', 9999999999999999); 
+	});
+}
+
+function doSwitch(){
+	$('a[href*="survey.php"]').each(function(){
+$(this).attr('href','javascript:showWait()');
 	});
 }
 
@@ -25,6 +32,9 @@ console.log(email, ' ', reg_email.test(email));
 	$('#waiting-list input[type="email"]').addClass('redBorder');
 }
 });
+	if(switchUrls){
+		doSwitch();
+	}
 }
 
  if(window.addEventListener) window.addEventListener('load', loadSignupAction, false);
