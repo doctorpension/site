@@ -561,10 +561,10 @@ include("includes/header.php");
 					<!--tab section-->
 			</section>
 			<!--End Page Content-->
+			<div class="mob-view"></div>
 
 			<!--Begin Footer section-->
 			<?php include('includes/footer.php') ?>
-			<div class="mob-view"></div>
 			<!--End Footer section-->
 		</div>
 		<!-- Le javascript
