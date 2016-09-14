@@ -2880,12 +2880,19 @@ right:-32px;left:auto;}
 	.banner-outercont.banner-new #show_video{margin-top:0px;position:absolute;left:20px;}
 }
 @media all and (orientation: landscape) and (max-width: 767px) {
-	.banner-outercont.banner-new #show_video{margin-top:-100px;position:absolute;left:20px;}
+	.banner-outercont.banner-new #show_video{margin-top:-150px;position:absolute;left:70px;}
 	.homehd.header-sticky.header-fixed .report-guide{
 		top:0px;
 	}
 	.homehd.header-sticky.header-fixed .navbar-default{
 		top:-5px;
+	}
+	.banner-outercont.banner-new .banner-content h1{
+		font-size:40px;
+		line-height:45px;
+	}
+	.banner-outercont.banner-new .banner-content h1 .cd-headline.type .cd-words-wrapper{
+		font-size:30px;
 	}
 }
 
