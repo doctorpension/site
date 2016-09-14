@@ -102,7 +102,7 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
  
 	<script type='text/javascript' src='js/wakeup.js'></script>
 <?php 
-if($_SERVER['HTTP_HOST'] == 'www.wakeuppension.com'){
+if(strpos($_SERVER['HTTP_HOST'], 'wakeuppension.com') === true){
 	echo '<script type="text/javascript"> switchUrls = true;</script>';
 }
 	?>
