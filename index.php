@@ -253,7 +253,7 @@ images/content/roni.jpg"/>
 <picture>
   <source srcset="images/content/yael_mobile.jpg" media="(max-width: 410px)">
   <source srcset="images/content/yael_landscape.jpg" media=" (max-width: 767px)">
-  <source srcset="images/content/yael_tablet.jpg" media=" (max-width: 1048px)">
+  <source srcset="images/content/yael_tablet.jpg" media=" (max-width: 1052px)">
 <img src="images/content/yael.jpg"
 		srcset="images/content/yael_mobile.jpg 420w,
 			images/content/yael_landscape.jpg 700w,

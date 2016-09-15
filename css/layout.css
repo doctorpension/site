@@ -2937,3 +2937,32 @@ right:-32px;left:auto;}
 		top:4px;
 	}
 }
+@media only screen and (min-width: 992px) and (max-width: 1025px) {
+	.looking-outerblk.new-looking-outerblk ul li {
+		width:47%;
+	}
+	.container{
+		width:880px;
+	}
+	.path-outer{
+		top:170px !important;
+		max-width:65px;
+	}
+	.graph-details{
+		width:42%;
+	}
+	.graph-details ul li{
+		font-size:28px;
+		line-height:30px;
+	}
+	.newthree-blk.three-blockouter .icon-outer{
+		max-width:250px;
+	}
+	.banner-outercont.banner-new #show_video{
+		left:300px;
+	}
+	.banner-outercont.banner-new .banner-imgblk{
+		min-height:345px;
+	}
+}
+

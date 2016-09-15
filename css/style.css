@@ -421,7 +421,7 @@ display:inline-block;
 	padding: 0 15px 0;
 	color: #222526; }
 .looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock h5{
-	padding: 22px 15px 0; direction:ltr;}
+	padding: 15px 15px 0px 15px; direction:ltr;}
 .looking-outerblk.new-looking-outerblk ul li:nth-child(2) .single-contentblk .list-topblock h5{
 	padding-top:14px;
 }
