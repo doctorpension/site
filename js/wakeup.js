@@ -11,6 +11,8 @@ function showWait(){
 
 var lets_go = '&#1489;&#1493;&#1488;&#1493;&nbsp;&#1504;&#1510;&#1488;&nbsp;&#1500;&#1491;&#1512;&#1498;';
 function doSwitch(){
+	//Until the site is ready, show waiting list popup instaed of questionnaire
+	//Add classes for google tag manager to indicate where the events are coming from
 	$('a[href*="survey.php"]').each(function(){
 $(this).attr('href','javascript:showWait()');
 $(this).addClass('LP');
@@ -19,7 +21,7 @@ $(this).addClass('LP');
 	$('.link-button.implement').unbind('click').css('background-image', 'none').addClass('LP').click(function () {
 		showWait();	
 	});
-
+	$('#show_video').addClass('LP');
 }
 
 function loadSignupAction(){
