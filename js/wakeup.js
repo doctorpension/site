@@ -13,9 +13,10 @@ var lets_go = '&#1489;&#1493;&#1488;&#1493;&nbsp;&#1504;&#1510;&#1488;&nbsp;&#15
 function doSwitch(){
 	$('a[href*="survey.php"]').each(function(){
 $(this).attr('href','javascript:showWait()');
+$(this).addClass('LP');
 	});
 	$('.link-button.implement span.eng').css('width','auto').html(lets_go);
-	$('.link-button.implement').unbind('click').css('background-image', 'none').click(function () {
+	$('.link-button.implement').unbind('click').css('background-image', 'none').addClass('LP').click(function () {
 		showWait();	
 	});
 
