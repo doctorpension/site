@@ -14,15 +14,15 @@
                     <div class="footer-links cs_mobile_footer border">
                         <div class="links-single">
                             <ul>
-                                <li><a href="#">תנאי שימוש</a></li>
-                                <li><a href="#">מדיניות פרטיות</a></li>
+                                <li><a href="/index.php#kal_vepashut">איך זה עובד</a></li>
+								<li><a href="#">צוות המומחים שלנו</a></li>
                                 <li><a href="#">שאלות נפוצות</a></li>
                              </ul>
                         </div>
                         <div class="links-single">
                             <ul>
-								<li><a href="#">צוות המומחים שלנו</a></li>
-                                <li><a href="/index.php#kal_vepashut">איך זה עובד</a></li>
+                                <li><a href="#">תנאי שימוש</a></li>
+                                <li><a href="#">מדיניות פרטיות</a></li>
                                 <li><a href="#">צור קשר</a></li>
                             </ul>
                         </div>
