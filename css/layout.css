@@ -1640,6 +1640,10 @@
 	.path-outer{
 		max-width:85px;
 	}
+	.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box{
+		height:100px;
+		width:100px;
+	}
 	.chart-outercont ul li {
 		width: 50%; }
 
@@ -1717,9 +1721,9 @@
 		min-height: 44px; }
 
 	.looking-outerblk.new-looking-outerblk ul li .single-contentblk .list-topblock .round-box {
-		height: 80px;
+		height: 100px;
 		padding: 15px 8px 12px;
-		width: 80px;
+		width: 100px;
 		right: -18px;
 		top: -28px; }
 
@@ -1949,17 +1953,21 @@
 		width: 60px; }
 
 	.newthree-blk.three-blockouter h2 {
+		font-size:35px;
 		line-height: 40px; }
 
 	.newthree-blk.three-blockouter .firsl-mainblk {
 		width: 35%;
-		padding-top: 50px; }
+		 }
 
 	.newthree-blk.three-blockouter .icon-outer {
 		width: 22%; }
 
 	.newthree-blk.three-blockouter .listingouter {
 		width: 43%; }
+	.newthree-blk.three-blockouter .listingouter ul{
+		padding:20px 0px;
+	}
 
 	.newthree-blk.three-blockouter {
 		padding: 35px 0; }

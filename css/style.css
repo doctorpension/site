@@ -4509,7 +4509,6 @@ display:inline;
 .banner-outercont.banner-new .banner-imgblk {
 	width: 100%;
 	height: auto;
-	min-height:400px;
 	float: left;
 	line-height: 1px;
 	text-align: center;
