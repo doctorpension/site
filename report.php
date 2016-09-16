@@ -401,7 +401,7 @@ include("includes/header.php");
 <sup>1</sup>הסכום כולל את הפנסיה התקציבית שלך
 </div>
 							<div class="bluebottomboxspan"><i class="fa fa-check"></i> הצבירה שלך לגיל הפרישה יכולה לגדול ב
-								<strong>₪<?=number_format($report->getIncrease());?> </strong> אם תבחר ליישם את המלצותינו.
+								<strong><?=number_format($report->getIncrease());?>&nbsp;₪</strong> אם תבחר ליישם את המלצותינו.
 							</div>
 							<div class="insurance-block">
 								<div class="container">
