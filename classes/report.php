@@ -26,7 +26,6 @@ class Report{
 
 	function loadData($account_id){
 		$this->raw_data = Wakeup::getReport($account_id);
-		echo 'the raw data:' . var_export($this->raw_data, 1);
 		if($this->raw_data['http_code'] == 500){
 			$this->isReady = false;
 			return;
