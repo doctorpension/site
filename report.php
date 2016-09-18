@@ -1,6 +1,9 @@
 <?php
 session_start();
 $_SESSION['user'] = 'sd';
+if(isset($_GET['account_id'])){
+	$_SESSION['user'] = $_GET['account_id'];
+}
 require_once('includes/application.php');
 $report = new Report($_SESSION['user']);
 if(isset($_SERVER['REDIRECT_URL'])){

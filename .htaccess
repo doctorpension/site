@@ -1,2 +1,3 @@
 RewriteEngine On
 RewriteRule ^accounts/report/$ report.php
+RewriteRule ^accounts/([^/]+)/report/?$ report.php?account_id=$1
