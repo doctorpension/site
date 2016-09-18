@@ -258,22 +258,27 @@ canvas {
 		position: relative;
 		overflow: hidden;
 		height: 800px;
-		width: 90%;
-		margin: 0px;
+		width: 95%;
+		margin: 0px auto;
 		background: #e9eef2; }
 
 	.tab_container {
-		width: 190%;
+		width: 200%;
 		height: 800px; }
 
 	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.down-block,
 	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk {
-		width: 42%;
+		width: 36%;
 		height: 850px;
 		padding-top: 46px;
+		padding-right:0px;
 		float: right;
-		margin-left: 7%; }
-
+		margin-left: 14%; }
+	.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.right-blk {
+		padding-top:44px;
+		padding-left:0px;
+		margin-left:0px;
+	}
 	.bottom-outercont {
 		background: #e9eef2; }
 

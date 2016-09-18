@@ -3166,9 +3166,6 @@ display:inline;
 	width: 100%;
 	text-align: center;
 	padding-bottom: 20px; }
-.content-maincont.common-blk.subtop-content .inner-contentblk h4:first-child {
-	padding-top:5px;
-}
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk {
 	width: 50%;
 	height: auto;
