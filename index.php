@@ -177,7 +177,7 @@ include('includes/header.php') ?>
 			<section class="content-maincont three-blockouter newthree-blk">
 				<div class="container">
 					<div class="firsl-mainblk">
-<h2>תרגישו בטוח המידע מאובטח ומשמש רק לצורך הייעוץ</h2>
+<h2>תרגישו בטוח,<br/> המידע מאובטח ומשמש רק לצורך הייעוץ</h2>
 					</div>
 					<div class="icon-outer"><img src="images/shield-icon.png" alt="המידע מאובטח" /></div>
 					<div class="listingouter">
