@@ -14,10 +14,10 @@ function doSwitch(){
 	//Until the site is ready, show waiting list popup instaed of questionnaire
 	//Add classes for google tag manager to indicate where the events are coming from
 	$('a[href*="survey.php"]').each(function(){
-$(this).attr('href','javascript:showWait()');
-$(this).addClass('LP');
+		$(this).attr('href','javascript:showWait()');
+		$(this).addClass('LP');
 	});
-	$('.link-button.implement span.eng').css('width','auto').html(lets_go);
+	$('.link-button.implement span.eng').css('width','auto').removeClass('eng').html(lets_go);
 	$('.link-button.implement').unbind('click').css('background-image', 'none').addClass('LP').click(function () {
 		showWait();	
 	});
