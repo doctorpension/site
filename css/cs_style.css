@@ -27,7 +27,6 @@
 @media all and (max-width: 767px) {
 
 	.cs_chart_equilibre_right_bottom {
-		padding-top: 10px;
 		padding-bottom: 21px !important; } }
 .cs_chart_container {
 	position: relative;
