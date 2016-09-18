@@ -16,6 +16,7 @@ class Report{
 	var $total_increase;
 	var $isTakzivit;
 	var $boxRows = array();
+	var $isReady = true;
 	
 	var $product_types = array('pensia', 'hishtalmut', 'gemel', 'minhalim');
 
@@ -25,6 +26,11 @@ class Report{
 
 	function loadData($account_id){
 		$this->raw_data = Wakeup::getReport($account_id);
+		echo 'the raw data:' . var_export($this->raw_data, 1);
+		if($this->raw_data['http_code'] == 500){
+			$this->isReady = false;
+			return;
+		}
 		$this->firstName = $this->raw_data['firstName'];
 		$this->currentPortfolio = new Portfolio($this->raw_data['currentPolicies'], $this->raw_data['currentPortfolioAggregated'], $this->raw_data['insurance']['currentCoverages'], $this->raw_data['totalBalance']);
 		$this->currentPortfolio->insuranceMatches = $this->raw_data['insurance']['fit'];

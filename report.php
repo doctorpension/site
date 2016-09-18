@@ -6,6 +6,9 @@ if(isset($_GET['account_id'])){
 }
 require_once('includes/application.php');
 $report = new Report($_SESSION['user']);
+if(!$report->isReady){
+	header("Location: /waiting.php");
+}
 if(isset($_SERVER['REDIRECT_URL'])){
 	//echo 'the user was redirected';
 	//CUSTOMIZE HERE
