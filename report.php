@@ -4,6 +4,9 @@ $_SESSION['user'] = 'sd';
 if(isset($_GET['account_id'])){
 	$_SESSION['user'] = $_GET['account_id'];
 }
+else{
+	$_SESSION['user'] = 999375736;
+}
 require_once('includes/application.php');
 $report = new Report($_SESSION['user']);
 if(!$report->isReady){
