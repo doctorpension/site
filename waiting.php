@@ -25,7 +25,6 @@ margin-bottom:50px;
 			<section id="home" class="content-maincont common-blk subtop-content">
 				<div class="container">
 					<div class="row">
-<h1>מזל טוב!</h1>
 <h2>מחכים לנתונים מהמסלקה,<br/> ודוח היעוץ שלכם יהיה מוכן!</h2>
 <div id='clock'>
 
