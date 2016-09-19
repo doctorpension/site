@@ -110,8 +110,7 @@ include('includes/header.php') ?>
 										<li class="third-ball"><span class="pulse"></span>מיישמים את ההמלצות בקליק</li>
 									</ul>
 								</div>
-								<!--div class="link-block"><a id='Sample_Report' class="link-button" href="report.php">דוח לדוגמה</a></div-->
-								<div class="link-block"><a id='Sample_Report' class="link-button" href="javascript:;">דוח לדוגמה</a></div>
+								<div class="link-block"><a id='Sample_Report' class="link-button" href="report.php">דוח לדוגמה</a></div>
 							</div>
 						</div>
 					</div>
