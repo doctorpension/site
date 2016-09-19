@@ -129,9 +129,9 @@ include('includes/header.php') ?>
 					<div class="detail-section">
 						<div class="graph-details">
 							<ul>
-								<li>אנחנו עובדים רק בשבילך. בלי עמלות נסתרות.</li>
+								<li>אנחנו עובדים רק בשבילכם. בלי עמלות נסתרות.</li>
+								<li>אתם יכולים להקטין את דמי הניהול ולהגדיל את הפנסיה שלכם.</li>
 								<li>המערכת שלנו הוכיחה את עצמה כבר בקרב אלפים.<a class='mizrachi-ref' id='Mizrachi' data-toggle="modal" data-target='#mizrachi-testimonial'>למידע נוסף</a></li>
-								<li>אפשר להקטין את דמי הניהול ולהגדיל את הקצבה.</li>
 							</ul>
 						</div>
 						<div class="graph-block">
