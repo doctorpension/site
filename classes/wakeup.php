@@ -13,8 +13,11 @@ class WakeUp{
 
 	function __construct(){	}
 
-	static function getReport($account_id){
-		return Wakeup::Send('accounts/' . $account_id . '/report', 'POST');
+		static function getReport($account_id, $isSample){
+			$endpoint = $isSample ? 
+					'accounts/report/sample' :
+					'accounts/' . $account_id . '/report'; 
+		return Wakeup::Send($endpoint, 'POST');
 	}
 
 	static function send($endpoint, $method, $params = array()){

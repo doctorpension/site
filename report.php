@@ -1,14 +1,14 @@
 <?php
 session_start();
-$_SESSION['user'] = 'sd';
+$sample = false;
 if(isset($_GET['account_id'])){
 	$_SESSION['user'] = $_GET['account_id'];
 }
 else{
-	$_SESSION['user'] = 999375736;
+	$sample = true;
 }
 require_once('includes/application.php');
-$report = new Report($_SESSION['user']);
+$report = new Report($_SESSION['user'], $sample);
 if(!$report->isReady){
 	header("Location: /waiting.php");
 }
@@ -20,6 +20,11 @@ $page_title = 'Report';
 $body_class='account-section';
 $body_id = 'report_body';
 include("includes/header.php");
+if($report->error){
+	?><section>Error generating report</section><?php
+	include('includes/footer.php');
+	die();
+}
 ?>
 			<!--Begin Page Content-->
 			<section id="home" class="content-maincont common-blk subtop-content">

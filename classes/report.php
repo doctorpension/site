@@ -17,17 +17,22 @@ class Report{
 	var $isTakzivit;
 	var $boxRows = array();
 	var $isReady = true;
+	var $error = false;
 	
 	var $product_types = array('pensia', 'hishtalmut', 'gemel', 'minhalim');
 
-	function __construct($account_id){
-		$this->loadData($account_id);
+	function __construct($account_id, $isSample){
+		$this->loadData($account_id, $isSample);
 	}
 
-	function loadData($account_id){
-		$this->raw_data = Wakeup::getReport($account_id);
+	function loadData($account_id, $isSample){
+		$this->raw_data = Wakeup::getReport($account_id, $isSample);
 		if($this->raw_data['http_code'] == 500){
 			$this->isReady = false;
+			return;
+		}
+		if($this->raw_data['http_code'] == 404){
+			$this->error = true;
 			return;
 		}
 		$this->firstName = $this->raw_data['firstName'];
