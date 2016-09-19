@@ -139,6 +139,10 @@ class Report{
 			$this->recommendedPortfolio->getTrackBalance($code);
 	}
 
+	function displayBox($product){
+		return sizeof($this->getBoxFunds('current', $product)) > 0;
+	}
+
 	function displayBoxFunds($portfolio, $product){
 	?><ul>
 			<?php 

@@ -94,6 +94,8 @@ if($report->error){
 											</div>
 										</div>
 										<!--pie chart section-->
+										<?php if($report->displayBox('gemel')){	?>
+									
 										<div class="single-tabblock first-blk" id='firstpopup-mob'>
 											<div class="cont-singleouterblock old-cont">
 												<!--normal popover-->
@@ -110,6 +112,8 @@ if($report->error){
 												<?php $report->displayBoxFunds('current', 'gemel');?>
 											</div>
 										</div>
+										<?php } 
+										if($report->displayBox('hishtalmut')){ ?>
 										<div class="single-tabblock sec-blk" id='secondpopup-mob'>
 											<div class="cont-singleouterblock old-cont">
 												<!--normal popover-->
@@ -130,6 +134,8 @@ if($report->error){
 												?>
 											</div>
 										</div>
+										<?php } 
+										if($report->displayBox('minhalim')){ ?>
 										<div class="single-tabblock third-blk" id='thirdpopup-mob'>
 											<div class="cont-singleouterblock old-cont">
 												<div class="compare-fieldtitle">
@@ -140,6 +146,8 @@ if($report->error){
 												?>
 											</div>
 										</div>
+										<?php } 
+										if($report->displayBox('pensia')){ ?>
 										<div class="single-tabblock fourth-blk">
 											<div class="cont-singleouterblock old-cont">
 												<div class="compare-fieldtitle">
@@ -148,6 +156,7 @@ if($report->error){
 													<?php 
 												$report->displayBoxFunds('current', 'pensia'); ?>
 											</div>
+										<?php }?>
 										</div>
 									</div>
 									<div class="listing-singleblk right-blk">
@@ -160,6 +169,7 @@ if($report->error){
 										<!--pie chart section-->
 
 										<!--first bold bell-->
+										<?php 	if($report->displayBox('gemel')){ ?>
 										<div class="single-tabblock rightfirst-blk" id="firstpopup">
 											<div class="closepopover"></div>
 											<div class=" normalpop">
@@ -176,11 +186,11 @@ if($report->error){
 													<label>קופת גמל</label>
 												</div>
 													<?php 
-												$report->displayBoxFunds('recommended', 'gemel');
-?>
+												$report->displayBoxFunds('recommended', 'gemel'); ?>
 											</div>
 										</div>
-										
+										<?php   }
+										if($report->displayBox('hishtalmut')) { ?>
 										<!--second bold bell-->
 										<div class="single-tabblock rightsec-blk" id="secondpopup">
 											<div class="normalpop">
@@ -208,6 +218,8 @@ if($report->error){
 											</div>
 										</div>
 										<!--third bold bell-->
+										<?php }
+										if($report->displayBox('minhalim')) { ?>
 										<div class="single-tabblock rightthird-blk" id="thirdpopup">
 											<div class=" normalpop">
 											</div>
@@ -220,6 +232,8 @@ if($report->error){
 												?>
 											</div>
 										</div>
+										<?php }
+										if($report->displayBox('pensia')) { ?>
 										<!--fourth bold bell-->
 										<div class="single-tabblock rightfourth-blk">
 											<div class="normalpop"></div>
@@ -232,6 +246,7 @@ if($report->error){
 												?>
 											</div>
 										</div>
+										<?php } ?>
 									</div>
 								</div>
 							</div>
