@@ -32,7 +32,7 @@ class Fund{
 		$this->match_profile = $info['betterFitProfile'];
 		$this->improved_fees = $info['improvedFees'];
 		foreach($info['investmentTrackInfos'] as $track){
-			$this->tracks[] = new Track($track);
+			$this->tracks[$track['trackCode']] = new Track($track);
 		}
 		$this->formatted_data =  number_format($this->total_balance) . " " . $this->deposit_fee . " " . $this->accumulation_fee . " " . $this->risk_level;
 	}
@@ -41,6 +41,15 @@ class Fund{
 		return $this->fund_types[$this->type];
 	}
 	
+	function getCodes(){
+		return array_keys($this->tracks);
+	}
+
+	function getTrackBalance($code){
+		return array_key_exists($code, $this->tracks) ? 
+				$this->tracks[$code]->balance :
+				null;
+	}
 }
 
 ?>

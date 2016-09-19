@@ -156,8 +156,8 @@ include("includes/header.php");
 
 										<!--first bold bell-->
 										<div class="single-tabblock rightfirst-blk" id="firstpopup">
-											<div class="alrm-icon closepopover"></div>
-											<div class="alrm-icon normalpop">
+											<div class="closepopover"></div>
+											<div class=" normalpop">
 												<!--normal popover-->
 												<div class="normalpop-over">
 													<p>לצפייה במידע נוסף לגבי כל
@@ -178,7 +178,7 @@ include("includes/header.php");
 										
 										<!--second bold bell-->
 										<div class="single-tabblock rightsec-blk" id="secondpopup">
-											<div class="alrm-icon normalpop">
+											<div class="normalpop">
 												<!--normal popover-->
 												<div class="normalpop-over long">
 													<p>זהו תיק החיסכון הפנסיוני המומלץ לך.
@@ -191,7 +191,7 @@ include("includes/header.php");
 												</div>
 												<!--normal popover-->
 											</div>
-											<div class="alrm-icon closepopover"></div>
+											<div class=" closepopover"></div>
 
 											<div class="cont-singleouterblock new-cont">
 												<div class="compare-fieldtitle">
@@ -204,9 +204,8 @@ include("includes/header.php");
 										</div>
 										<!--third bold bell-->
 										<div class="single-tabblock rightthird-blk" id="thirdpopup">
-											<div class="<?php if($d->hishtalmutBell) { ?>alrm-icon<?php }?> normalpop">
+											<div class=" normalpop">
 											</div>
-											<div class="alrm-icon closepopover"></div>
 											<div class="cont-singleouterblock new-cont">
 												<div class="compare-fieldtitle">
 													<label>ביטוח מנהלים</label>
@@ -218,8 +217,7 @@ include("includes/header.php");
 										</div>
 										<!--fourth bold bell-->
 										<div class="single-tabblock rightfourth-blk">
-											<div class="<?php if($d->minhalimBell) { ?>alrm-icon <?php }?>normalpop"></div>
-											<div class="alrm-icon closepopover"></div>
+											<div class="normalpop"></div>
 											<div class="cont-singleouterblock new-cont">
 												<div class="compare-fieldtitle">
 													<label>קרן פנסיה</label>

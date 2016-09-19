@@ -24,6 +24,27 @@ class Product{
 	function getFunds(){
 		return $this->funds;
 	}
+
+	function getCodes(){
+		$codes = array();
+		foreach($this->funds as $fund){
+			$codes = array_merge($codes, $fund->getCodes());	
+		}
+		return $codes;
+	}
+
+	function getTrackBalance($code){
+		$balance = null;
+		if(!in_array($code, $this->getCodes())){
+			return $balance;
+		}
+		foreach($this->funds as $fund){
+			$balance = $fund->getTrackBalance($code);
+			if($balance){
+				return $balance;
+			}
+		}
+	}
 }
 
 

@@ -124,6 +124,16 @@ class Report{
 	function getProductPoints($portfolio){
 		return $this->getPortfolio($portfolio)->getProductPoints();
 	}
+	
+	function isRecommendation($code){
+		return !in_array($code, $this->currentPortfolio->getCodes());
+	}
+
+	function balancesMatch($code){
+		return $this->currentPortfolio->getTrackBalance($code) ==
+			$this->recommendedPortfolio->getTrackBalance($code);
+	}
+
 	function displayBoxFunds($portfolio, $product){
 	?><ul>
 			<?php 
@@ -134,6 +144,14 @@ class Report{
 			}
 			else{
 				$class=$portfolio .'-box-' . $product; 
+				if($portfolio == 'recommended'){
+					foreach($row->tracks as $track){
+						if($this->isRecommendation($track->code) || !$this->balancesMatch($track->code)){
+							$class .= ' alarm';
+							break;
+						}
+					}
+				}	
 				echo '<li data-details="' . $row->formatted_data . 
 					'" data-name="' . $row->name . '" data-risk="'.
 					$row->risk_level.'" data-tracks=\'' . 

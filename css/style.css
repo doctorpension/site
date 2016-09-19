@@ -3228,7 +3228,17 @@ display:inline;
 	height: 40px;
 	line-height: 40px;
 	float: left;
+	position:relative;
 	width: 100%; }
+.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li.alarm span:before {
+	background: url(../images/alarm.png) no-repeat center center;
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 24px;
+	top:7px;
+	right:-27px;
+}
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li.no-border,
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li:first-child {
 	border: none; }
@@ -3289,7 +3299,6 @@ display:inline;
 	margin-top: -12px;
 	background: url(../images/alarm.png) no-repeat center center;
 	background-size: 100% 100%;
-	cursor: pointer;
 	z-index: 9999; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock.empty .alrm-icon {
 	background:none;

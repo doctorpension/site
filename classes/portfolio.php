@@ -17,6 +17,7 @@ class Portfolio{
 	var $insurance;
 	var $insuranceMatches;
 	var $worstCase;
+	var $codes;
 	
 	var $riskFitTexts = array('GOOD' => 'טובה', 'HIGH' => 'גבוהה', 'LOW' => 'נמוכה');
 
@@ -30,6 +31,7 @@ class Portfolio{
 		$this->setProducts($policies);
 		$this->totalBalance = $totalBalance;
 		$this->setProductAggregations();
+		$this->setCodes();
 	}
 	
 	
@@ -73,6 +75,13 @@ class Portfolio{
 		$this->minhalim->setPercent($this->totalBalance);
 	}
 	
+	function setCodes(){
+		$this->codes = $this->pensia->getCodes();
+		$codes = array_merge($this->codes, $this->hishtalmut->getCodes());
+		$codes = array_merge($this->codes, $this->gemel->getCodes());
+		$codes = array_merge($this->codes, $this->minhalim->getCodes());
+	}
+
 	function getProductPoints(){
 		return $this->minhalim->getPercent() . ',' .
 			 $this->hishtalmut->getPercent() . ',' .
@@ -92,6 +101,27 @@ class Portfolio{
 				return $this->minhalim;
 		}
 		
+	}
+
+	function getCodes(){
+		return $this->codes;
+	}
+
+	function getProductTrackBalance($code, $product){
+		return $product->getTrackBalance($code);
+	}
+
+	function getTrackBalance($code){
+		$products = array(
+			$this->minhalim, $this->hishtalmut,
+			$this->gemel, $this->pensia);
+		foreach($products as $prod){
+			$balance = $this->getProductTrackBalance($code, $prod);
+			if($balance){
+				return $balance;
+			}
+		}
+		return null;
 	}
 
 	function riskMatches(){
