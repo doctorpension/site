@@ -40,7 +40,7 @@ jQuery(function () {
 	});
 
 	jQuery(".listing-singleblk .single-tabblock").each(function(){
-		if(jQuery(this).find('ul li').length == 0){
+		if(jQuery(this).find('ul li[data-details]').length == 0){
 			jQuery(this).addClass('empty');
 		}
 	});
