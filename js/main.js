@@ -39,6 +39,12 @@ jQuery(function () {
 		jQuery(".insurance-title.result_hover").removeClass("result_hover").addClass('close-triggered');
 	});
 
+	jQuery(".listing-singleblk .single-tabblock").each(function(){
+		if(jQuery(this).find('ul li').length == 0){
+			jQuery(this).addClass('empty');
+		}
+	});
+
 	var isMobLand = false;
 	var dw = jQuery(window).width();
 	var dh = jQuery(window).height();

@@ -3206,6 +3206,13 @@ display:inline;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px; }
+.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock.empty:after {
+	height:100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk.down-block .single-tabblock.empty{
+	margin-bottom:5px;
+}
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock .cont-singleouterblock {
 	list-style: none;
 	vertical-align: middle;
@@ -3284,6 +3291,9 @@ display:inline;
 	background-size: 100% 100%;
 	cursor: pointer;
 	z-index: 9999; }
+.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock.empty .alrm-icon {
+	background:none;
+}
 
 /*chart section*/
 .chart-outercont {
