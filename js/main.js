@@ -134,18 +134,6 @@ jQuery(function () {
 
 		var $adjusted_distance = 400;
 
-		var $rightfirst_height = parseInt(jQuery('.rightfirst-blk').outerHeight(true));
-		var $rightfirst_top = parseInt(jQuery('.rightfirst-blk').offset().top);
-
-		var $rightsec_height = parseInt(jQuery('.rightsec-blk').outerHeight(true));
-		var $rightsec_top = parseInt(jQuery('.rightsec-blk').offset().top);
-
-		var $rightthird_height = parseInt(jQuery('.rightthird-blk').outerHeight(true));
-		var $rightthird_top = parseInt(jQuery('.rightthird-blk').offset().top);
-
-		var $rightfourth_height = parseInt(jQuery('.rightfourth-blk').outerHeight(true));
-		var $rightfourth_top = parseInt(jQuery('.rightfourth-blk').offset().top);
-
 		jQuery(document).scroll(function () {
 			scroll_pos = $(this).scrollTop();
 			var $skippoint = parseInt(jQuery('.bluebottomboxspan').offset().top) - 1200;
