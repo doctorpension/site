@@ -49,51 +49,43 @@ jQuery(function () {
 			var isMobLand = true;
 		}
 	}
-	//Setup Chain for Popups
-	var pop_chain = {
-		'firstpopup': '.rightfirst-blk',
-		'secondpopup': '.rightsec-blk',
-		'thirdpopup': '.rightthird-blk',
-		'topblock': '',
-		'firstpopup-mob': '.first-blk',
-		'secondpopup-mob': '.sec-blk',
-		'thirdpopup-mob': '.third-blk',
-		'topblock-mob': '',
-	}
 
+	//report walkthrough
 	jQuery("body").on('click', '.popupbtns', function (e) {
 		e.preventDefault();
 		console.log('in click popupbtns');
+		var ref = $(this).attr('href');
+			console.log('the ref: ', ref);
 
-		if (jQuery(this).attr('href')) {
-			var $hash = jQuery(this).attr('href').slice(1);
-			var toppos = jQuery(jQuery(this).attr('href')).offset().top;
-			if (jQuery(".mob-view").is(":visible")) {
-				//suffix = '-mob';
-				suffix = '';
+		if (typeof(ref) != "undefined" ) {
+			var next_pop = $(this).attr('href') + '-walkthrough';
+			var target = $(this).data('targetLocation');
+			if(typeof(target) != 'undefined'){
+				var attach_to = $(target);
+				var add_to_height = $(this).data('targetBelowTop');
+
+				console.log('the add to: ', add_to_height, ' the attach to: ', attach_to);
+				var top_pos = attach_to.offset().top + add_to_height;
+				console.log('the next pop: ', next_pop);
+				$(next_pop).css('top',top_pos);
 			}
-			else {
-				suffix = '';
-			}
-			$hash += suffix;
-			$classrefer = pop_chain[$hash];
-			if ($classrefer.indexOf('first-blk') > -1) {
+			if (ref == '#second') {
 				jQuery("body, html").animate(
-					{scrollTop: toppos + -100},
+					{scrollTop: top_pos + -100},
 					{duration: 1000});
 			}
-			else if ($classrefer === '') {
-				//	var toppos= jQuery( '#guide-template' ).offset().top;
+			else if (ref == '#fourth') {
+				var scrollTo= jQuery( '#guide-template' ).offset().top;
 				
 				if (jQuery(".mob-view").is(":visible")) {
 					if(isMobLand){
-						toppos += 350;
+					//	top_pos += 350;
 					}else{
-						toppos += 100;
+						scrollTo -= 80;
 					}
 				}
 				jQuery("body, html").animate(
-					{scrollTop: toppos},
+					{scrollTop: scrollTo},
 					{
 						duration: 1000,
 						complete: function () {
@@ -105,8 +97,8 @@ jQuery(function () {
 						}
 					});
 			}
-			jQuery($classrefer).addClass("active-tabover");
-			jQuery('.mainpop-over').removeClass("active-popup");
+			$('.active-popup, .active-tabover').removeClass("active-popup");
+			$(next_pop).addClass("active-tabover");
 
 		}
 	});

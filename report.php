@@ -53,30 +53,9 @@ if($report->error){
 
 						<!--tab section-->
 						<div class='scroll_holder'>
-
-
 							<div class="listing_blk_tabs">
 								<div class="tab_container">
-								<!--main popover-->
-								<div class="mainpop-over">
-									<p>ברוכים הבאים לדוח הייעוץ הפנסיוני שלך.<br/>
-										מימין מופיעות הקופות שיש ברשותך כיום.<br/>
-										משמאל מופיעות המלצות <span class='eng'>WakeUp</span>
-									</p>
-									<a href="#firstpopup" id='RepNote1' class="link-button popupbtns">הבנתי</a>
-								</div>
-								<!--main popover-->
-										<div class='normalpop-over rightfourth-blk'>
-<p>
-צריך עוד הסברים?
-<br/>
-תמיד תוכל להקיש על
-<img src='/images/guide_cue_on.png'/>
-שלמעלה
-</p>
-<a href="javascript:hideLastPop()" class="link-button" id='RepNote4'>הבנתי</a>
-</div>
-									<div id="sticky-anchor"></div>
+	<div id="sticky-anchor"></div>
 									<div class="header-outercont hidden-xs" id="sticky">
 										<div class="header-innercont">
 											<h4>מצבך היום</h4>
@@ -98,14 +77,6 @@ if($report->error){
 									
 										<div class="single-tabblock first-blk" id='firstpopup-mob'>
 											<div class="cont-singleouterblock old-cont">
-												<!--normal popover-->
-												<div class="normalpop-over long">
-													<p>לצפייה במידע נוסף לגבי כל
-														קופה, ניתן ללחוץ עם הסמן
-														על שם הקופה.</p>
-													<p>לצפייה במידע נוסף לגבי כל קופה, ניתן ללחוץ עם הסמן על שם הקופה.</p>
-													<a href="#secondpopup" class="link-button popupbtns" id='MRepNote2' >הבנתי</a></div>
-												<!--normal popover-->
 												<div class="compare-fieldtitle">
 													<label>קופת גמל</label>
 												</div>
@@ -171,16 +142,6 @@ if($report->error){
 										<!--first bold bell-->
 										<?php 	if($report->displayBox('gemel')){ ?>
 										<div class="single-tabblock rightfirst-blk" id="firstpopup">
-											<div class="closepopover"></div>
-											<div class=" normalpop">
-												<!--normal popover-->
-												<div class="normalpop-over">
-													<p>לצפייה במידע נוסף לגבי כל
-														קופה, ניתן ללחוץ עם הסמן
-														על שם הקופה.</p>
-													<a href="#secondpopup" class="link-button popupbtns" id='RepNote2'>הבנתי</a></div>
-												<!--normal popover-->
-											</div>
 											<div class="cont-singleouterblock new-cont">
 												<div class="compare-fieldtitle">
 													<label>קופת גמל</label>
@@ -594,6 +555,54 @@ if($report->error){
 			<?php include('includes/footer.php') ?>
 			<!--End Footer section-->
 		</div>
+		<!--First walkthrough-->
+		<div class="mainpop-over" id='first-walkthrough'>
+			<p>ברוכים הבאים לדוח הייעוץ הפנסיוני שלך.<br/>
+				מימין מופיעות הקופות שיש ברשותך כיום.<br/>
+				משמאל מופיעות המלצות <span class='eng'>WakeUp</span>
+			</p>
+			<a href="#second" id='RepNote1' 
+				data-target-location=".listing-singleblk.down-block .single-tabblock:eq(0)"
+				data-target-below-top="55" 
+			class="link-button popupbtns">הבנתי</a>
+		</div>
+		<!--main popover-->
+	<!--Second Walkthrough -->
+	<div class="normalpop-over long" id='second-walkthrough'>
+		<p>לצפייה במידע נוסף לגבי כל קופה, ניתן ללחוץ עם הסמן על שם הקופה.</p>
+		<a href="#third" 
+				data-target-location=".listing-singleblk.down-block .single-tabblock:eq(1)"
+				data-target-below-top="55" 
+		class="link-button popupbtns" id='MRepNote2' >הבנתי</a></div>
+	<!--Second Walkthrough -->
+		<!--Third Walkthrough-->
+	<div class=" normalpop-over" id='third-walkthrough'>
+<p>זהו תיק החיסכון הפנסיוני המומלץ לך.
+														ליד כל שינוי ביחס לתיק החיסכון הקיים
+														יהיה פעמון. קופה שאין לידה פעמון
+														משמע שאיננו ממליצים לבצע לגביה
+														שינוי.
+													</p>
+
+			<a href="#fourth" class="link-button popupbtns" 
+				data-target-location="#guide-template"
+				data-target-below-top="155" 
+
+
+id='RepNote2'>הבנתי</a></div>
+		<!--/Third Walktrough-->
+<!--Fourth Walkthrough-->
+<div class='normalpop-over' id='fourth-walkthrough'>
+<p>
+צריך עוד הסברים?
+<br/>
+תמיד תוכל להקיש על
+<img src='/images/guide_cue_on.png'/>
+שלמעלה
+</p>
+<a href="javascript:hideLastPop()" class="link-button" id='RepNote4'>הבנתי</a>
+</div>
+		<!--/Fourth Walkthrough-->								
 		<!-- Le javascript
 ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
