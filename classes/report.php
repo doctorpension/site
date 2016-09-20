@@ -170,6 +170,12 @@ class Report{
 					'<em class=\'' . $class . '\'>₪'.number_format($row->total_balance).'</em></li>';
 			}
 		}
+		//if box is empty, show appropriate message
+		if($i == 1){
+			echo '<li class="no-border empty-box-note">';
+			echo ($portfolio == 'current' ) ? 'לא קיים' : 'היתרה הועברה למוצר אחר';
+			echo '</li>';
+		}
 		?>	
 			</ul> <?php
 }

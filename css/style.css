@@ -3235,6 +3235,11 @@ display:inline;
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li.no-border,
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li:first-child {
 	border: none; }
+.content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li.no-border.empty-box-note{
+	margin-top:-20px;
+	font-size:20px;
+	color:#FFF;
+}
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li em {
 	width: auto;
 	height: auto;
