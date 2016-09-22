@@ -1,6 +1,7 @@
 <?php
 session_start();
 $sample = false;
+$_SESSION['user'] = '';
 if(isset($_GET['account_id'])){
 	$_SESSION['user'] = $_GET['account_id'];
 }

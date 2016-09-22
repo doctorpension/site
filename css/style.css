@@ -3236,7 +3236,7 @@ display:inline;
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li:first-child {
 	border: none; }
 .content-maincont.common-blk.subtop-content .inner-contentblk .listing-singleblk .single-tabblock ul li.no-border.empty-box-note{
-	margin-top:-20px;
+	margin-top:-40px;
 	font-size:20px;
 	color:#FFF;
 }
