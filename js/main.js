@@ -473,7 +473,7 @@ jQuery(function () {
 			onClose: function() { $('#video_popup iframe').attr('src', ''); }
 		},
 		function() { 
-			$('#video_popup iframe').attr('src', "https://www.youtube.com/embed/OQFv9rP_Q4c?autoplay=1&amp;origin=https%3A%2F%2Fstaging.doctorpension.com&amp;enablejsapi=1");
+			$('#video_popup iframe').attr('src', "https://www.youtube.com/embed/OQFv9rP_Q4c?autoplay=1&amp;rel=0&amp;show_info=0&amp;origin=https%3A%2F%2Fstaging.doctorpension.com&amp;enablejsapi=1");
 			jQuery('#video_popup').css('z-index', 999999999); }
 		);
 	});
