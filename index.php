@@ -16,7 +16,7 @@ include('includes/header.php') ?>
 					</div>
 				</div>
 				<div class="banner-imgblk">
-<img src="images/home_wakeup_banner_1920.jpg"/>
+<img src="images/home_coffee_1920.jpg"/>
 				</div>
 				<div class="banner-content">
 					<div class="container">
